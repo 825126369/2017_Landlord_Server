@@ -1,0 +1,80 @@
+﻿<?xml version="1.0"?>
+
+<configuration>
+	<!-- excel文件的导出目录 -->
+	<add key="exportDir" value="..\..\WebManager\excel" type="string" />
+	<!-- excel导出服务端口号 -->
+	<add key="exportPort" value="60002" type="int" />
+	
+	<add key="channel" value="悠扬网络" type="string" />
+	
+	<!-- 账号与充值所在数据库IP -->
+	<add key="account" value="192.168.1.12" type="string" />
+	<add key="payment" value="192.168.1.12" type="string" />
+	
+	<add key="server" type="table" >
+		<elem>
+			<add key="serverIp" value="192.168.1.202" type="string" />   <!-- 服务器IP -->
+			<add key="serverId" value="4" type="string" />              <!-- 服务器ID -->
+			<add key="serverName" value="zhenlipao" type="string" />       <!-- 服务器名称 -->
+			<add key="logDbIp" value="192.168.1.202" type="string" />     <!-- logdb服务器ip -->
+		</elem>	
+		
+		<elem>
+			<add key="serverIp" value="192.168.1.205" type="string" />   <!-- 服务器IP -->
+			<add key="serverId" value="6" type="string" />              <!-- 服务器ID -->
+			<add key="serverName" value="shenyoujun" type="string" />       <!-- 服务器名称 -->
+			<add key="logDbIp" value="192.168.1.205" type="string" />     <!-- logdb服务器ip -->
+		</elem>	
+		
+		<elem>
+			<add key="serverIp" value="192.168.1.207" type="string" />   <!-- 服务器IP -->
+			<add key="serverId" value="7" type="string" />              <!-- 服务器ID -->
+			<add key="serverName" value="luoluo" type="string" />       <!-- 服务器名称 -->
+			<add key="logDbIp" value="192.168.1.207" type="string" />   <!-- logdb服务器ip -->
+		</elem>	
+		
+		<elem>
+			<add key="serverIp" value="192.168.1.213" type="string" />   <!-- 服务器IP -->
+			<add key="serverId" value="2" type="string" />              <!-- 服务器ID -->
+			<add key="serverName" value="wangwei" type="string" />       <!-- 服务器名称 -->
+			<add key="logDbIp" value="192.168.1.213" type="string" />   <!-- logdb服务器ip -->
+		</elem>	
+		
+		<elem>
+			<add key="serverIp" value="192.168.1.220" type="string" />   <!-- 服务器IP -->
+			<add key="serverId" value="12" type="string" />              <!-- 服务器ID -->
+			<add key="serverName" value="zhangyibiao" type="string" />       <!-- 服务器名称 -->
+			<add key="logDbIp" value="192.168.1.220" type="string" />      <!-- logdb服务器ip -->
+		</elem>	
+		
+		<elem>
+			<add key="serverIp" value="192.168.1.137" type="string" />   <!-- 服务器IP -->
+			<add key="serverId" value="14" type="string" />              <!-- 服务器ID -->
+			<add key="serverName" value="sunxiaodong" type="string" />    <!-- 服务器名称 -->
+			 <add key="logDbIp" value="192.168.1.137" type="string" />   <!-- logdb服务器ip -->
+		</elem>
+		
+		<elem>
+			<add key="serverIp" value="192.168.1.17" type="string" />   <!-- 服务器IP -->
+			<add key="serverId" value="10" type="string" />              <!-- 服务器ID -->
+			<add key="serverName" value="dwc_test17" type="string" />       <!-- 服务器名称 -->
+			 <add key="logDbIp" value="192.168.1.17" type="string" />    <!-- logdb服务器ip -->
+		</elem>	
+		
+		<elem>
+			<add key="serverIp" value="192.168.1.12" type="string" />   <!-- 服务器IP -->
+			<add key="serverId" value="500000" type="string" />              <!-- 服务器ID -->
+			<add key="serverName" value="充值所在服务器" type="string" />       <!-- 服务器名称 -->
+			<add key="logDbIp" value="192.168.1.12" type="string" />    <!-- logdb服务器ip -->
+		</elem>	
+		
+		<elem>
+		  <add key="serverIp" value="192.168.1.19:27217" type="string" />
+		  <add key="serverId" value="15" type="string" />
+		  <add key="serverName" value="捕鱼3" type="string" />
+		  <add key="logDbIp" value="192.168.1.19:27217" type="string" />
+    </elem>
+    </add>
+</configuration>
+

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0"?>
+
+<configuration>  
+  <add opid="1" opname="解/封账号" fmt="[{0}]了账号[{1}]" class="LogBlockAcc" />
+
+  <add opid="2" opname="重置密码" fmt="重置了账号[{0}]的密码" class="LogResetPwd" />
+
+  <add opid="3" opname="祝福诅咒" fmt="在游戏[{0}]内，给玩家ID[{1}] [{2}] 了 [{3}]" class="LogWishCurse" />
+
+  <add opid="4" opname="踢玩家" fmt="把玩家[{0}]踢出游戏" class="LogKickPlayer" />
+
+  <add opid="5" opname="会员创建" fmt="创建了会员[{0}]" class="LogCreatePlayer" />
+
+  <add opid="6" opname="修改盈利率" fmt="修改房间[{0}]的盈利率为[{1}]-{2}" class="LogModifyFishlordRoomExpRate" />
+
+  <add opid="7" opname="重置盈利率" fmt="重置了房间[{0}]的盈利率-{1}" class="LogResetFishlordRoomExpRate" />
+  
+  <add opid="9" opname="牛牛牌型" fmt="增加了牛牛牌型， 庄家[{0}],闲家-东[{1}],闲家-南[{2}],闲家-西[{3}],闲家-北[{4}]" class="LogCowsAddCardType" />
+
+  <add opid="10" opname="API审批" fmt="审批通过了API账号[{0}],别名[{1}]" class="LogApiApprove" />
+</configuration>
+
+

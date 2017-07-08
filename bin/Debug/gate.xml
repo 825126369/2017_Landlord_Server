@@ -1,0 +1,11 @@
+<root>
+  <monitor_ip>127.0.0.1</monitor_ip>
+  <monitor_port>11001</monitor_port>
+  <out_port>15001</out_port>
+  <server_type>1</server_type>
+  <close_select>1</close_select> 
+  <debug>0</debug>
+  <mutli_thread>1</mutli_thread>
+  
+  <maxcount>10000</maxcount>
+</root>

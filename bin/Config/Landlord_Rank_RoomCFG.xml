@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Data RoomID="1" RoomName="初级房" IsOpen="true" RoomImage="B_RoomItem_1" GoldCondition="1000" orShuffle="false" deskCount="3" Score="100" />
+	<Data RoomID="2" RoomName="中级房" IsOpen="true" RoomImage="B_RoomItem_2" GoldCondition="1000" orShuffle="false" deskCount="3" Score="200" />
+	<Data RoomID="3" RoomName="高级房" IsOpen="true" RoomImage="B_RoomItem_2" GoldCondition="1000" orShuffle="false" deskCount="3" Score="300" />
+	<Data RoomID="4" RoomName="初级房" IsOpen="true" RoomImage="B_RoomItem_1" GoldCondition="1000" orShuffle="true" deskCount="3" Score="100" />
+	<Data RoomID="5" RoomName="中级房" IsOpen="true" RoomImage="B_RoomItem_2" GoldCondition="1000" orShuffle="true" deskCount="3" Score="200" />
+	<Data RoomID="6" RoomName="高级房" IsOpen="true" RoomImage="B_RoomItem_2" GoldCondition="1000" orShuffle="true" deskCount="3" Score="300" />
+</Root>

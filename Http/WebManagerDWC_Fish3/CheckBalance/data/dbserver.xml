@@ -1,0 +1,21 @@
+﻿<?xml version="1.0"?>
+
+<configuration>
+	<!-- 账号数据库 -->
+	<add key="mongodbAccount" value="127.0.0.1" type="string" />
+	
+	<!-- 玩家数据库 -->
+	<add key="mongodbPlayer" value="127.0.0.1" type="string" />
+	
+	<!-- 日志数据库 -->
+	<add key="mongodbLog" value="192.168.1.19:27217" type="string" />
+
+	<!-- 游戏数据库 -->
+	<add key="mongodbGame" value="127.0.0.1" type="string" />
+
+	<add key="title" value="创想盟" type="string" />
+	
+	<!-- 毫秒 隔一定时间查看是否需要统计 -->
+	<add key="statInterval" value="1000" type="int" />
+</configuration>
+

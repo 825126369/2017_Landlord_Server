@@ -1,0 +1,367 @@
+﻿<?xml version="1.0"?>
+
+<configuration>
+  <add key="op" type="table" >
+    <elem>
+      <add key="rightId" value="1" type="string" />
+      <add key="name" value="玩家金币变化详细" type="string" />
+    </elem>
+    <elem>
+      <add key="rightId" value="2" type="string" />
+      <add key="name" value="后台充值" type="string" />
+    </elem>
+    <elem>
+      <add key="rightId" value="3" type="string" />
+      <add key="name" value="运营公告" type="string" />
+    </elem>
+    <elem>
+      <add key="rightId" value="4" type="string" />
+      <add key="name" value="通告消息" type="string" />
+    </elem>
+    <elem>
+      <add key="rightId" value="5" type="string" />
+      <add key="name" value="维护公告" type="string" />
+    </elem>
+    <elem>
+      <add key="rightId" value="6" type="string" />
+      <add key="name" value="金币预警" type="string" />
+    </elem>
+    <elem>
+      <add key="rightId" value="7" type="string" />
+      <add key="name" value="当前在线人数" type="string" />
+    </elem>
+    <elem>
+      <add key="rightId" value="8" type="string" />
+      <add key="name" value="冻结头像" type="string" />
+    </elem>
+    <elem>
+      <add key="rightId" value="9" type="string" />
+      <add key="name" value="举报头像" type="string" />
+    </elem>
+    <elem>
+      <add key="rightId" value="10" type="string" />
+      <add key="name" value="渠道测试编辑" type="string" />
+    </elem>
+    <elem>
+      <add key="rightId" value="11" type="string" />
+      <add key="name" value="金币增长排行" type="string" />
+    </elem>
+    <elem>
+      <add key="rightId" value="12" type="string" />
+      <add key="name" value="祝福诅咒" type="string" />
+    </elem>
+    <elem>
+      <add key="rightId" value="13" type="string" />
+      <add key="name" value="最高在线" type="string" />
+    </elem>
+    <elem>
+      <add key="rightId" value="14" type="string" />
+      <add key="name" value="玩家金币总和" type="string" />
+    </elem>
+    <elem>
+      <add key="rightId" value="15" type="string" />
+      <add key="name" value="玩家相关操作" type="string" />
+    </elem>
+    <elem>
+      <add key="rightId" value="16" type="string" />
+      <add key="name" value="付费点统计" type="string" />
+    </elem>
+    <elem>
+      <add key="rightId" value="17" type="string" />
+      <add key="name" value="大奖赛冠军设置" type="string" />
+    </elem>
+  </add>
+
+  <!-- *************************************** -->
+  <add key="svr" type="table" >
+    <elem>
+      <add key="rightId" value="1001" type="string" />
+      <add key="name" value="账号查询" type="string" />
+    </elem>
+    <elem>
+      <add key="rightId" value="1002" type="string" />
+      <add key="name" value="充值记录查询" type="string" />
+    </elem>
+    <elem>
+      <add key="rightId" value="1003" type="string" />
+      <add key="name" value="发邮件" type="string" />
+    </elem>
+    <elem>
+      <add key="rightId" value="1004" type="string" />
+      <add key="name" value="邮件检查" type="string" />
+    </elem>
+    <elem>
+      <add key="rightId" value="1005" type="string" />
+      <add key="name" value="重置密码" type="string" />
+    </elem>
+    <elem>
+      <add key="rightId" value="1006" type="string" />
+      <add key="name" value="停封玩家ID" type="string" />
+    </elem>
+    <elem>
+      <add key="rightId" value="1007" type="string" />
+      <add key="name" value="兑换管理" type="string" />
+    </elem>
+    <elem>
+      <add key="rightId" value="1008" type="string" />
+      <add key="name" value="增加客服信息" type="string" />
+    </elem>
+  </add>
+  
+  <!-- *************************************** -->
+  <add key="td" type="table" >
+    <elem>
+      <add key="rightId" value="2001" type="string" />
+      <add key="name" value="活跃数据" type="string" />
+    </elem>
+    <elem>
+      <add key="rightId" value="2002" type="string" />
+      <add key="name" value="LTV统计" type="string" />
+    </elem>
+    <elem>
+      <add key="rightId" value="2003" type="string" />
+      <add key="name" value="大R流失" type="string" />
+    </elem>
+    <elem>
+      <add key="rightId" value="2004" type="string" />
+      <add key="name" value="充值用户统计" type="string" />
+    </elem>
+    <elem>
+      <add key="rightId" value="2005" type="string" />
+      <add key="name" value="玩家龙珠监控" type="string" />
+    </elem>
+    <elem>
+      <add key="rightId" value="2006" type="string" />
+      <add key="name" value="每日龙珠" type="string" />
+    </elem>
+    <elem>
+      <add key="rightId" value="2007" type="string" />
+      <add key="name" value="充值玩家监控" type="string" />
+    </elem>
+    <elem>
+      <add key="rightId" value="2008" type="string" />
+      <add key="name" value="活跃玩家收支统计" type="string" />
+    </elem>
+    <elem>
+      <add key="rightId" value="2009" type="string" />
+      <add key="name" value="实时付费" type="string" />
+    </elem>
+    <elem>
+      <add key="rightId" value="2010" type="string" />
+      <add key="name" value="实时在线" type="string" />
+    </elem>
+  </add>
+  
+  <!-- *************************************** -->
+  <add key="data" type="table" >
+    <elem>
+      <add key="rightId" value="3001" type="string" />
+      <add key="name" value="盈利率重置查询" type="string" />
+    </elem>
+    <elem>
+      <add key="rightId" value="3002" type="string" />
+      <add key="name" value="玩家喜好" type="string" />
+    </elem>
+    <elem>
+      <add key="rightId" value="3003" type="string" />
+      <add key="name" value="独立数据大厅" type="string" />
+    </elem>
+    <elem>
+      <add key="rightId" value="3004" type="string" />
+      <add key="name" value="游戏金币流动统计" type="string" />
+    </elem>
+    <elem>
+      <add key="rightId" value="3005" type="string" />
+      <add key="name" value="消耗收入总计" type="string" />
+    </elem>
+    <elem>
+      <add key="rightId" value="3006" type="string" />
+      <add key="name" value="游戏每天收入统计" type="string" />
+    </elem>
+    <elem>
+      <add key="rightId" value="3007" type="string" />
+      <add key="name" value="重新加载表格" type="string" />
+    </elem>
+    <elem>
+      <add key="rightId" value="3008" type="string" />
+      <add key="name" value="流失查询" type="string" />
+    </elem>
+    <elem>
+      <add key="rightId" value="3009" type="string" />
+      <add key="name" value="商城兑换" type="string" />
+    </elem>
+    <elem>
+      <add key="rightId" value="3010" type="string" />
+      <add key="name" value="星星抽奖" type="string" />
+    </elem>
+  </add>
+
+  <!-- *************************************** -->
+  <add key="fish" type="table" >
+    <elem>
+      <add key="rightId" value="4001" type="string" />
+      <add key="name" value="经典捕鱼参数调整" type="string" />
+    </elem>
+    <elem>
+      <add key="rightId" value="4002" type="string" />
+      <add key="name" value="经典捕鱼桌子盈利率" type="string" />
+    </elem>
+    <elem>
+      <add key="rightId" value="4003" type="string" />
+      <add key="name" value="经典捕鱼算法分析" type="string" />
+    </elem>
+    <elem>
+      <add key="rightId" value="4004" type="string" />
+      <add key="name" value="鱼的统计" type="string" />
+    </elem>
+    <elem>
+      <add key="rightId" value="4005" type="string" />
+      <add key="name" value="独立数据-捕鱼" type="string" />
+    </elem>
+    <elem>
+      <add key="rightId" value="4006" type="string" />
+      <add key="name" value="捕鱼消耗" type="string" />
+    </elem>
+    <elem>
+      <add key="rightId" value="4007" type="string" />
+      <add key="name" value="大奖赛周冠军" type="string" />
+    </elem>
+    <elem>
+      <add key="rightId" value="4008" type="string" />
+      <add key="name" value="大奖赛名次" type="string" />
+    </elem>
+    <elem>
+      <add key="rightId" value="4009" type="string" />
+      <add key="name" value="BOSS消耗" type="string" />
+    </elem>
+    <elem>
+      <add key="rightId" value="4010" type="string" />
+      <add key="name" value="经典捕鱼BOSS控制" type="string" />
+    </elem>
+  </add>
+
+  <!-- *************************************** -->
+  <add key="crod" type="table" >
+    <elem>
+      <add key="rightId" value="5001" type="string" />
+      <add key="name" value="鳄鱼大亨参数调整" type="string" />
+    </elem>
+    <elem>
+      <add key="rightId" value="5002" type="string" />
+      <add key="name" value="独立数据-鳄鱼" type="string" />
+    </elem>
+    <elem>
+      <add key="rightId" value="5003" type="string" />
+      <add key="name" value="鳄鱼大亨结果控制" type="string" />
+    </elem>
+  </add>
+
+  <!-- *************************************** -->
+  <add key="dice" type="table" >
+    <elem>
+      <add key="rightId" value="6001" type="string" />
+      <add key="name" value="骰宝盈利率" type="string" />
+    </elem>
+    <elem>
+      <add key="rightId" value="6002" type="string" />
+      <add key="name" value="独立数据-骰宝" type="string" />
+    </elem>
+    <elem>
+      <add key="rightId" value="6003" type="string" />
+      <add key="name" value="骰宝结果控制" type="string" />
+    </elem>
+  </add>
+
+  <!-- *************************************** -->
+  <add key="bacc" type="table" >
+    <elem>
+      <add key="rightId" value="7001" type="string" />
+      <add key="name" value="百家乐参数调整" type="string" />
+    </elem>
+    <elem>
+      <add key="rightId" value="7002" type="string" />
+      <add key="name" value="上庄情况" type="string" />
+    </elem>
+    <elem>
+      <add key="rightId" value="7003" type="string" />
+      <add key="name" value="百家乐结果控制" type="string" />
+    </elem>
+  </add>
+  
+  <!-- *************************************** -->
+  <add key="cow" type="table" >
+    <elem>
+      <add key="rightId" value="8001" type="string" />
+      <add key="name" value="牛牛参数调整" type="string" />
+    </elem>
+    <elem>
+      <add key="rightId" value="8002" type="string" />
+      <add key="name" value="牛牛上庄查询" type="string" />
+    </elem>
+    <elem>
+      <add key="rightId" value="8003" type="string" />
+      <add key="name" value="牛牛独立数据" type="string" />
+    </elem>
+    <elem>
+      <add key="rightId" value="8004" type="string" />
+      <add key="name" value="牛牛牌型设置" type="string" />
+    </elem>
+  </add>
+  
+  <!-- *************************************** -->
+  <add key="d5" type="table" >
+    <elem>
+      <add key="rightId" value="9001" type="string" />
+      <add key="name" value="五龙参数调整" type="string" />
+    </elem>
+    <elem>
+      <add key="rightId" value="9002" type="string" />
+      <add key="name" value="五龙具体盈利情况" type="string" />
+    </elem>
+  </add>
+
+  <!-- *************************************** -->
+  <add key="shcd" type="table" >
+    <elem>
+      <add key="rightId" value="10001" type="string" />
+      <add key="name" value="黑红梅方结果控制" type="string" />
+    </elem>
+    <elem>
+      <add key="rightId" value="10002" type="string" />
+      <add key="name" value="黑红梅方参数调整" type="string" />
+    </elem>
+    <elem>
+      <add key="rightId" value="10003" type="string" />
+      <add key="name" value="独立数据-黑红梅方" type="string" />
+    </elem>
+  </add>
+
+  <!-- *************************************** -->
+  <add key="calf" type="table" >
+    <elem>
+      <add key="rightId" value="11001" type="string" />
+      <add key="name" value="套牛参数调整" type="string" />
+    </elem>
+    <elem>
+      <add key="rightId" value="11002" type="string" />
+      <add key="name" value="套牛独立数据" type="string" />
+    </elem>
+    <elem>
+      <add key="rightId" value="11003" type="string" />
+      <add key="name" value="套牛关卡数据" type="string" />
+    </elem>
+    <elem>
+      <add key="rightId" value="11004" type="string" />
+      <add key="name" value="套牛分类统计" type="string" />
+    </elem>
+  </add>
+
+  <!-- *************************************** -->
+  <add key="other" type="table" >
+    <elem>
+      <add key="rightId" value="10000001" type="string" />
+      <add key="name" value="查看日志" type="string" />
+    </elem>
+  </add>
+</configuration>
+

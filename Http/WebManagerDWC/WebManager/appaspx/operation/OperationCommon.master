@@ -1,0 +1,76 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="OperationCommon.master.cs" Inherits="WebManager.appaspx.operation.OperationCommon" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
+<style type="text/css">
+    ul.cOperationM
+    {
+        list-style-type:none;
+        margin:0;
+        padding:0;
+        overflow:hidden;
+    }
+    .cOperationM li
+    {
+        float:left;
+        margin-right : 1px;
+    }
+    a.operation_menu:link,a.operation_menu:visited
+    {
+        display:block;
+        width:120px;
+        font-weight:bold;
+        color:black;
+        background-color:#D0D0D0;
+        text-align:center;
+        padding:4px;
+        text-decoration:none;
+        text-transform:uppercase;
+    }
+    a.operation_menu:hover
+    {
+        background-color:#cc0000;
+    }
+    div.SplitBorder
+    {
+        width : auto;
+        height : auto;
+        border-style : solid;
+        border-color : black;
+        border-width : 2px;
+        padding : 5px;
+        margin-bottom : 10px;
+    }
+</style>
+    <asp:ContentPlaceHolder ID="operationHeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+    <ul class="cOperationM">
+        <li><a href="/appaspx/operation/OperationMoneyQuery.aspx" class="operation_menu">玩家金币变化</a></li>
+        <li><a href="/appaspx/operation/OperationMoneyQueryDetail.aspx" class="operation_menu">金币变化详细</a></li>
+        <%-- <li><a href="OperationLoginQuery.aspx" class="operation_menu">玩家登陆历史</a></li> --%>
+        <li><a href="/appaspx/operation/OperationRecharge.aspx" class="operation_menu">后台充值</a></li>
+        <%-- <li><a href="OperationJPushApp.aspx" class="operation_menu">极光应用配置</a></li> --%>
+        <%--<li><a href="OperationJPushMsg.aspx" class="operation_menu">极光消息配置</a></li> --%>
+        <%--<li><a href="OperationGenGift.aspx" class="operation_menu">礼包生成</a></li> --%>
+        <%--<li><a href="OperationGiftModify.aspx" class="operation_menu">礼包修改</a></li> --%>
+        <%--<li><a href="OperationGenGiftCode.aspx" class="operation_menu">礼包码生成</a></li> --%>
+        <%--<li><a href="OperationGiftCodeQuery.aspx" class="operation_menu">礼包码查询-统计</a></li> --%>
+        <li><a href="/appaspx/operation/OperationNotify.aspx" class="operation_menu">运营公告</a></li>
+        <li><a href="/appaspx/operation/OperationSpeaker.aspx" class="operation_menu">通告消息</a></li>
+        <li><a href="/appaspx/operation/OperationMaintenanceNotice.aspx" class="operation_menu">维护公告</a></li>
+        <li><a href="/appaspx/operation/OperationMoneyWarn.aspx" class="operation_menu">金币预警</a></li>
+        <li><a href="/appaspx/operation/OperationOnlinePlayerCount.aspx" class="operation_menu">当前在线人数</a></li>
+        <li><a href="/appaspx/operation/OperationMaxOnline.aspx" class="operation_menu">最高在线</a></li>
+        <li><a href="/appaspx/operation/OperationFreezeHead.aspx" class="operation_menu">冻结头像</a></li>
+        <li><a href="/appaspx/operation/OperationViewInformHead.aspx" class="operation_menu">举报头像</a></li>
+        <li><a href="/appaspx/operation/OperationChannelEdit.aspx" class="operation_menu">渠道测试编辑</a></li>
+        <li><a href="/appaspx/operation/OperationRank.aspx" class="operation_menu">金币增长排行</a></li>
+        <li><a href="/appaspx/operation/OperationPlayerTotalMoney.aspx" class="operation_menu">玩家金币总和</a></li>
+        <li><a href="/appaspx/operation/OperationWishCurse.aspx" class="operation_menu">祝福诅咒</a></li>
+        <li><a href="/appaspx/operation/OperationPlayerOp.aspx" class="operation_menu">玩家相关操作</a></li>
+        <li><a href="/appaspx/operation/OperationRechargePoint.aspx" class="operation_menu">付费点统计</a></li>
+    </ul> 
+    <div class="clear"></div>
+    <asp:ContentPlaceHolder ID="operation_common" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>

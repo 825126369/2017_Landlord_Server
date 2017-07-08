@@ -1,0 +1,394 @@
+fun,map,reduce,描述,结束标志(不能删)
+recharge,"function Map() 
+{
+  emit( this.PlayerId, {total: this.RMB, rechargeCount : 1} ); 
+}","function Reduce(key, values) 
+{
+ var reduced = {total:0, rechargeCount : 0};
+
+ values.forEach(function(val) {
+  reduced.total += val.total;  
+  reduced.rechargeCount += val.rechargeCount;  
+ });
+
+ return reduced; 
+}",充值的统计,$
+sameOrderId,"function Map() 
+{
+  emit( this.OrderID, {total: 1} ); 
+}","function Reduce(key, values) 
+{
+ var reduced = {total:0};
+
+ values.forEach(function(val) {
+  reduced.total += val.total;  
+ });
+
+ return reduced; 
+}",统计相同的订单号,$
+activeCount,"function Map() {
+  var year  = this.genTime.getFullYear();
+  var month = this.genTime.getMonth();
+  var day   = this.genTime.getDate(); 
+  var curDate = new Date(year, month, day,0,0,0,0);
+ 
+  var v = {};
+  for(var i = 1; i <= 30; i++)
+  {
+   v['game'+i] = 0;
+  }
+  v['game' + this.gameId] = this.value;
+   emit(curDate, v); 
+}","function Reduce(key, values) {
+  var reduced = {}; 
+  for(var i = 1; i <= 30; i++)
+  {
+   reduced['game'+i] = 0;
+  }
+ 
+ values.forEach(function(val) {
+  
+   for(var i = 1; i <= 30; i++)
+   {
+    reduced['game'+i] += val['game'+i];
+   }
+   
+  });
+
+  return reduced; 
+}",活跃次数统计,$
+activePerson,"function Map() {
+ var year  = this.genTime.getFullYear();
+ var month = this.genTime.getMonth();
+ var day   = this.genTime.getDate(); 
+ var curDate = new Date(year, month, day,0,0,0,0);
+ 
+ if(this.gameId == 1)
+ {
+  emit(curDate,    
+   {game1:this.value, game2:0, game3:0, game4:0, game5:0, game6:0, game7:0, game8:0}
+  ); 
+ }
+ else if(this.gameId == 2)
+ {
+  emit(curDate,    
+   {game1:0, game2:this.value, game3:0, game4:0, game5:0, game6:0, game7:0, game8:0}
+  ); 
+ }
+ else if(this.gameId == 3)
+ {
+  emit(curDate,    
+   {game1:0, game2:0, game3:this.value, game4:0, game5:0, game6:0, game7:0, game8:0}
+  ); 
+ }
+ else if(this.gameId == 4)
+ {
+  emit(curDate,    
+   {game1:0, game2:0, game3:0, game4:this.value, game5:0, game6:0, game7:0, game8:0}
+  ); 
+ }
+ else if(this.gameId == 5)
+ {
+  emit(curDate,    
+   {game1:0, game2:0, game3:0, game4:0, game5:this.value, game6:0, game7:0, game8:0}
+  ); 
+ }
+ else if(this.gameId == 6)
+ {
+  emit(curDate,    
+   {game1:0, game2:0, game3:0, game4:0, game5:0, game6:this.value, game7:0, game8:0}
+  ); 
+ }
+ else if(this.gameId == 7)
+ {
+  emit(curDate,    
+   {game1:0, game2:0, game3:0, game4:0, game5:0, game6:0, game7:this.value, game8:0}
+  ); 
+ }
+ else if(this.gameId == 8)
+ {
+  emit(curDate,    
+   {game1:0, game2:0, game3:0, game4:0, game5:0, game6:0, game7:0, game8:this.value}
+  ); 
+ }
+}","function Reduce(key, values) {
+ var reduced = {game1:0, game2:0, game3:0, game4:0, game5:0, game6:0, game7:0, game8:0};
+
+ values.forEach(function(val) {
+  reduced.game1 += val.game1; 
+  reduced.game2 += val.game2; 
+  reduced.game3 += val.game3; 
+  reduced.game4 += val.game4; 
+  reduced.game5 += val.game5; 
+  reduced.game6 += val.game6; 
+  reduced.game7 += val.game7; 
+  reduced.game8 += val.game8; 
+ });
+
+ return reduced; 
+}",活跃人数统计,$
+vipLevel,"function Map() {
+ emit( this.VipLevel, {count: 1} ); 
+}","function Reduce(key, values) {
+ var reduced = {count:0}; 
+
+ values.forEach(function(val) {
+  reduced.count += val.count; 
+ });
+
+ return reduced; 
+}",vip等级分布情况,$
+LTV,"function Map() 
+{
+  var day1 = typeof(this.Day1TotalRecharge)==""undefined""?0:this.Day1TotalRecharge;
+  var day3 = typeof(this.Day3TotalRecharge)==""undefined""?0:this.Day3TotalRecharge;
+  var day7 = typeof(this.Day7TotalRecharge)==""undefined""?0:this.Day7TotalRecharge;
+  var day14 = typeof(this.Day14TotalRecharge)==""undefined""?0:this.Day14TotalRecharge;
+  var day30 = typeof(this.Day30TotalRecharge)==""undefined""?0:this.Day30TotalRecharge;
+  var day60 = typeof(this.Day60TotalRecharge)==""undefined""?0:this.Day60TotalRecharge;
+  var day90 = typeof(this.Day90TotalRecharge)==""undefined""?0:this.Day90TotalRecharge;
+  day1=day1>0?day1:0;
+  day3=day3>0?day3:0;
+  day7=day7>0?day7:0;
+  day14=day14>0?day14:0;
+  day30=day30>0?day30:0;
+  day60=day60>0?day60:0;
+  day90=day90>0?day90:0;
+  emit( this.genTime, {regeditCount: this.regeditCount, 
+        day1TotalRecharge : day1, 
+      day3TotalRecharge:day3, 
+      day7TotalRecharge:day7,
+      day14TotalRecharge:day14,
+      day30TotalRecharge:day30,
+      day60TotalRecharge:day60,
+      day90TotalRecharge:day90} ); 
+}
+","
+function Reduce(key, values) 
+{
+ var reduced = {regeditCount: 0, 
+        day1TotalRecharge : 0, 
+      day3TotalRecharge:0, 
+      day7TotalRecharge:0,
+      day14TotalRecharge:0,
+      day30TotalRecharge:0,
+      day60TotalRecharge:0,
+      day90TotalRecharge:0};
+
+ values.forEach(function(val) {
+  reduced.regeditCount += val.regeditCount;  
+  reduced.day1TotalRecharge += val.day1TotalRecharge;  
+  reduced.day3TotalRecharge += val.day3TotalRecharge;  
+  reduced.day7TotalRecharge += val.day7TotalRecharge;  
+  reduced.day14TotalRecharge += val.day14TotalRecharge;  
+  reduced.day30TotalRecharge += val.day30TotalRecharge;  
+  reduced.day60TotalRecharge += val.day60TotalRecharge;  
+  reduced.day90TotalRecharge += val.day90TotalRecharge;  
+ });
+
+ return reduced; 
+}
+",,$
+rechargePlayer,"function Map() {
+ var i = 1;
+ var arr = [];
+ for(; i <= 20; i++)
+ {
+  var t = this['game' + i] == undefined ? 0 :this['game' + i];
+  arr.push(t);
+ }
+ 
+ emit(
+  this.playerId,     
+  {rechargeCount: this.rechargeCount?this.rechargeCount:0, rechargeMoney: this.rechargeMoney?this.rechargeMoney:0, loginCount:this.loginCount?this.loginCount:0,
+  enterGame:arr}
+ ); 
+ 
+}","function Reduce(key, values) {
+
+ var reduced = {rechargeCount: 0, rechargeMoney: 0, enterGame:[],loginCount:0}; 
+ var arr =[];
+ for(var i = 0; i < 20; i++)
+ {
+  arr.push(0);
+ }
+ 
+ values.forEach(function(val) {
+  reduced.rechargeCount   += val.rechargeCount;  
+  reduced.rechargeMoney += val.rechargeMoney; 
+  reduced.loginCount += val.loginCount;
+  for(i = 0; i < val.enterGame.length; i++)
+  {
+   arr[i] += val.enterGame[i];
+  }
+ });
+
+ reduced.enterGame = arr;
+ 
+ return reduced; 
+}",充值用户统计,$
+playerDragonBall,"function Map() {
+
+ var val = {dbgain: this.dbgain, dbsend:this.dbsend, dbaccept:this.dbaccept, dbexchange:this.dbexchange, 
+ 
+    goldByRecharge:this.goldByRecharge,goldByOther:this.goldByOther,goldConsume:this.goldConsume,
+    
+    gemByRecharge:this.gemByRecharge,gemByOther:this.gemByOther,gemConsume:this.gemConsume, totalRecharge:this.todayRecharge};
+ 
+ emit(this.playerId, val); 
+}
+
+","
+function Reduce(key, values) {
+
+ var reduced =  {dbgain: 0, dbsend:0, dbaccept:0, dbexchange:0, goldByRecharge:0,goldByOther:0,goldConsume:0,
+ gemByRecharge:0,gemByOther:0,gemConsume:0,totalRecharge:0};
+
+ values.forEach(function(val) {
+  reduced.dbgain += val.dbgain; 
+  reduced.dbsend += val.dbsend; 
+  reduced.dbaccept += val.dbaccept; 
+  reduced.dbexchange += val.dbexchange; 
+  
+  reduced.goldByRecharge += val.goldByRecharge; 
+  reduced.goldByOther += val.goldByOther; 
+  reduced.goldConsume += val.goldConsume; 
+  
+  reduced.gemByRecharge += val.gemByRecharge; 
+  reduced.gemByOther += val.gemByOther; 
+  reduced.gemConsume += val.gemConsume; 
+  reduced.totalRecharge += val.totalRecharge; 
+ });
+
+ return reduced; 
+}",玩家龙珠,$
+playerIncomeExpenses,"function Map() {
+ 
+ emit(
+  this.genTime,     
+  {goldFreeGain:this.goldFreeGain, goldRechargeGain:this.goldRechargeGain, goldConsume:this.goldConsume, goldRemain:this.goldRemain,goldStart:this.goldStart,
+     gemFreeGain:this.gemFreeGain, gemRechargeGain:this.gemRechargeGain, gemConsume:this.gemConsume,gemRemain:this.gemRemain,gemStart:this.gemStart,
+     dbFreeGain:this.dbFreeGain,  dbConsume:this.dbConsume,dbRemain:this.dbRemain,dbStart:this.dbStart,
+     chipFreeGain:this.chipFreeGain, chipConsume:this.chipConsume,chipRemain:this.chipRemain,chipStart:this.chipStart,playerCount:1}
+ ); 
+ 
+}","function Reduce(key, values) {
+
+ var reduced = {goldFreeGain:0, goldRechargeGain:0, goldConsume:0, goldRemain:0,goldStart:0,
+     gemFreeGain:0, gemRechargeGain:0, gemConsume:0,gemRemain:0,gemStart:0,
+     dbFreeGain:0,  dbConsume:0,dbRemain:0,dbStart:0,
+     chipFreeGain:0, chipConsume:0,chipRemain:0,chipStart:0,
+   playerCount:0}; 
+
+ var count = 0;
+ values.forEach(function(val) {
+  reduced.goldFreeGain   += val.goldFreeGain;  
+  reduced.goldRechargeGain += val.goldRechargeGain; 
+  reduced.goldConsume += val.goldConsume; 
+  reduced.goldRemain += val.goldRemain; 
+  reduced.goldStart += val.goldStart; 
+  
+  reduced.gemFreeGain   += val.gemFreeGain;  
+  reduced.gemRechargeGain += val.gemRechargeGain; 
+  reduced.gemConsume += val.gemConsume; 
+  reduced.gemRemain += val.gemRemain; 
+  reduced.gemStart += val.gemStart;
+  
+  reduced.dbFreeGain   += val.dbFreeGain;  
+  reduced.dbConsume += val.dbConsume; 
+  reduced.dbRemain += val.dbRemain; 
+  reduced.dbStart += val.dbStart; 
+  
+  reduced.chipFreeGain   += val.chipFreeGain;  
+  reduced.chipConsume += val.chipConsume; 
+  reduced.chipRemain += val.chipRemain; 
+  reduced.chipStart += val.chipStart; 
+  reduced.playerCount += val.playerCount; 
+ });
+
+ return reduced; 
+}",玩家收支,$
+userGameBet,"function Map() {
+ 
+ var val={sumCarry:0,maxCarry:0,minCarry:0,sumOutlay:0,maxOutlay:0,minOutlay:0,
+    sumWin:0,maxWin:0,minWin:0,sumLose:0,maxLose:0,minLose:0, playerCount:1,rw:0};
+ 
+ val.sumCarry=this.sumCarry/this.round;
+ val.maxCarry=this.maxCarry;
+ val.minCarry=this.minCarry;
+ val.sumOutlay=this.sumOutlay/this.round;
+ val.maxOutlay=this.maxOutlay;
+ val.minOutlay=this.minOutlay;
+ val.sumWin = this.sumWin/this.round;
+ val.maxWin = this.maxWin;
+ val.minWin = this.minWin;
+ val.sumLose=this.sumLose/this.round;
+ val.maxLose=this.maxLose;
+ val.minLose=this.minLose;
+ val.rw=this.sumOutlay;
+ emit(this.genTime, val); 
+}","function Reduce(key, values) {
+
+ var reduced = {sumCarry:0,maxCarry:0,minCarry:-1,sumOutlay:0,maxOutlay:0,minOutlay:-1,
+        sumWin:0,maxWin:0,minWin:-1,sumLose:0,maxLose:0,minLose:-1, playerCount:0,rw:0};
+
+ values.forEach(function(val) {
+  reduced.sumCarry   += val.sumCarry;  
+  reduced.sumOutlay += val.sumOutlay; 
+  reduced.sumWin += val.sumWin;
+  reduced.sumLose += val.sumLose;
+  reduced.playerCount += val.playerCount;
+  reduced.rw += val.rw;
+  if(val.maxCarry > reduced.maxCarry)
+  {
+   reduced.maxCarry = val.maxCarry;
+  }
+  if(val.maxOutlay > reduced.maxOutlay)
+  {
+   reduced.maxOutlay = val.maxOutlay;
+  }
+  if(val.maxWin > reduced.maxWin)
+  {
+   reduced.maxWin = val.maxWin;
+  }
+  if(val.maxLose > reduced.maxLose)
+  {
+   reduced.maxLose = val.maxLose;
+  }
+  
+  if(reduced.minCarry==-1 || val.minCarry < reduced.minCarry)
+  {
+   reduced.minCarry = val.minCarry;
+  }
+  if(val.maxCarry < reduced.minCarry)
+  {
+ reduced.minCarry=val.maxCarry;
+  }
+  if(reduced.minOutlay==-1 || val.minOutlay < reduced.minOutlay)
+  {
+   reduced.minOutlay = val.minOutlay;
+  }
+  if(val.maxOutlay < reduced.minOutlay)
+  {
+ reduced.minOutlay=val.maxOutlay;
+  }
+  if(reduced.minWin==-1 || val.minWin < reduced.minWin)
+  {
+   reduced.minWin = val.minWin;
+  }
+  if(val.maxWin < reduced.minWin)
+  {
+ reduced.minWin=val.maxWin;
+  }
+  if(reduced.minLose==-1 || val.minLose < reduced.minLose)
+  {
+   reduced.minLose = val.minLose;
+  }
+  if(val.maxLose < reduced.minLose)
+  {
+ reduced.minLose=val.maxLose;
+  }
+ });
+
+ return reduced; 
+}",每局携带量和最大携带量、最小携带量  平均,$

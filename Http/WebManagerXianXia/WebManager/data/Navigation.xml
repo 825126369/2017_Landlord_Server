@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Root>
+  <mainMenu gameName="运营相关">
+    <subMenu url="/appaspx/operation/OperationMoneyQuery.aspx" text="玩家金币变化"></subMenu>
+    <subMenu url="/appaspx/operation/OperationRecharge.aspx" text="后台充值"></subMenu>
+    <subMenu url="/appaspx/operation/OperationNotify.aspx" text="运营公告"></subMenu>
+    <subMenu url="/appaspx/operation/OperationSpeaker.aspx" text="通告消息"></subMenu>
+    <subMenu url="/appaspx/operation/OperationMaintenanceNotice.aspx" text="维护公告"></subMenu>
+    <subMenu url="/appaspx/operation/OperationMoneyWarn.aspx" text="金币预警"></subMenu>
+    <subMenu url="/appaspx/operation/OperationOnlinePlayerCount.aspx" text="当前在线人数"></subMenu>
+    <subMenu url="/appaspx/operation/OperationFreezeHead.aspx" text="冻结头像"></subMenu>
+    <subMenu url="/appaspx/operation/OperationChannelEdit.aspx" text="渠道测试编辑"></subMenu>
+    <subMenu url="/appaspx/operation/OperationRank.aspx" text="金币增长排行"></subMenu>
+  </mainMenu>
+
+  <mainMenu gameName="客服相关">
+    <subMenu url="/appaspx/service/ServiceAccountQuery.aspx" text="账号查询"></subMenu>
+    <subMenu url="/appaspx/service/ServiceRechargeQuery.aspx" text="充值记录查询"></subMenu>
+    <subMenu url="/appaspx/service/ServiceMail.aspx" text="发邮件"></subMenu>
+    <subMenu url="/appaspx/service/ServiceModifyPwd.aspx" text="重置密码"></subMenu>
+    <subMenu url="/appaspx/service/ServiceCheckMail.aspx" text="邮件检查"></subMenu>
+    <subMenu url="/appaspx/service/ServiceBlockId.aspx" text="停封玩家ID"></subMenu>
+    <subMenu url="/appaspx/service/ServiceExchange.aspx" text="兑换管理"></subMenu>
+    <subMenu url="/appaspx/service/ServiceInfo.aspx" text="增加客服信息"></subMenu>
+  </mainMenu>
+
+  <mainMenu gameName="数据统计">
+    <subMenu url="/appaspx/stat/StatOldEarningsRate.aspx" text="盈利率重置查询"></subMenu>
+    <subMenu url="/appaspx/stat/StatPlayerFavor.aspx" text="玩家喜好"></subMenu>
+    <subMenu url="/appaspx/stat/StatLobby.aspx" text="独立数据大厅"></subMenu>
+    <subMenu url="/appaspx/stat/StatServerEarnings.aspx" text="游戏金币流动统计"></subMenu>
+    <subMenu url="/appaspx/stat/StatTotalConsume.aspx" text="消耗收入总计"></subMenu>
+    <subMenu url="/appaspx/stat/StatGameRecharge.aspx" text="游戏每天收入统计"></subMenu>
+    <subMenu url="/appaspx/stat/StatReloadTable.aspx" text="重新加载表格"></subMenu>
+    <subMenu url="/appaspx/stat/StatGeneralPlayerLost.aspx" text="流失查询"></subMenu>
+  </mainMenu>
+
+  <mainMenu gameName="经典捕鱼">
+    <subMenu url="/appaspx/stat/StatFishlordControl.aspx" text="经典捕鱼参数调整"></subMenu>
+    <subMenu url="/appaspx/stat/StatFishlordDeskEarningsRate.aspx" text="经典捕鱼桌子盈利率"></subMenu>
+    <subMenu url="/appaspx/stat/StatFishlordStage.aspx" text="经典捕鱼算法分析"></subMenu>
+    <subMenu url="/appaspx/stat/StatFish.aspx" text="鱼的统计"></subMenu>
+    <subMenu url="/appaspx/stat/StatIndependentFishlord.aspx" text="独立数据-捕鱼"></subMenu>
+    <subMenu url="/appaspx/stat/fish/StatFishlordConsume.aspx" text="捕鱼消耗"></subMenu>
+  </mainMenu>
+
+  <mainMenu gameName="鳄鱼大亨">
+    <subMenu url="/appaspx/stat/StatCrocodile.aspx" text="鳄鱼大亨参数调整"></subMenu>
+    <subMenu url="/appaspx/stat/StatIndependentCrocodile.aspx" text="独立数据-鳄鱼"></subMenu>
+  </mainMenu>
+
+  <mainMenu gameName="欢乐骰宝">
+    <subMenu url="/appaspx/stat/StatDice.aspx" text="骰宝盈利率"></subMenu>
+    <subMenu url="/appaspx/stat/StatIndependentDice.aspx" text="独立数据-骰宝"></subMenu>
+  </mainMenu>
+
+  <mainMenu gameName="百家乐">
+    <subMenu url="/appaspx/stat/baccarat/BaccaratControl.aspx" text="百家乐参数调整"></subMenu>
+    <subMenu url="/appaspx/stat/baccarat/BaccaratPlayerBanker.aspx" text="上庄情况"></subMenu>
+  </mainMenu>
+
+  <mainMenu gameName="万人牛牛">
+    <subMenu url="/appaspx/stat/cows/CowsControl.aspx" text="牛牛参数调整"></subMenu>
+    <subMenu url="/appaspx/stat/cows/CowsPlayerBanker.aspx" text="牛牛上庄查询"></subMenu>
+    <subMenu url="/appaspx/stat/cows/StatIndependentCows.aspx" text="牛牛独立数据"></subMenu>
+    <subMenu url="/appaspx/stat/cows/CowsCardType.aspx" text="牛牛牌型设置"></subMenu>
+  </mainMenu>
+</Root>

@@ -1,0 +1,72 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WebManager.SiteMaster" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css" />
+    <link href="Site.css?ver=1" rel="stylesheet" type="text/css" />
+    
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="Form1" runat="server">
+    <div class="Page">
+        <div class="header">
+            <div class="title">
+                <h1>
+                    电玩城--后台管理工具
+                </h1>
+                <asp:Label ID="Label1" style="font-size:1.6em;color:white" runat="server" Text="请选择要操作的数据库地址"></asp:Label>
+            </div>
+            <div class="loginDisplay">
+                <a href="/appaspx/ModifyLoginPwd.aspx">修改密码</a>
+                <a href="/appaspx/Exit.aspx">退出</a>
+            </div>
+            <div class="clear hideSkiplink">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/About.aspx" Text="关于"/>
+                    </Items>
+                </asp:Menu>
+            </div>
+        </div>
+        
+        <div >
+            <asp:Menu ID="Menu1" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="/appaspx/operation/OperationMoneyQuery.aspx" Text="运营相关"/>
+                        <asp:MenuItem NavigateUrl="/appaspx/service/ServiceAccountQuery.aspx" Text="客服相关"/>
+                        <asp:MenuItem NavigateUrl="/appaspx/stat/StatFishlordControl.aspx" Text="数据统计"/>
+                        <asp:MenuItem NavigateUrl="/appaspx/td/TdActivation.aspx" Text="运营数据"/>
+                        <asp:MenuItem NavigateUrl="/appaspx/LogViewer.aspx" Text="查看操作日志"/>
+                        <asp:MenuItem NavigateUrl="/appaspx/service/ServiceExcelDownLoad.aspx" Text="Excel下载"/>
+                        <asp:MenuItem NavigateUrl="/appaspx/Right.aspx" Text="编辑人员权限"/>
+                        <asp:MenuItem NavigateUrl="/appaspx/AddAccount.aspx" Text="添加账号"/>
+                    </Items>
+                </asp:Menu>
+        </div>
+
+        <div style="min-height:200px">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="clear">
+        </div>
+
+        <div class="cShortCutMenu">
+            <asp:Table ID="tabShortCutMenu" runat="server">
+                <asp:TableRow ID="shortCutMenu" runat="server"></asp:TableRow>
+            </asp:Table>
+        </div>
+
+        <div class="footer">
+            <span><img src="/image/icon.jpg"/ width="40" height="40"alt="icon" /> 悠扬网络--电玩城</span>
+        </div>
+    </div>
+    
+    </form>
+</body>
+</html>

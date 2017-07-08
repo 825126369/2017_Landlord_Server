@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ServiceCommon.master.cs" Inherits="WebManager.appaspx.service.ServiceCommon" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
+<style type="text/css">
+    ul.cServiceM
+    {
+        list-style-type:none;
+        margin:0;
+        padding:0;
+        overflow:hidden;
+    }
+    .cServiceM li
+    {
+        float:left;
+        margin-right : 1px;
+        margin-top : 1px;
+    }
+    a.service_menu:link,a.service_menu:visited
+    {
+        display:block;
+        width:120px;
+        font-weight:bold;
+        color:black;
+        background-color:#D0D0D0;
+        text-align:center;
+        padding:4px;
+        text-decoration:none;
+        text-transform:uppercase;
+    }
+    a.service_menu:hover
+    {
+        background-color:#cc0000;
+    }
+</style>
+    <asp:ContentPlaceHolder ID="serviceHeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+    <ul class="cServiceM">
+       <li><a href="/appaspx/service/ServiceAccountQuery.aspx" class="service_menu">账号查询</a></li>
+       <li><a href="/appaspx/service/ServiceRechargeQuery.aspx" class="service_menu">充值记录查询</a></li>
+       <li><a href="/appaspx/service/ServiceMail.aspx" class="service_menu">发邮件</a></li>
+       <li><a href="/appaspx/service/ServiceCheckMail.aspx" class="service_menu">邮件检查</a></li>
+       <li><a href="/appaspx/service/ServiceModifyPwd.aspx" class="service_menu">重置密码</a></li>
+       <%-- <li><a href="/appaspx/service/ServiceBindPhone.aspx" class="service_menu">绑定手机</a></li>  --%>
+       <li><a href="/appaspx/service/ServiceBlockId.aspx" class="service_menu">停封玩家ID</a></li>
+       <%-- <li><a href="/appaspx/service/ServiceBlockIP.aspx" class="service_menu">停封IP</a></li>  --%>
+
+       <li><a href="/appaspx/service/ServiceExchange.aspx" class="service_menu">兑换管理</a></li>
+       <%--   <li><a href="/appaspx/service/ServiceBenefitHelp.aspx" class="service_menu">发放福利帮助</a></li> --%>
+       <li><a href="/appaspx/service/ServiceInfo.aspx" class="service_menu">增加客服信息</a></li>
+       <%--   <li><a href="/appaspx/Notice.aspx" class="fun_menu">发布公告</a></li> --%>
+    </ul>
+    
+    <asp:ContentPlaceHolder ID="service_common" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>

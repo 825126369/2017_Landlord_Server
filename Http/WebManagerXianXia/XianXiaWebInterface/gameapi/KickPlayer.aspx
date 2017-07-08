@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="KickPlayer.aspx.cs" Inherits="XianXiaWebInterface.gameapi.KickPlayer" %>

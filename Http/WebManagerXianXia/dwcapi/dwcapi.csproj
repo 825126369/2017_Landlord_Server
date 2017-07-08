@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{18128F72-94AD-4101-8F47-1FADDCEB209A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>dwcapi</RootNamespace>
+    <AssemblyName>dwcapi</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MongoDB.Bson, Version=0.0.0.0, Culture=neutral, PublicKeyToken=f686731cfb9cc103, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Mongodb\MongoDB.Bson.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver, Version=0.0.0.0, Culture=neutral, PublicKeyToken=f686731cfb9cc103, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Mongodb\MongoDB.Driver.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WebManager\dll\MySql.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Mongodb\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="appaspx\ClearLoginFailed.aspx" />
+    <Content Include="appaspx\CreatePlayer.aspx" />
+    <Content Include="appaspx\LogoutPlayer.aspx" />
+    <Content Include="appaspx\PlayerDrawMoney.aspx" />
+    <Content Include="appaspx\PlayerOp.aspx" />
+    <Content Include="appaspx\PlayerSaveMoney.aspx" />
+    <Content Include="appaspx\QueryOrderInfo.aspx" />
+    <Content Include="appaspx\QueryPlayerInfo.aspx" />
+    <Content Include="appaspx\QueryPlayerLoginLog.aspx" />
+    <Content Include="appaspx\QueryPlayerMoneyChange.aspx" />
+    <Content Include="appaspx\QueryPlayerOnline.aspx" />
+    <Content Include="appaspx\QueryPlayerTradingRecord.aspx" />
+    <Content Include="appaspx\QueryPlayerWinLose.aspx" />
+    <Content Include="appaspx\QueryWinLosePlayerList.aspx" />
+    <Content Include="appaspx\QueryWinLoseSum.aspx" />
+    <Content Include="appaspx\UnlockPlayer.aspx" />
+    <Content Include="appaspx\UpdatePlayerInfo.aspx" />
+    <Content Include="appaspx\UpdatePlayerPwd.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="appaspx\ClearLoginFailed.aspx.cs">
+      <DependentUpon>ClearLoginFailed.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\ClearLoginFailed.aspx.designer.cs">
+      <DependentUpon>ClearLoginFailed.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\CreatePlayer.aspx.cs">
+      <DependentUpon>CreatePlayer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\CreatePlayer.aspx.designer.cs">
+      <DependentUpon>CreatePlayer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\LogoutPlayer.aspx.cs">
+      <DependentUpon>LogoutPlayer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\LogoutPlayer.aspx.designer.cs">
+      <DependentUpon>LogoutPlayer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\PlayerDrawMoney.aspx.cs">
+      <DependentUpon>PlayerDrawMoney.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\PlayerDrawMoney.aspx.designer.cs">
+      <DependentUpon>PlayerDrawMoney.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\PlayerOp.aspx.cs">
+      <DependentUpon>PlayerOp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\PlayerOp.aspx.designer.cs">
+      <DependentUpon>PlayerOp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\PlayerSaveMoney.aspx.cs">
+      <DependentUpon>PlayerSaveMoney.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\PlayerSaveMoney.aspx.designer.cs">
+      <DependentUpon>PlayerSaveMoney.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\QueryOrderInfo.aspx.cs">
+      <DependentUpon>QueryOrderInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\QueryOrderInfo.aspx.designer.cs">
+      <DependentUpon>QueryOrderInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\QueryPlayerInfo.aspx.cs">
+      <DependentUpon>QueryPlayerInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\QueryPlayerInfo.aspx.designer.cs">
+      <DependentUpon>QueryPlayerInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\QueryPlayerLoginLog.aspx.cs">
+      <DependentUpon>QueryPlayerLoginLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\QueryPlayerLoginLog.aspx.designer.cs">
+      <DependentUpon>QueryPlayerLoginLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\QueryPlayerMoneyChange.aspx.cs">
+      <DependentUpon>QueryPlayerMoneyChange.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\QueryPlayerMoneyChange.aspx.designer.cs">
+      <DependentUpon>QueryPlayerMoneyChange.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\QueryPlayerOnline.aspx.cs">
+      <DependentUpon>QueryPlayerOnline.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\QueryPlayerOnline.aspx.designer.cs">
+      <DependentUpon>QueryPlayerOnline.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\QueryPlayerTradingRecord.aspx.cs">
+      <DependentUpon>QueryPlayerTradingRecord.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\QueryPlayerTradingRecord.aspx.designer.cs">
+      <DependentUpon>QueryPlayerTradingRecord.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\QueryPlayerWinLose.aspx.cs">
+      <DependentUpon>QueryPlayerWinLose.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\QueryPlayerWinLose.aspx.designer.cs">
+      <DependentUpon>QueryPlayerWinLose.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\QueryWinLosePlayerList.aspx.cs">
+      <DependentUpon>QueryWinLosePlayerList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\QueryWinLosePlayerList.aspx.designer.cs">
+      <DependentUpon>QueryWinLosePlayerList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\QueryWinLoseSum.aspx.cs">
+      <DependentUpon>QueryWinLoseSum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\QueryWinLoseSum.aspx.designer.cs">
+      <DependentUpon>QueryWinLoseSum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\UnlockPlayer.aspx.cs">
+      <DependentUpon>UnlockPlayer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\UnlockPlayer.aspx.designer.cs">
+      <DependentUpon>UnlockPlayer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\UpdatePlayerInfo.aspx.cs">
+      <DependentUpon>UpdatePlayerInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\UpdatePlayerInfo.aspx.designer.cs">
+      <DependentUpon>UpdatePlayerInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\UpdatePlayerPwd.aspx.cs">
+      <DependentUpon>UpdatePlayerPwd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\UpdatePlayerPwd.aspx.designer.cs">
+      <DependentUpon>UpdatePlayerPwd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appcode\common.cs" />
+    <Compile Include="appcode\def.cs" />
+    <Compile Include="appcode\dyop.cs" />
+    <Compile Include="appcode\mongodb.cs" />
+    <Compile Include="appcode\mysql.cs" />
+    <Compile Include="appcode\query.cs" />
+    <Compile Include="appcode\user.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\PublishProfiles\publish.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\Common.csproj">
+      <Project>{ea3d98dd-533c-4a9a-93a3-39f3035ed717}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\libcommon\libcommon.csproj">
+      <Project>{5c624ef3-6680-40af-a4c6-17b0f7f57146}</Project>
+      <Name>libcommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>9439</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:45564/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

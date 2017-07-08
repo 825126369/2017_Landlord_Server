@@ -1,0 +1,16 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/appaspx/stat/StatCommon.master" AutoEventWireup="true" CodeBehind="StatCommonCalfRoping.master.cs" Inherits="WebManager.appaspx.stat.StatCommonCalfRoping" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="stat_comm_HeadContent" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="stat_common" runat="server">
+    <div class="statMenu">
+        <ul>
+            <li><a href="/appaspx/stat/calfroping/CalfRopingControl.aspx" >套牛参数调整</a></li>
+            <li><a href="/appaspx/stat/calfroping/CalfRopingIndependent.aspx" >套牛独立数据</a></li>
+            <li><a href="/appaspx/stat/calfroping/CalfRopingLevel.aspx" >套牛关卡数据</a></li>
+            <li><a href="/appaspx/stat/calfroping/CalfRopingClass.aspx" >套牛分类统计</a></li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+     <asp:ContentPlaceHolder ID="StatCommonCalfRoping_Content" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>

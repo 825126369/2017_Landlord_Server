@@ -1,0 +1,13 @@
+﻿<?xml version="1.0"?>
+
+<configuration>
+  <add key="0" value="操作成功" type="string" />
+  <add key="1" value="操作失败" type="string" />
+  <add key="2" value="时间格式错误" type="string" />
+  <add key="3" value="没有找到相关数据" type="string" />
+  <add key="4" value="没有选择任何项目" type="string" />
+  <add key="5" value="参数非法" type="string" />
+  <add key="6" value="不存在该道具" type="string" />
+  <add key="7" value="密码格式不正确" type="string" />
+  <add key="8" value="连接db服务器失败" type="string" />
+</configuration>

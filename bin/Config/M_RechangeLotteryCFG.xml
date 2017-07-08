@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Data Much="1" FirstRate="10000" DefaultRate="10000" />
+	<Data Much="2" FirstRate="5900" DefaultRate="1300" />
+	<Data Much="3" FirstRate="0" DefaultRate="0" />
+	<Data Much="4" FirstRate="0" DefaultRate="0" />
+	<Data Much="5" FirstRate="1100" DefaultRate="300" />
+	<Data Much="6" FirstRate="0" DefaultRate="0" />
+	<Data Much="7" FirstRate="400" DefaultRate="200" />
+	<Data Much="8" FirstRate="0" DefaultRate="0" />
+	<Data Much="9" FirstRate="0" DefaultRate="100" />
+	<Data Much="10" FirstRate="0" DefaultRate="0" />
+</Root>

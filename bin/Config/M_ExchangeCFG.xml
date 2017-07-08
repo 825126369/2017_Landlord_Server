@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Data ChangeId="1" CostTicket="300" ItemId="40108" Vip="0" ItemIcon="Common2/M_ExChange_30.png" ItemName="Common2/M_ExChangeItemName30.png" ItemCount="1" />
+	<Data ChangeId="2" CostTicket="100" ItemId="2" Vip="0" ItemIcon="Common2/M_TicketIcon_2.png" ItemName="Common2/M_ExChangeItemName2.png" ItemCount="8" />
+	<Data ChangeId="3" CostTicket="200" ItemId="1" Vip="0" ItemIcon="Common2/M_ShopIcon_6.png" ItemName="Common2/M_ExChangeItemName3.png" ItemCount="180000" />
+</Root>

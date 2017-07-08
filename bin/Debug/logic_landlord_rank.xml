@@ -1,0 +1,17 @@
+﻿<root>
+  <monitor_ip>127.0.0.1</monitor_ip>
+  <monitor_port>11001</monitor_port>
+  <out_port>14017</out_port>
+  
+  <debug>1</debug>
+ 
+	<!-- 游戏数据库 -->
+  <gamedb_url>127.0.0.1:27017</gamedb_url>
+  <gamedb_name>GameDB</gamedb_name>
+  <logdb_url>127.0.0.1:27017</logdb_url>
+  <logdb_name>LogDB_DWC</logdb_name>
+
+  <game_dll>games/game_landlord_rank-gd.dll</game_dll>
+  <game_ver>2.4.0</game_ver> 
+  
+</root>

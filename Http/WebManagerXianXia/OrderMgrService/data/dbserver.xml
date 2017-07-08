@@ -1,0 +1,14 @@
+﻿<?xml version="1.0"?>
+
+<configuration>
+	<!-- playerDb数据库 -->
+	<add key="mongodbPlayer" value="192.168.1.205" type="string" />
+	
+	<!-- 连接数据库串 -->
+    <add key="connectStr" value="server={0};user id=root; password=123456; database={1}; pooling=false" type="string"/>
+    <add key="mysql" value="192.168.1.205" type="string" />
+	
+	<!-- http 监听，端口号为monitor的out_port+1 -->
+	<add key="httpMonitor" value="http://localhost:11002/{0}" type="string" />
+</configuration>
+

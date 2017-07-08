@@ -1,0 +1,83 @@
+﻿*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    margin:0;
+    padding:0;
+    background-image:url(/data/image/bg.png);
+    padding-top:200px;
+    color:#675423;
+    font-size:18px;
+}
+
+.cLogin
+{
+    width:416px;
+    height:296px;
+    margin:0 auto;
+    padding-top:20px;
+    background-image:url(/data/image/main_panel.png);
+    background-repeat:no-repeat;
+}
+
+.cLogin table{table-layout:fixed;width:360px;padding:0;margin:0 auto;}
+    .cLogin input[type='submit']
+    {
+        z-index: 0;
+        width: 100%;
+        height:47px;
+        border-radius: 5px;
+        color: #FFF;
+        background-image: linear-gradient(to bottom, #353535 0%, #111111 60%, #111111 70%, #222222 100%);
+    }
+
+.cTdInfo{padding:10px 10px 10px 5px;text-align:center;color:#ffe6a7;}
+.cTdAcc{text-align:left;width:100%}
+.cTdAcc input{width:100%;height:47px;}
+.cTdVerCode{text-align:left;width:50%;}
+.cTdVerCode input{width:150px;height:47px;}
+.cTdImgCode{width:50%;text-align:left;}
+
+.cTdImgCode img{width:100%;height:47px;}
+
+.cLogin .countDown
+{
+    text-align:right;
+    float:right;
+    margin-right:10px;
+    color:white;
+    font-size:14px;
+}
+
+.cErrInfo
+{
+    text-align:center;
+    font-size:16px;
+    color:red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ThirdLogin.aspx.cs" Inherits="HttpLogin.thirdsdk.ThirdLogin" %>

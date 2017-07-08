@@ -1,0 +1,47 @@
+﻿<?xml version="1.0"?>
+
+<configuration>
+  <add opres="0" fmt="操作成功" />
+  <add opres="1" fmt="操作失败" />
+  <add opres="2" fmt="时间格式错误" />
+  <add opres="3" fmt="没有找到相关数据" />
+  <add opres="4" fmt="没有选择任何项目" />
+  <add opres="5" fmt="参数非法" />
+  <add opres="6" fmt="不存在该道具" />
+  <add opres="7" fmt="密码格式不正确" />
+  <add opres="8" fmt="后台服务未开启" />
+  <add opres="9" fmt="已提交导出，稍候到[Excel下载]页面获取表格" />
+  <add opres="10" fmt="后台服务繁忙，请稍候重试" />
+  <add opres="11" fmt="至少需要输入一个条件" />
+  <add opres="12" fmt="已绑定手机，需自行找回" />
+  <add opres="13" fmt="需要选择平台" />
+  <add opres="14" fmt="没有绑定手机" />
+  <add opres="15" fmt="指定玩家不存在" />
+  <add opres="16" fmt="数据重复" />
+  <add opres="17" fmt="发放奖励超出限额" />
+  <add opres="18" fmt="这是第三方平台，无法完成操作" />
+  <add opres="19" fmt="账号已存在" />
+
+  <add opres="20" fmt="创建的账号为: {0}, 四位固定验证码:{1}" />
+  <add opres="21" fmt="数据库操作失败" />
+  <add opres="22" fmt="没有权限操作" />
+  <add opres="23" fmt="错误号: {0}" />
+  <add opres="24" fmt="余额不足" />
+
+  <add opres="25" fmt="玩家在游戏中，已提交订单请求" />
+  <add opres="26" fmt="账号已停封" />
+
+  <add opres="27" fmt="创建的账号为: {0}" />
+
+  <add opres="28" fmt="前缀重复" />
+  <add opres="29" fmt="已提交，请等待管理员审批" />
+
+  <add opres="30" fmt="玩家账号被锁定，需要先解锁" />
+
+  <add opres="31" fmt="时间范围大" />
+  <add opres="32" fmt="超出范围" />
+
+  <add opres="33" fmt="玩家在游戏中，不能下分" />
+
+  <add opres="34" fmt="操作出现异常情况，请通知管理员查看" />
+</configuration>

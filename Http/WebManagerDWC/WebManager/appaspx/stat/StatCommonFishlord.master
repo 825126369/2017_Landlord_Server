@@ -1,0 +1,69 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/appaspx/stat/StatCommon.master" AutoEventWireup="true" CodeBehind="StatCommonFishlord.master.cs" Inherits="WebManager.appaspx.stat.StatCommonFishlord" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="stat_comm_HeadContent" runat="server">
+    <link href="../../Site.css" rel="stylesheet" />
+    <style type="text/css">
+   /* ul
+    {
+        list-style-type:none;
+        margin:0;
+        padding:0;
+        overflow:hidden;
+    }
+    li
+    {
+        float:left;
+        margin-right : 1px;
+        margin-bottom : 1px;
+        margin-top : 1px;
+        display : inline;
+    }
+    a.stat_menu:link,a.stat_menu:visited
+    {
+        display:block;
+        width:120px;
+        font-weight:bold;
+        color:black;
+        background-color:#D0D0D0;
+        text-align:center;
+        padding:4px;
+        text-decoration:none;
+        text-transform:uppercase;
+    }
+    a.stat_menu:hover
+    {
+        background-color:#cc0000;
+    }
+    div.SplitBorder
+    {
+        width : auto;
+        height : auto;
+        border-style : solid;
+        border-color : black;
+        border-width : 2px;
+        padding : 5px;
+        margin-bottom : 10px;
+    }*/
+</style>
+    <asp:ContentPlaceHolder ID="StatCommonFishlord_HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="stat_common" runat="server">
+    <div class="statMenu">
+        <ul>
+            <li><a href="/appaspx/stat/StatFishlordControl.aspx" >经典捕鱼参数调整</a></li>
+            <li><a href="/appaspx/stat/StatFishlordDeskEarningsRate.aspx" >经典捕鱼桌子盈利率</a></li>
+            <li><a href="/appaspx/stat/StatFishlordStage.aspx" >经典捕鱼算法分析</a></li>
+            <li><a href="/appaspx/stat/StatFish.aspx" >鱼的统计</a></li>
+            <li><a href="/appaspx/stat/StatIndependentFishlord.aspx" >独立数据-捕鱼</a></li>
+            <li><a href="/appaspx/stat/fish/StatFishlordConsume.aspx">捕鱼消耗</a></li>
+
+            <%--<li><a href="/appaspx/stat/fish/GrandPrixWeekChampion.aspx">大奖赛周冠军</a></li> --%>
+            <%--<li><a href="/appaspx/stat/fish/GrandPrixMatchDay.aspx">大奖赛名次</a></li> --%>
+        </ul>
+        <div class="clear"></div>
+    </div>
+    
+    <asp:ContentPlaceHolder ID="StatCommonFishlord_Content" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>

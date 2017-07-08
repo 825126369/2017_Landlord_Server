@@ -1,0 +1,65 @@
+﻿<?xml version="1.0"?>
+
+<configuration>  
+  <add key="1" value="每日登录转盘抽奖" type="string" />
+  <add key="2" value="在线奖励" type="string" />
+  <add key="3" value="保险箱存入" type="string" />
+  <add key="4" value="保险箱取出" type="string" />
+  <add key="5" value="赠送礼物" type="string" />
+  
+  <add key="6" value="接收礼物" type="string" />
+  <add key="7" value="玩家发小喇叭" type="string" />
+  <add key="8" value="玩家兑换礼物" type="string" />
+  <add key="9" value="购买商品获得" type="string" />
+  <add key="10" value="领取救济金" type="string" />
+  
+  <add key="11" value="单局结算" type="string" />
+  <add key="12" value="购买商品消耗" type="string" />
+  <add key="13" value="购买捕鱼等级" type="string" />
+  <add key="14" value="购买捕鱼道具" type="string" />
+  <add key="15" value="捕鱼升级" type="string" />
+  <add key="16" value="新手引导" type="string" />
+
+  <add key="17" value="修改头像" type="string" />
+  <add key="18" value="充值" type="string" />
+  <add key="19" value="修改昵称" type="string" />
+  <add key="20" value="充值赠送" type="string" />
+  <add key="21" value="后台充值" type="string" />
+
+  <add key="22" value="后台充值赠送" type="string" />
+  <add key="23" value="月卡每日领取" type="string" />
+  <add key="24" value="首充礼包" type="string" />
+
+  <add key="25" value="每日签到" type="string" />
+  <add key="26" value="每日宝箱抽奖" type="string" />
+  <add key="27" value="谢谢参与兑换" type="string" />
+  <add key="28" value="连续发小喇叭" type="string" />
+  <add key="29" value="领取邮件" type="string" />
+
+  <add key="30" value="捕鱼掉落" type="string" />
+  <add key="31" value="创建账号" type="string" />
+  <add key="32" value="活动奖励" type="string" />
+  
+  <add key="33" value="抢庄" type="string" />
+  <add key="34" value="下庄" type="string" />
+  <add key="35" value="使用技能" type="string" />
+  <add key="36" value="五龙翻倍" type="string" />
+  <add key="37" value="五龙升级" type="string" />
+
+  <add key="38" value="星星奖池" type="string" />
+  <add key="39" value="星星抽奖" type="string" />
+  <add key="40" value="新手礼包" type="string" />
+  <add key="41" value="每日任务" type="string" />
+  <add key="42" value="成就" type="string" />
+
+  <add key="43" value="导弹产出" type="string" />
+  <add key="44" value="充值抽奖" type="string" />
+  <add key="45" value="引导充值礼包" type="string" />
+
+  <add key="46" value="活跃开宝箱" type="string" />
+  <add key="47" value="玩小游戏兑换" type="string" />
+  <add key="48" value="VIP福利" type="string" />
+  <add key="49" value="比赛门票" type="string" />
+  <add key="50" value="后台操作" type="string" />
+</configuration>
+

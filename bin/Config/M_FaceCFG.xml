@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Data ID="1" Name="表情1" Icon="UI/faceIcon/game_face01.png" />
+	<Data ID="2" Name="表情2" Icon="UI/faceIcon/game_face02.png" />
+	<Data ID="3" Name="表情3" Icon="UI/faceIcon/game_face03.png" />
+	<Data ID="4" Name="表情4" Icon="UI/faceIcon/game_face04.png" />
+	<Data ID="5" Name="表情5" Icon="UI/faceIcon/game_face05.png" />
+	<Data ID="6" Name="表情6" Icon="UI/faceIcon/game_face06.png" />
+	<Data ID="7" Name="表情7" Icon="UI/faceIcon/game_face07.png" />
+	<Data ID="8" Name="表情8" Icon="UI/faceIcon/game_face08.png" />
+	<Data ID="9" Name="表情9" Icon="UI/faceIcon/game_face09.png" />
+	<Data ID="10" Name="表情10" Icon="UI/faceIcon/game_face10.png" />
+	<Data ID="11" Name="表情11" Icon="UI/faceIcon/game_face11.png" />
+	<Data ID="12" Name="表情12" Icon="UI/faceIcon/game_face12.png" />
+	<Data ID="13" Name="表情13" Icon="UI/faceIcon/game_face13.png" />
+	<Data ID="14" Name="表情14" Icon="UI/faceIcon/game_face14.png" />
+	<Data ID="15" Name="表情15" Icon="UI/faceIcon/game_face15.png" />
+</Root>

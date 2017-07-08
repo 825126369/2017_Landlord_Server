@@ -1,0 +1,742 @@
+file:logic_player,path:D:\work\dwc_new\branches\dwc\server\games\game_5dragons //数据库：GameDB，表名:dragons_player
+name: m_player_lv, field: player_lv, type: int32_t, //玩家等级 
+name: m_player_exp, field: player_exp, type: int32_t, // 玩家经验
+name: m_win_count, field: win_count, type: int32_t, // 星星抽奖累计赢钱局数   
+
+file: logic_room, path:D:\work\dwc_new\branches\dwc\server\games\game_5dragons //数据库：GameDB，表名：dragons_room
+name: room_income, field: room_income, type: int64_t, // 收入
+name: room_outcome, field: room_outcome, type: int64_t, // 支出
+name: double_income, field: double_income, type: int64_t, // 双倍游戏收入
+name: double_outcome, field: double_outcome, type: int64_t, // 双倍游戏支出
+name: m_expect_earn_rate, field: expect_earn_rate, type: double, // 预期盈利率
+
+file: record, path:D:\work\dwc_new\branches\dwc\server\games\game_5dragons //数据库：GameDB，表名：dragons_table
+name: m_system_out, field: system_out, type: int64_t, //系统支出 
+name: m_system_get, field: system_get, type: int64_t, // 系统收入
+name: m_room_id, field: room_id, type: int32_t, // 房间ID
+name: m_table_id, field: table_id, type: int32_t, // 桌子ID
+name: m_normal_outcome, field: normal_outcome, type: int64_t, // 普通模式 支出
+name: m_free_outcome, field: free_outcome, type: int64_t, // freeGame 支出
+name: m_table_income, field: table_income, type: int64_t, // 桌子总 收入
+name: m_table_outcome, field: table_outcome, type: int64_t, // 桌子总 支出 (普通+freeGame)
+name: m_double_income, field: double_income, type: int64_t, // 双倍游戏 收入
+name: m_double_outcome, field: double_outcome, type: int64_t, // 双倍游戏 支出
+name: m_system_pro, field: , type: , //代码里面已注销掉的 
+
+file:logic_player,path:D:\work\dwc_new\branches\dwc\server\games\game_baccarai //数据库：GameDB，表名：baccarat_player
+name: m_player_id, field: player_id, type: int32_t, //玩家ID 
+name: m_once_win_maxgold, field: OnceWinMaxGold, type: GOLD_TYPE/*int32_t*/, // 单局最大金币盈利数
+name: m_win_count, field: win_count, type: int32_t, // 星星抽奖累计赢钱局数   
+
+file: logic_room, path:D:\work\dwc_new\branches\dwc\server\games\game_baccarat //数据库：GameDB，表名：baccarat_room
+name: m_room_id, field: room_id, type: int16_t, // 房间id
+name: m_room_income, field: room_income, type: int64_t, // 当前收入
+name: m_room_outcome, field: room_outcome, type: int64_t, // 当前消耗
+name: m_enter_count, field: enter_count, type: int64_t, // 进入次数
+name: ExpectEarnRate, field: ExpectEarnRate, type: double, // 预期盈利率
+name: m_player_charge, field: player_charge, type: int64_t, // 玩家上庄抽水
+name: m_room_history, field: historyList, type: arr,//房间历史：HistoryArray，元素：HistoryItem 
+name: m_rob_income, field: rob_income, type: int64_t, // 机器人收入
+name: m_rob_outcome, field: rob_outcome, type: int64_t, // 机器人支出
+name: is_tie, field: is_tie, type: bool, //是否平局 
+name: is_player_win, field: is_player_win, type: bool, // 是否玩家赢了
+name: is_player_pair, field: is_player_pair, type: bool, // 是否玩家成对？
+name: is_banker_pair, field: is_banker_pair, type: bool, // 是否庄家成对？
+name: is_banker_win, field: is_banker_win, type: bool, // 是否庄家赢了
+name: win_point, field: win_point, type: int, // 赢得点数
+
+file: logic_lobby,path:D:\work\dwc_new\branches\dwc\server\games\game_calfRoping //数据库：GameDB，表名：calfRoping_lobby
+name: m_lobby_income, field: lobby_income, type: int64_t, // 当前收入(总投币)
+name: m_lobby_outcome, field: lobby_outcome, type: int64_t, // 当前消耗(总返奖)
+name: m_enter_count, field: enter_count, type: int64_t, // 进入次数
+name: ExpectEarnRate, field: ExpectEarnRate, type: double, // 预期盈利率
+name: RealEarnRate, field: RealEarnRate, type: double, // 实际盈利率
+name: NorRewardNum, field: NorRewardNum, type: int64_t, // 鼓励奖次数
+name: BigRewardNum, field: BigRewardNum, type: int64_t, // 大奖次数
+name: BuyLifeNum, field: BuyLifeNum, type: int64_t, // 续关次数
+name: NorRewardGold, field: NorRewardGold, type: int64_t, // 鼓励奖总收入
+name: BigRewardGold, field: BigRewardGold, type: int64_t, // 大奖总奖金
+
+file:logic_player,path:D:\work\dwc_new\branches\dwc\server\games\game_calfRoping //数据库：GameDB，表名:calfRoping_player
+name: m_player_id, field: player_id, type: int32_t, //玩家ID 
+
+file: logic_player, path:D:\work\dwc_new\branches\dwc\server\games\game_cows //数据库：GameDB，表名：cows_player
+name: m_win_count, field: win_count, type: int32_t, // 星星抽奖累计赢钱局数   
+
+file: logic_room, path:D:\work\dwc_new\branches\dwc\server\games\game_cows //数据库：GameDB，表名: cows_room
+name: RoomID, field: room_id, type: int16_t, // 桌子id
+name: BankerAddGold, field: BankerAddGold, type: int64_t, // 上庄手续费
+name: BankerSubGold, field: BankerSubGold, type: int64_t, // 爆庄系统支付
+name: TotalWinGold, field: room_income, type: int64_t, // 桌子总获利
+name: TotalLoseGold, field: room_outcome, type: int64_t, // 桌子总支出
+name: TotalBetGold, field: TotalBetGold, type: int64_t, // 桌子总下注
+name: TotalRobotWinGold, field: TotalRobotWinGold, type: int64_t, // 机器人赢情况
+name: TotalRobotLoseGold, field: TotalRobotLoseGold, type: int64_t, // 机器人输情况
+name: WinGold1, field: WinGold1, type: int64_t, // 桌子获利1
+name: LoseGold1, field: LoseGold1, type: int64_t, // 桌子支出1
+name: WinCount1, field: WinCount1, type: int64_t, // 赢次数1
+name: WinGold2, field: WinGold2, type: int64_t, // 桌子获利2
+name: LoseGold2, field: LoseGold2, type: int64_t, // 桌子支出2
+name: WinCount2, field: WinCount2, type: int64_t, // 赢次数1
+name: WinGold3, field: WinGold3, type: int64_t, // 桌子获利3
+name: LoseGold3, field: LoseGold3, type: int64_t, // 桌子支出3
+name: WinCount3, field: WinCount3, type: int64_t, // 赢次数1
+name: WinGold4, field: WinGold4, type: int64_t, // 桌子获利4
+name: LoseGold4, field: LoseGold4, type: int64_t, // 桌子支出4
+name: WinCount4, field: WinCount4, type: int64_t, // 赢次数1
+name: MaxEarnRate, field: MaxEarnRate, type: double, // 最大盈利率
+name: ExpectEarnRate, field: ExpectEarnRate, type: double, // 预期盈利率
+name: MinEarnRate, field: MinEarnRate, type: double, // 最小盈利率
+name: History, field: History, type: intlist, //历史 
+name: HistoryLogTime, field: HistoryLogTime, type: int64_t, // 记录时间
+
+file: logic_player,path:D:\work\dwc_new\branches\dwc\server\games\game_crocodile //数据库：GameDB，表名: crocodile_player
+name: m_player_id, field: player_id, type: int32_t, //玩家ID 
+name: m_once_win_maxgold, field: OnceWinMaxGold, type: int64_t/*int32_t*/, // 单局最大金币盈利数
+name: m_handsel_time, field: HandselTime, type: int32_t, // 彩金次数
+name: m_spotlight_time, field: SpotlightTime, type: int32_t, // 射灯次数
+name: m_allprizes_time, field: AllprizesTime, type: int32_t, // 人人有奖次数
+name: m_today_ticket, field: TodayTicketCount, type: int32_t, // 今日获取礼券
+name: m_last_get_ticket, field: LastGetTicketTime, type: time_t, // 最后获取礼券日期
+name: m_win_count, field: win_count, type: int32_t, // 星星抽奖累计赢钱局数   
+name: changeGold, field: , type: , // 单次金币变化
+
+file: logic_room,path:D:\work\dwc_new\branches\dwc\server\games\game_crocodile //数据库：GameDB，表名: crocodile_room
+name: m_room_id, field: room_id, type: int16_t, // 房间id
+name: m_earn_rate, field: earn_rate, type: double, // 盈利率
+name: m_room_income, field: room_income, type: int64_t, // 当前收入
+name: m_room_outcome, field: room_outcome, type: int64_t, // 当前消耗
+name: m_enter_count, field: enter_count, type: int64_t, // 进入次数
+name: ExpectEarnRate, field: ExpectEarnRate, type: double, // 预期盈利率
+
+file:logic_table,path:D:\work\dwc_new\branches\dwc\server\games\game_crocodile //数据库：GameDB，表名:crocodile_table
+name: m_table_id, field: table_id, type: int16_t, // 桌子id
+name: m_table_income, field: table_total_income, type: int64_t, // 桌子总投注量
+name: m_table_outcome, field: table_total_outcome, type: int64_t, // 桌子总返奖量
+name: m_table_history, field: table_history, type: intlist, // 桌子历史 
+
+file: player, path:D:\work\dwc_new\branches\dwc\server\games\game_dice //数据库：GameDB，表名:dice 
+name: mMaxGold, field: max_gold, type: int16_t, //单局获得最大金币数 
+name: mMaxCoupon, field: max_coupon, type: int16_t, // 单局获得最大礼券数
+name: mMaxLeopard, field: max_leopard, type: int16_t, // 累计压中的豹子数
+name: mMaxWins, field: max_wins, type: int16_t, //最大连续压中次数 
+name: m_today_ticket, field: today_ticket_count, type: int32_t,//今日已获得礼券 
+name: m_last_get_ticket, field: last_get_ticket_time, type: time_t,//最后获取礼券日期 
+name: m_win_count, field: win_count, type: int32_t, // 星星抽奖累计赢钱局数   
+
+file: room, path:D:\work\dwc_new\branches\dwc\server\games\game_dice //数据库：GameDB，表名:dice_room 
+name: m_room_id, field: room_id, type: int16_t, // 房间id
+name: m_enter_count, field: enter_count, type: int64_t, // 进入次数
+name: m_room_income, field: room_income, type: int64_t, // 当前收入
+name: m_room_outcome, field: room_outcome, type: int64_t, // 当前消耗
+
+file: table, path:D:\work\dwc_new\branches\dwc\server\games\game_dice //数据库：GameDB,表名：dice_table
+name: m_table_history, field: table_history, type: intlist, //桌子历史 
+
+file: logic_player,path:D:\work\dwc_new\branches\dwc\server\games\game_example//数据库：GameDB,表名：fishlord_player（已注销）
+name: KillFishCount, field: KillFishCount, type: int32_t, // 杀鱼数
+name: KillFishScore, field: KillFishScore, type: int32_t, // 杀鱼积分
+name: Level, field: Level, type: int16_t, // 等级
+name: Exp, field: Exp, type: int32_t, // 经验
+name: TodayTicket, field: TodayTicket, type: int32_t, // 今日获取礼券
+name: LastGetTicket, field: LastGetTicket, type: time_t, // 最后获取礼券日期
+name: ReceiveTicket, field: ReceiveTicket, type: bool, // 首次礼券
+
+file: logic_room, path:D:\work\dwc_new\branches\dwc\server\games\game_example //数据库：GameDB,表名：fishlord_room（已注销）
+name: RoomID, field: room_id, type: int16_t, // 房间id
+name: EarningsRate, field: EarningsRate, type: double, // 盈利率
+name: TotalIncome, field: TotalIncome, type: int64_t, // 当前收入
+name: TotalOutlay, field: TotalOutlay, type: int64_t, // 当前消耗
+name: EnterCount, field: EnterCount, type: int64_t, // 进入次数
+
+file: logic_table, path:D:\work\dwc_new\branches\dwc\server\games\game_example //数据库：GameDB,表名：fishlord_table（已注销）
+name: TableID, field: table_id, type: int16_t, // 桌子id
+name: TotalIncome, field: TotalIncome, type: int64_t, // 当前收入
+name: TotalOutlay, field: TotalOutlay, type: int64_t, // 当前消耗
+
+file:
+logic_item,path:D:\work\dwc_new\branches\dwc\server\games\game_fishlord //数据库：GameDB,表名：fishlord_player，字典：items
+name: ItemID, field: item_id, type: int32_t, //物品ID 
+name: ItemCount, field: item_count, type: int32_t, //物品数量 
+name: EndTime, field: end_time, type: time_t, //时间
+
+file: logic_player,path:D:\work\dwc_new\branches\dwc\server\games\game_fishlord //数据库：GameDB,表名：fishlord_player
+name: KillFishCount, field: KillFishCount, type: int32_t, // 杀鱼数
+name: KillFishScore, field: KillFishScore, type: int32_t, // 杀鱼积分
+name: Level, field: Level, type: int16_t, // 等级
+name: Exp, field: Exp, type: int32_t, // 经验
+name: MaxWinCoin, field: maxWinCoin, type: GOLD_TYPE, // 单场获得最大金币数
+name: MaxWinTicket, field: maxWinTicket, type: int32_t, // 单场获得最大礼券数
+name: HitBlackDagonCount, field: hitBlackDagonCount, type: int32_t, // 累计击中黑龙
+name: HitBlueDagonCount, field: hitBlueDagonCount, type: int32_t, // 累计击中蓝龙
+name: HitGoldDagonBombCount, field: hitGoldDagonBombCount, type: int32_t, // 累计击中金龙炸弹
+name: TurretID, field: TurretID, type: int32_t, // 炮台id
+name: ItemBag, field: items, type: map, // 物品包：logic_item_bag,元素：logic_item
+name: TodayTicket, field: TodayTicket, type: int32_t, // 今日获取礼券
+name: LastGetTicket, field: LastGetTicket, type: time_t, // 最后获取礼券日期
+name: ReceiveTicket, field: ReceiveTicket, type: bool, // 首次礼券
+name: LastGetGift, field: LastGetGift, type: time_t, // 最后获取礼包日期
+name: TryTurretID, field: TryTurretID, type: int32_t, // 试用炮台id
+name: TryCD, field: TryCD, type: time_t, // 试用cd
+name: OldTurretID, field: OldTurretID, type: int32_t, // 原来炮ID
+name: LogFish, field: LogFish, type: bool, // 捕鱼记录
+name: TotalNetIncome, field: TotalNetIncome, type: int64_t, // 渔网收入
+name: TotalPlayerOutlay, field: TotalPlayerOutlay, type: int64_t, // 玩家消耗
+name: TotalAward, field: TotalAward, type: int64_t, //总共奖励的ID 
+name: FixRate, field: FixRate, type: double, // 修正几率
+name: Lucky, field: Lucky, type: int64_t, // 玩家幸运
+name: TempIncome, field: TempIncome, type: int64_t, // 玩家临时收益(幸运值产生的收益，次轮幸运值结束，清零)
+name: TotalIncome, field: TotalIncome, type: int64_t, // 玩家总收益(幸运值产生的收益，不清零)
+
+file: logic_room, path:D:\work\dwc_new\branches\dwc\server\games\game_fishlord //数据库：GameDB,表名：fishlord_room
+name: RoomID, field: room_id, type: int16_t, // 房间id
+name: EarningsRate, field: EarningsRate, type: double, // 盈利率
+name: TotalIncome, field: TotalIncome, type: int64_t, // 当前收入
+name: TotalOutlay, field: TotalOutlay, type: int64_t, // 当前消耗
+name: EnterCount, field: EnterCount, type: int64_t, // 进入次数
+name: PlayerCount, field: player_count, type: int16_t, // 当前玩家数
+name: Abandonedbullets, field: Abandonedbullets, type: int64_t, // 废弹
+name: MissileCount, field: MissileCount, type: int64_t, // 导弹产出
+name: TotalProfit, field: TotalProfit, type: int64_t, // 总盈利
+name: TotalStock, field: TotalStock, type: int64_t, // 总库存
+
+file: logic_table,path:D:\work\dwc_new\branches\dwc\server\games\game_fishlord //数据库：GameDB,表名：fishlord_table
+name: TableID, field: table_id, type: int16_t, // 桌子id
+name: TotalIncome, field: TotalIncome, type: int64_t, // 当前收入
+name: TotalOutlay, field: TotalOutlay, type: int64_t, // 当前消耗
+name: Abandonedbullets, field: Abandonedbullets, type: int64_t, // 废弹
+
+file:logic_player,path:D:\work\dwc_new\branches\dwc\server\games\game_fishpark //数据库：GameDB,表名：fishpark_player
+name: KillFishCount, field: KillFishCount, type: int32_t, // 杀鱼数
+name: KillFishScore, field: KillFishScore, type: int32_t, // 杀鱼积分
+name: MaxWinCoin, field: maxWinCoin, type: int32_t, // 单场获得最大金币数
+name: MaxWinTicket, field: maxWinTicket, type: int32_t, // 单场获得最大礼券数
+name: HitBlackDagonCount, field: hitBlackDagonCount, type: int32_t, // 累计击中黑龙
+name: HitBlueDagonCount, field: hitBlueDagonCount, type: int32_t, // 累计击中蓝龙
+name: HitGoldDagonBombCount, field: hitGoldDagonBombCount, type: int32_t, // 累计击中金龙炸弹
+name: TurretID, field: TurretID, type: int32_t, // 炮台ID
+name: TurretRate, field: TurretRate, type: int32_t, // 炮台倍率
+name: TodayTicket, field: TodayTicket, type: int32_t, // 今日获取礼券
+name: LastGetTicket, field: LastGetTicket, type: time_t, // 最后获取礼券日期
+name: ReceiveTicket, field: ReceiveTicket, type: bool, // 首次礼券
+name: LastGetGift, field: LastGetGift, type: time_t, // 最后获取礼包日期
+name: LogFish, field: LogFish, type: bool, // 捕鱼记录
+name: TotalNetIncome, field: TotalNetIncome, type: int64_t, // 渔网收入
+name: TotalPlayerOutlay, field: TotalPlayerOutlay, type: int64_t, // 玩家消耗
+name: TotalAward, field: TotalAward, type: int64_t, //总奖励 
+name: FixRate, field: FixRate, type: double, // 修正几率
+
+file: logic_room, path:D:\work\dwc_new\branches\dwc\server\games\game_fishpark //数据库：GameDB,表名：fishpark_room
+name: RoomID, field: room_id, type: int16_t, // 房间id
+name: EarningsRate, field: EarningsRate, type: double, // 盈利率
+name: TotalIncome, field: TotalIncome, type: int64_t, // 当前收入
+name: TotalOutlay, field: TotalOutlay, type: int64_t, // 当前消耗
+name: EnterCount, field: EnterCount, type: int64_t, // 进入次数
+name: PlayerCount, field: player_count, type: int16_t, // 当前玩家数
+name: Abandonedbullets, field: Abandonedbullets, type: int64_t, // 废弹
+
+file: logic_table,path:D:\work\dwc_new\branches\dwc\server\games\game_fishpark //数据库：GameDB,表名：fishpark_table
+name: RoomID, field: room_id, type: int16_t, // 房间id
+name: TableID, field: table_id, type: int16_t, // 桌子id
+name: TotalIncome, field: TotalIncome, type: int64_t, // 当前收入
+name: TotalOutlay, field: TotalOutlay, type: int64_t, // 当前消耗
+name: Abandonedbullets, field: Abandonedbullets, type: int64_t, // 废弹
+
+file: logic_player,path:D:\work\dwc_new\branches\dwc\server\games\game_goldshark //数据库：GameDB,表名：goldshark_player
+name: m_player_id, field: player_id, type: int32_t, //玩家ID 
+name: m_once_win_maxgold, field: OnceWinMaxGold, type: int32_t, // 单局最大金币盈利数
+
+file: logic_room,path:D:\work\dwc_new\branches\dwc\server\games\game_goldshark //数据库：GameDB,表名：goldshark_room
+name: m_room_id, field: room_id, type: int16_t, // 房间id
+name: m_room_income, field: room_income, type: int64_t, // 当前收入
+name: m_room_outcome, field: room_outcome, type: int64_t, // 当前消耗
+name: m_enter_count, field: enter_count, type: int64_t, // 进入次数
+name: m_expect_earn_rate, field: expect_earn_rate, type: double, // 预期盈利率
+name: m_player_charge, field: player_charge, type: int64_t, // 玩家上庄抽水
+name: m_rob_income, field: rob_income, type: int64_t, // 机器人收入
+name: m_rob_outcome, field: rob_outcome, type: int64_t, // 机器人支出
+name: m_room_history, field: room_history, type: intlist, //房间历史  
+
+file: logic_lobby,path:D:\work\dwc_new\branches\dwc\server\games\game_prizeClaw//数据库：GameDB,表名：prizeclaw_lobby
+name: m_lobby_income, field: lobby_income, type: int64_t, // 当前收入(总投币)
+name: m_lobby_outcome, field: lobby_outcome, type: int64_t, // 当前消耗(总返奖)
+name: m_enter_count, field: enter_count, type: int64_t, // 进入次数
+name: ExpectEarnRate, field: ExpectEarnRate, type: double, // 预期盈利率
+
+file: logic_player,path:D:\work\dwc_new\branches\dwc\server\games\game_prizeClaw //数据库：GameDB,表名：prizeclaw_player
+name: m_player_id, field: player_id, type: int32_t, //玩家ID 
+
+file: logic_player,path:D:\work\dwc_new\branches\dwc\server\games\game_shcdcards//数据库：GameDB,表名：shcdcards_player
+name: m_player_id, field: player_id, type: int32_t, //玩家ID
+
+file: logic_room,path:D:\work\dwc_new\branches\dwc\server\games\game_shcdcards//数据库：GameDB,表名：shcdcards_room
+name: RoomID, field: room_id, type: int16_t, // 房间id
+name: Enter_count, field: enter_count, type: int64_t, // 进入次数
+name: TotalWinGold, field: room_income, type: int64_t, // 总收入（目前就是总下注）
+name: TotalLoseGold, field: room_outcome, type: int64_t, // 总支出
+name: TotalBetGold, field: TotalBetGold, type: int64_t, // 总下注
+name: TotalGold, field: TotalGold, type: int64_t, // 总盈亏
+name: ExpectEarnRate, field: ExpectEarnRate, type: double, // 预期盈利率
+name: EarnRateControl, field: EarnRateControl, type: int16_t, // 盈利率控制 0-自动调整盈利率（在RateContorl==1时），1~5天堂，普通，困难，超难，极难
+name: BankerAddGold, field: BankerAddGold, type: int64_t, // 上庄手续费
+name: BankerSubGold, field: BankerSubGold, type: int64_t, // 爆庄系统支付
+name: TotalRobotWinGold, field: TotalRobotWinGold, type: int64_t, // 机器人赢情况
+name: TotalRobotLoseGold, field: TotalRobotLoseGold, type: int64_t, // 机器人输情况
+name: BetCount1, field: BetCount1, type: int64_t, // 区域1押注次数
+name: WinGold1, field: WinGold1, type: int64_t, // 区域1获利
+name: LoseGold1, field: LoseGold1, type: int64_t, // 区域1支出
+name: BetGold1, field: BetGold1, type: int64_t, // 区域1总下注
+name: EarnRate1, field: EarnRate1, type: double, //区域1赢得概率 
+name: BetCount2, field: BetCount2, type: int64_t, // 区域2押注次数
+name: WinGold2, field: WinGold2, type: int64_t, // 区域2获利
+name: LoseGold2, field: LoseGold2, type: int64_t, // 区域2支出
+name: BetGold2, field: BetGold2, type: int64_t, // 区域2总下注
+name: EarnRate2, field: EarnRate2, type: double, // 区域2赢得概率
+name: BetCount3, field: BetCount3, type: int64_t, // 区域3押注次数
+name: WinGold3, field: WinGold3, type: int64_t, // 区域3获利
+name: LoseGold3, field: LoseGold3, type: int64_t, // 区域3支出
+name: BetGold3, field: BetGold3, type: int64_t, // 区域3总下注
+name: EarnRate3, field: EarnRate3, type: double, // 区域3赢得概率
+name: BetCount4, field: BetCount4, type: int64_t, // 区域4押注次数
+name: WinGold4, field: WinGold4, type: int64_t, // 区域4获利
+name: LoseGold4, field: LoseGold4, type: int64_t, // 区域4支出
+name: BetGold4, field: BetGold4, type: int64_t, // 区域4总下注
+name: EarnRate4, field: EarnRate4, type: double, // 区域4赢得概率
+name: BetCount5, field: BetCount5, type: int64_t, // 区域5押注次数
+name: WinGold5, field: WinGold5, type: int64_t, // 区域5获利
+name: LoseGold5, field: LoseGold5, type: int64_t, // 区域5支出
+name: BetGold5, field: BetGold5, type: int64_t, // 区域5总下注
+name: EarnRate5, field: EarnRate5, type: double, // 区域5赢得概率
+name: History, field: History, type: intlist, // 牌路
+name: HistoryLogTime, field: HistoryLogTime, type: int64_t, // 记录牌路的时间
+name: Earntype, field: Earntype, type: int16_t, // 当前盈利模式
+name: MaxResetCount, field: MaxResetCount, type: int16_t, // 100盘里一共要作弊的次数
+name: ResetCount, field: ResetCount, type: int16_t, // 100盘里已经作弊的次数
+name: BeginContorlIdx, field: BeginContorlIdx, type: int16_t, // 100盘里开始作弊的索引
+name: EndContorlIdx, field: EndContorlIdx, type: int16_t, // 100盘里结束作弊的索引
+
+file: logic_player,path:D:\work\dwc_new\branches\dwc\server\games\game_texaspoker //数据库：GameDB,表名：crocodile_player
+name: m_player_id, field: player_id, type: int32_t, // 玩家ID
+name: m_once_win_maxgold, field: OnceWinMaxGold, type: int32_t, // 单局最大金币盈利数
+name: m_handsel_time, field: HandselTime, type: int32_t, // 彩金次数
+name: m_spotlight_time, field: SpotlightTime, type: int32_t, // 射灯次数
+name: m_allprizes_time, field: AllprizesTime, type: int32_t, // 人人有奖次数
+name: m_today_ticket, field: TodayTicketCount, type: int32_t, // 今日获取礼券
+name: m_last_get_ticket, field: LastGetTicketTime, type: time_t, // 最后获取礼券日期
+name: m_win_count, field: win_count, type: int32_t, // 星星抽奖累计赢钱局数   
+name: changeGold, field: , type: , // 单次金币变化
+
+file: logic_room,path:D:\work\dwc_new\branches\dwc\server\games\game_texaspoker //数据库：GameDB,表名：crocodile_room
+name: m_room_id, field: room_id, type: int16_t, // 房间id
+name: m_earn_rate, field: earn_rate, type: double, // 盈利率
+name: m_room_income, field: room_income, type: int64_t, // 当前收入
+name: m_room_outcome, field: room_outcome, type: int64_t, // 当前消耗
+name: m_enter_count, field: enter_count, type: int64_t, // 进入次数
+name: ExpectEarnRate, field: ExpectEarnRate, type: double, // 预期盈利率
+
+file:logic_table,path:D:\work\dwc_new\branches\dwc\server\games\game_texaspoker //数据库：GameDB,表名crocodile_table
+name: m_table_id, field: table_id, type: int16_t, // 桌子id
+name: m_table_income, field: table_total_income, type: int64_t, // 桌子总投注量
+name: m_table_outcome, field: table_total_outcome, type: int64_t, // 桌子总返奖量
+name: m_table_history, field: table_history, type: intlist, //桌子历史 
+
+file: game_check, path:D:\work\dwc_new\branches\dwc\server\logic //工程没有加载
+name: CheckID, field: check_id, type: int32_t, //核实ID 
+name: CheckValue, field: check_value, type: int16_t, //核实值 
+
+file: bag_def, path:D:\work\dwc_new\branches\dwc\server\world //数据库：PlayerDB_DWC，表名：playerBag
+name: m_itemId, field: itemId, type: int32_t, //物品ID 
+name: m_itemCount, field: count, type: int32_t, //物品数量
+
+file: bag_mgr, path:D:\work\dwc_new\branches\dwc\server\world //数据库：PlayerDB_DWC，表名：playerBag
+name: m_playerId, field: player_id, type: int32_t, //玩家ID
+name: m_items, field: items, type: map, //字典背包：BagMap，元素：GameItem
+
+file: benefits_mgr, path:D:\work\dwc_new\branches\dwc\server\world //数据库：PlayerDB_DWC，表名：player_info 
+name: m_collected, field: hasReceiveAlmsCount, type: int32_t, //收集的ID 
+
+file: daily_box_lottery_mgr, path:D:\work\dwc_new\branches\dwc\server\world //数据库：PlayerDB_DWC，表名：player_info 
+name: m_boxArray, field: dailyBoxLottery, type: arr,//宝箱数组：BoxLotteryItem,元素：BoxLotteryItem
+name: m_lastBoxResetTime, field: lastBoxResetTime, type: time_t, //上次宝箱的重置时间 
+name: m_lotteryCountToday, field: lotteryBoxCountToday, type: int32_t, //今日已抽奖次数 
+name: m_thankYouCount, field: thankYouCount, type: int32_t, //// 谢谢参与次数 
+name: m_isOpen, field: isOpen, type: bool, //是否开放 
+name: m_containGold, field: containGold, type: GOLD_TYPE, //包含的金币 
+
+file: dial_lottery_mgr, path:D:\work\dwc_new\branches\dwc\server\world //数据库：PlayerDB_DWC，表名：player_info 
+name: LotteryTime, field: lotteryTime, type: time_t, // 抽奖时间 
+name: m_hasSignCount, field: hasSignCount, type: int32_t, //已连续签到次数 
+name: MonthCardRewardReceiveTime, field: monthCardRewardReceiveTime, type: time_t, //上次月卡奖励的领取时间 
+
+file: friend_def, path:D:\work\dwc_new\branches\dwc\server\world //数据库：PlayerDB_DWC，表名：player_info
+name: m_friendId, field: friendId, type: int32_t, // 好友ID 
+
+file: friend_mgr, path:D:\work\dwc_new\branches\dwc\server\world //数据库：PlayerDB_DWC，表名：player_info
+name: m_friends, field: friends, type: map, //好友字典FriendMap，元素：FriendItem 
+
+file: game_check, path:D:\work\dwc_new\branches\dwc\server\world //数据库：PlayerDB_DWC，表名：player_info
+name: CheckID, field: check_id, type: int32_t, //核实ID 
+name: CheckValue, field: check_value, type: int16_t, //核实值 
+
+file: game_player, path:D:\work\dwc_new\branches\dwc\server\world //数据库：PlayerDB_DWC，表名：player_info 
+name: Account, field: account, type: str, // 账号
+name: NickName, field: nickname, type: str, // 昵称
+name: Platform, field: platform, type: str, // 平台
+name: LoginPlatform, field: loginplatform, type: str, // 平台
+name: IconId, field: icon_id, type: int16_t, // 头像id
+name: PlayerId, field: player_id, type: int32_t, // 玩家id
+name: Gold, field: gold, type: GOLD_TYPE, // 金币
+name: Ticket, field: ticket, type: int32_t, // 礼券
+name: Chip, field: chip, type: int32_t, // 碎片
+name: OnlineTime, field: online_time, type: int32_t, // 在线时间
+name: LogoutTime, field: logout_time, type: time_t, // 下线时间
+name: IconCustom, field: icon_custom, type: str, // 自定义头像
+name: UpLoadCustomHeadFreezeDeadTime, field: upLoadCustomHeadFreezeDeadTime,type: time_t, //上传自定义头像的冻结截止时间 
+name: Sex, field: sex, type: int8_t, // 性别，0不明，1男，2女
+name: UpdateIconCount, field: UpdateIconCount, type: int16_t, // 修改头像次数
+name: SelfSignature, field: selfSignature, type: str, // 签名
+name: m_giftStat, field: gifts, type: map, // 收礼物的统计：GiftMap，元素：GiftInfo
+name: MaxGold, field: maxGold, type: GOLD_TYPE, // 金币最大持有记录
+name: MaxTicket, field: maxTicket, type: int32_t, // 礼券最大持有记录
+name: LastCheckTime, field: lastcheck_time, type: time_t, // 最后1次检测刷新的时间
+name: OnlineRewardCount, field: OnlineRewardCount, type: int16_t, // 在线已领奖次数
+name: PhotoFrameId, field: PhotoFrameId, type: int32_t, // 当前相框ID
+name: BindPhone, field: bindPhone, type: str, //  绑定的手机
+name: BindCount, field: bindCount, type: int8_t, //  今日绑定手机的次数
+name: NewGuildHasFinishStep, field: newGuildHasFinishStep, type: int32_t, //  新手引导已完成步骤
+name: SendGiftCoinCount, field: sendGiftCoinCount, type: GOLD_TYPE, //  今日赠送礼物的所含金币总和
+name: FetchSafeBoxSecurityCodeCount, field: fetchSafeBoxSecurityCodeCount, type: int8_t, //  今日获取保险箱验证码次数
+name: UpdateNickCount, field: updateNickCount, type: int8_t, //  改名次数
+name: ExperienceVIP, field: ExperienceVIP, type: time_t, // 体验vip
+name: CreateTime, field: create_time, type: time_t, // 创建时间
+name: IsRobot, field: is_robot, type: bool, //  是否机器人
+name: FirstGiftTime, field: FirstGiftTime, type: int32_t, //  首冲礼包时间		-1表示买了
+name: WinCount, field: WinCount, type: int32_t, //  赢次数
+name: ChannelID, field: ChannelID, type: int32_t, // 渠道ID
+name: OldAcc, field: OldAcc, type: str, // 旧账号
+name: CheckMap, field: checks, type: map, // 通用的标识map：check_map，元素：game_check
+name: KickEndTime, field: KickEndTime, type: time_t, // 踢下线结束
+name: PlayerType, field: PlayerType, type: int32_t, //  玩家类型
+name: Lucky, field: Lucky, type: int32_t, // 玩家幸运
+name: TempIncome, field: TempIncome, type: int64_t, // 玩家临时收益(幸运值产生的收益，次轮幸运值结束，清零)
+name: TotalIncome, field: TotalIncome, type: int64_t, // 玩家总收益(幸运值产生的收益，不清零)
+name: LastIP, field: LastIP, type: str, //上一次的ID 
+name: LastPort, field: LastPort, type: int16_t, // 上一次的端口
+
+file: game_quest, path:D:\work\dwc_new\branches\dwc\server\world  //数据库：PlayerDB_DWC，表名：player_quest
+name: QuestID, field: quest_id, type: int32_t, //问题ID 
+name: Count, field: count, type: int32_t, // 问题数量
+name: Received, field: received, type: bool, // 是否接受
+
+file: game_quest_mgr, path:D:\work\dwc_new\branches\dwc\server\world //数据库：PlayerDB_DWC，表名：player_quest
+name: LastCheckTime, field: lastcheck_time, type: time_t, //上一次核对时间 
+name: Quests, field: quests, type: map, // 问题字典：quest_map，元素：game_quest
+name: Activitys, field: activitys, type: map, //活动字典：quest_map，元素：game_quest 
+name: NeedReflush, field: NeedReflush, type: bool, //  是否需要刷新
+
+file: game_sys_recharge, path:D:\work\dwc_new\branches\dwc\server\world //数据库：PlayerDB_DWC，表名：player_info 
+name: VipLevel, field: VipLevel, type: int16_t, // VIP等级
+name: VipExp, field: VipExp, type: int32_t, // VIP经验
+name: VipCardEndTime, field: VipCardEndTime, type: time_t, // vip卡到期时间
+name: Recharged, field: recharged, type: int32_t, // 累计充值金额
+name: PaymentCheck, field: payment_check, type: arr, //支付标记：check_array，元素：game_check
+name: RechargeRewardFlag, field: rechargeRewardFlag, type: bool,//充值奖励标志 
+name: LotteryCount, field: LotteryCount, type: int16_t, // 累计抽奖次数
+
+file: gift_def, path:D:\work\dwc_new\branches\dwc\server\world //数据库：PlayerDB_DWC，表名：player_info
+name: m_giftId, field: giftId, type: int32_t, // 礼物ID 
+name: m_count, field: count, type: int32_t, // 收到的数量
+
+file: online_reward_mgr, path:D:\work\dwc_new\branches\dwc\server\world //数据库：PlayerDB_DWC，表名：player_info
+name: m_onlineReward, field: onlineRewardArr, type: arr,//在线奖励：OnlineRewardArray，元素：OnlineRewardItem 
+name: m_id, field: id, type: int32_t, //  id号
+name: m_isReceive, field: isReceive, type: bool, //  是否领取过了
+
+file: operation_activity_def, path:D:\work\dwc_new\branches\dwc\server\world //数据库：PlayerDB_DWC，表名：player_info
+name: m_activityId, field: activityId, type: int32_t,// 活动ID 
+name: m_param1, field: param1, type: int32_t, // 参数1
+name: m_param2, field: param2, type: time_t, // 参数2
+name: m_isFinish, field: isFinish, type: bool, // 是否完成
+
+file: operation_activity_mgr, path:D:\work\dwc_new\branches\dwc\server\world //数据库：PlayerDB_DWC，表名：player_info
+name: m_activityInfo, field: activityInfo, type: arr,//活动信息ActivityStoreInfoArray，元素：ActivityStoreInfo 
+
+file: player_log_def, path:D:\work\dwc_new\branches\dwc\server\world //数据库：PlayerDB_DWC，表名：player_info
+name: m_sendTime, field: sendTime, type: time_t, //发送时间 
+name: m_friendId, field: friendId, type: int32_t, // 好友id
+name: m_giftId, field: giftId, type: int32_t, // 礼物ID
+name: m_count, field: count, type: GOLD_TYPE, // 数量
+name: m_sendgold, field: sendgold, type: bool, // 是否发送金币
+name: m_mailId, field: mailId, type: str, // 邮件ID
+name: m_friendNickName, field: friendNickName, type: str, // 好友昵称
+name: m_content, field: content, type: str, // 发送内容
+name: m_title, field: title, type: str, // 邮件标题
+name: m_time, field: time, type: time_t, // 时间
+name: m_gold, field: gold, type: GOLD_TYPE, // 金币
+name: m_player_gold, field: playergold, type: GOLD_TYPE, //玩家金币
+
+file: player_log_mgr, path:D:\work\dwc_new\branches\dwc\server\world //数据库：PlayerDB_DWC，表名：player_info 
+name: m_sendList, field: sendGiftLog, type: arr,//赠送列表：SendGiftLogInfoArray，元素：SendGiftLogInfo
+name: m_mailList, field: sendMailLog, type: arr,//邮件列表：SendMailLogInfoArray，元素：SendMailLogInfo
+name: m_safeBoxList, field: safeBoxLog, type: arr,//保险箱记录：SafeBoxLogInfoArray，元素：SafeBoxLogInfo
+
+file: safe_deposit_box_mgr, path:D:\work\dwc_new\branches\dwc\server\world //数据库：PlayerDB_DWC，表名：player_info
+name: m_password, field: safeBoxPwd, type: str, //保险箱密码 
+name: m_gold, field: safeBoxGold, type: GOLD_TYPE, //存入的金币数量
+
+file: star_lottery_mgr, path:D:\work\dwc_new\branches\dwc\server\world //数据库：PlayerDB_DWC，表名：player_info
+name: CurStar, field: CurStar, type: int32_t, // 当前星星
+name: CurAward, field: CurAward, type: int32_t, // 当前奖池
+name: TotalChip, field: TotalChip, type: int32_t, // 累计获取碎片
+name: CurCount, field: CurCount, type: int32_t, // 当前次数
+
+file:game_db_log,path:F:\svn\dwc\branches\dwc\server\games\game_5dragons //数据库：LogDB_DWC，表名：DragonEveryday，pumpPlayerMoney，pumpTotalConsume，pumpCoinGrowth
+
+file:game_db_log,path:F:\svn\dwc\branches\dwc\server\games\game_baccarat //数据库：LogDB_DWC，表名：pumpPlayerMoney，BaccaratEveryday，CrocodileBetInfo，pumpTotalConsume,pumpBaccaratPlayerBanker,pumpCoinGrowth
+
+file:game_db_log,path:F:\svn\dwc\branches\dwc\server\games\game_calfRoping //数据库：LogDB_DWC，表名：pumpPlayerMoney，ropingLog,ropingPassLog,pumpTotalConsume,pumpCoinGrowth,ropingEveryday
+
+file:game_db_log,path:F:\svn\dwc\branches\dwc\server\games\game_cows //数据库：LogDB_DWC，表名：pumpPlayerMoney，CowsEveryday,pumpCoinGrowth,pumpCowsPlayerBanker,pumpTotalConsume
+
+file:game_db_log,path:F:\svn\dwc\branches\dwc\server\games\game_crocodile //数据库：LogDB_DWC，表名：pumpPlayerMoney,CrocodileEveryday,CrocodileBetInfo,pumpTotalConsume,pumpCoinGrowth,pumpOnlineGaming
+
+file:game_db_log,path:F:\svn\dwc\branches\dwc\server\games\game_dice //数据库：LogDB_DWC，表名：pumpPlayerMoney,dice_table,DiceEveryday,pumpTotalConsume,pumpCoinGrowth,pumpOnlineGaming
+
+file:game_db_log,path:F:\svn\dwc\branches\dwc\server\games\game_fishlord //数据库：LogDB_DWC，表名：pumpTotalConsume,pumpCoinGrowth
+
+file:game_db_log,path:F:\svn\dwc\branches\dwc\server\games\game_fishpark //数据库：LogDB_DWC，表名：pumpTotalConsume,pumpCoinGrowth
+
+file:game_db_log,path:F:\svn\dwc\branches\dwc\server\games\game_goldshark //数据库：LogDB_DWC，表名：pumpPlayerMoney,BaccaratEveryday,CrocodileBetInfo,pumpTotalConsume,pumpBaccaratPlayerBanker,pumpCoinGrowth
+
+file:game_db_log,path:F:\svn\dwc\branches\dwc\server\games\game_prizeClaw //数据库：LogDB_DWC，表名：pumpPlayerMoney
+
+file:game_db_log,path:F:\svn\dwc\branches\dwc\server\games\game_shcdcards //数据库：LogDB_DWC，表名：pumpPlayerMoney,pumpShcdCardsLog,ShcdCardsEveryday,pumpTotalConsume,pumpCoinGrowth,logPlayerInfo,pumpOnlineGaming
+
+file:game_db_log,path:F:\svn\dwc\branches\dwc\server\games\game_texaspoker //数据库：LogDB_DWC，表名：pumpPlayerMoney,CrocodileEveryday,CrocodileBetInfo,pumpTotalConsume,pumpCoinGrowth
+
+file:game_db_log,path:F:\svn\dwc\branches\dwc\server\world //数据库：LogDB_DWC，表名:pumpActiveCount,pumpActivePerson,pumpPlayerMoney,pumpSendGift,pumpPhotoFrame,pumpGeneralStat,pumpPersonalSendGift,pumpTotalConsume,pumpCoinGrowth,pumpCoinGrowthHistory,pumpPlayerGold,pumpMaxOnlinePlayer,pumpPlayerLogin,pumpPlayerSendGold
+
+//0数据库：LogDB_DWC，表名：pumpActiveCount
+
+//1数据库：LogDB_DWC，表名：pumpActivePerson
+
+//2数据库：LogDB_DWC，表名：pumpPlayerMoney
+name:genTime,type:time_t //时间
+name:playerId,type:int32_t //玩家ID
+name:gameId,type:int32_t	//游戏ID
+name:itemId,type:int32_t	//物品ID
+name:oldValue,type:GOLD_TYPE //旧数据
+name:newValue,type:GOLD_TYPE //新数据
+name:addValue,type:GOLD_TYPE //增加多少
+name:reason,type:int32_t //原因
+name:param,type:string //参数
+
+//3数据库：LogDB_DWC，表名：pumpSendGift
+
+//4数据库：LogDB_DWC，表名：pumpPhotoFrame
+
+//5数据库：LogDB_DWC，表名：pumpGeneralStat
+
+//6数据库：LogDB_DWC，表名：pumpPersonalSendGift
+
+//7数据库：LogDB_DWC，表名：pumpTotalConsume
+name:time,type:time_t //时间
+name:reason,type:int32_t //原因
+name:itemId,type:int32_t //物品ID
+name:changeType,type:int32_t //改变的类型
+
+//8数据库：LogDB_DWC，表名：pumpCoinGrowth
+name:gold,type:GOLD_TYPE //金币数
+name:nickName,type:string //昵称
+name:vipLevel,type:int32_t //vip等级
+
+//9数据库：LogDB_DWC，表名：pumpCoinGrowthHistory
+
+//10数据库：LogDB_DWC，表名：pumpPlayerGold
+name:playerId,type:int32_t, //玩家ID
+name:oldValue,type:GOLD_TYPE,//旧数据
+name:newValue,type:GOLD_TYPE,//新数据
+name:addValue,type:GOLD_TYPE,//增加
+name:reason,  type:int32_t,//原因
+
+//11数据库：LogDB_DWC，表名：pumpMaxOnlinePlayer
+
+//12数据库：LogDB_DWC，表名：pumpPlayerLogin
+name:genTime,type:time_t //时间
+name:playerId,type:int32_t //玩家ID
+name:ip,type:string //登录ip
+name:port,type:int32_t //端口
+name:Machine_code,type:string //机器码
+name:Machine_type,type:string //机器类型
+
+//13数据库：LogDB_DWC，表名：pumpPlayerSendGold
+
+//14数据库：LogDB_DWC，表名：DragonEveryday
+
+//15数据库：LogDB_DWC，表名：pumpOnlineGaming
+name:playerId,type:int32_t //玩家ID
+name:gameId,type:uint16_t //游戏ID
+name:roomId,type:int32_t //房间ID
+
+//16数据库：LogDB_DWC，表名：pumpBaccaratPlayerBanker
+name:genTime,type:time_t //时间
+name:playerId,type:uint32_t //玩家ID
+name:playerName,type:string //玩家名字
+name:bankerCount,type:int32_t //庄家数量
+name:beforeGold,type:GOLD_TYPE //金币旧数据
+name:nowGold,type:GOLD_TYPE //金币现在的数量
+name:resultValue,type:GOLD_TYPE //结果
+name:sysGet,type:GOLD_TYPE //系统收益
+
+//17数据库：LogDB_DWC，表名：BaccaratEveryday
+
+//18数据库：LogDB_DWC，表名：CrocodileBetInfo
+
+//19数据库：LogDB_DWC,表名：ropingLog
+
+//20数据库：LogDB_DWC,表名：ropingPassLog
+name:hitcount,type:int32_t //隐藏的数量
+name:allcount,type:int32_t //所有的数量
+
+//21数据库：LogDB_DWC,表名：ropingEveryday
+
+//22数据库：LogDB_DWC,表名：CowsEveryday
+
+//23数据库：LogDB_DWC,表名:pumpCowsPlayerBanker
+name:genTime,type:time_t //时间
+name:playerId,type:uint32_t //玩家ID
+name:playerName,type:string //玩家名字
+name:startTime,type:time_t //开始时间
+name:endTime,type:time_t //结束时间
+name:bankerCount,type:int32_t //庄家数量
+name:beforeGold,type:GOLD_TYPE //先前的金币数量
+name:nowGold,type:GOLD_TYPE //现在的金币数量
+name:resultValue,type:GOLD_TYPE //结果
+name:sysGet,type:GOLD_TYPE //系统获得
+name:sysLose,type:GOLD_TYPE //系统输了
+
+//24数据库：LogDB_DWC,表名:CrocodileEveryday
+
+//25数据库：LogDB_DWC,表名:dice_table
+
+//26数据库：LogDB_DWC,表名:DiceEveryday
+
+//27数据库：LogDB_DWC,表名:fishlordEveryDay
+
+//28数据库：LogDB_DWC,表名:AllFishLog
+
+//29数据库：LogDB_DWC,表名:FishTableLog
+
+//30数据库：LogDB_DWC,表名:pumpRoomStock
+name:genTime,type:time_t //时间
+name:playerId,type:uint32_t //玩家ID
+name:gameId,type:uint16_t //游戏ID
+name:roomId,type:int32_t //房间ID
+name:oldStock,type:int32_t //先前的存货
+name:newStock,type:int64_t //新的存货
+name:oldProfit,type:int32_t //先前获利
+name:newProfit,type:int64_t //现在获利
+
+//31数据库：LogDB_DWC,表名:pumpPlayerLucky
+name:genTime,type:time_t //时间
+name:playerId,type:uint32_t //玩家ID
+name:gameId,type:uint16_t //游戏ID
+name:roomId,type:int32_t //房间ID
+name:oldValue,type:int32_t //旧数据
+name:newValue,type:int32_t //新数据
+
+//32数据库：LogDB_DWC,表名:pumpFishConsume
+name:time,type:time_t //时间
+name:consumeType,type:int32_t //消费类型
+name:moneyType,type:int32_t //钱币类型
+name:value,type:int64_t // 数据
+
+//33数据库：LogDB_DWC,表名:pump_playerfish
+
+//34数据库：LogDB_DWC,表名:fishParkEveryDay
+
+//35数据库：LogDB_DWC,表名:AllFishParkLog
+
+//36数据库：LogDB_DWC,表名:FishParkTableLog
+
+//37数据库：LogDB_DWC,表名:FishParkTableLog
+
+//38数据库：LogDB_DWC,表名:logPlayerInfo
+name:genTime,type:time_t //时间
+name:playerId,type:uint32_t //玩家ID
+name:gameId,type:uint16_t //游戏ID
+name:playerOutlay,type:GOLD_TYPE //玩家支出
+name:playerIncome,type:GOLD_TYPE //玩家收益
+name:oldValue,type:GOLD_TYPE //旧数据
+name:newValue,type:GOLD_TYPE //新数据
+name:exInfo,type:string //额外的信息
+
+//39数据库：LogDB_DWC,表名:logGameHour
+
+//40数据库：LogDB_DWC,表名:logGameDay
+
+//41数据库：LogDB_DWC,表名:logGameMonth
+
+//42数据库：LogDB_DWC,表名:pumpShcdCardsLog
+name:genTime,type:time_t //时间
+name:gameIdx,type:int64_t //游戏ID
+name:gameId,type:int32_t //游戏ID
+name:cardType,type:int32_t //卡片类型
+name:cardValue,type:int32_t //卡片的值
+name:roomId,type:int32_t //房间ID
+
+//43数据库：LogDB_DWC,表名:ShcdCardsEveryday
+
+//44数据库：LogDB_DWC,表名:pumpShcdCardsBanker
+name:genTime,type:time_t //时间
+name:playerId,type:uint32_t //玩家ID
+name:playerName,type:string //玩家名字
+name:startTime,type:time_t //开始时间
+name:endTime,type:time_t //结束时间
+name:bankerCount,type:int32_t //庄家数量
+name:beforeGold,type:GOLD_TYPE //先前的金币
+name:nowGold,type:GOLD_TYPE //现在的金币
+name:resultValue,type:GOLD_TYPE //结果
+name:sysGet,type:GOLD_TYPE //系统获得多少
+name:sysLose,type:GOLD_TYPE //系统输了多少
+
+
+
+
+支付数据库（关键字）：
+name:Account,type:string
+name:PayCode,type:string
+name:PlayerId,type:int32_t
+name:Channel,type:string
+name:RMB,type:int32_t
+name:OrderID,type:string
+name:Process,type:bool
+name:PayTime,type:time_t
+name:Custom,type:int32_t
+
+
+账号数据库：
+name:acc,type:string
+name:randkey,type:int32_t
+name:lasttime,type:long
+name:lastip,type:string
+
+name:acc,type:string
+name:pwd,type:string
+name:regedittime,type:string
+name:regeditip,type:string
+name:updatepwd,type:bool
+name:platform,type:string
+
+name:loginFailedCount,type:int32_t
+name:loginFailedDate,type:time_t
+
+服务器列表数据库：ServerList
+name:ip,type:string
+name:name,type:string
+name:index,type:int32_t
+name:test,type:int32_t
+name:spread_id,type:string
+
+
+

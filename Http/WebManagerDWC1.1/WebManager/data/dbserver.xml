@@ -1,0 +1,62 @@
+﻿<?xml version="1.0"?>
+
+<configuration>
+	<add key="server" type="table" >
+		<elem>
+			<add key="serverIp" value="192.168.1.202" type="string" />   <!-- 服务器IP， 主IP -->
+			<add key="serverId" value="4" type="string" />              <!-- 服务器ID -->
+			<add key="serverName" value="zhenlipao" type="string" />       <!-- 服务器名称 -->
+			<add key="logDbIp" value="192.168.1.202" type="string" />     <!-- logdb服务器ip -->
+		</elem>	
+		
+		<elem>
+			<add key="serverIp" value="192.168.1.222" type="string" />   <!-- 服务器IP， 主IP -->
+			<add key="serverId" value="8" type="string" />              <!-- 服务器ID -->
+			<add key="serverName" value="zhixing" type="string" />       <!-- 服务器名称 -->
+			<add key="logDbIp" value="192.168.1.222" type="string" />     <!-- logdb服务器ip -->
+		</elem>	
+		
+		<elem>
+			<add key="serverIp" value="192.168.1.205" type="string" />   <!-- 服务器IP -->
+			<add key="serverId" value="6" type="string" />              <!-- 服务器ID -->
+			<add key="serverName" value="shenyoujun" type="string" />       <!-- 服务器名称 -->
+		    <add key="logDbIp" value="192.168.1.205" type="string" />     <!-- logdb服务器ip -->
+		</elem>	
+		
+		<elem>
+			<add key="serverIp" value="192.168.1.207" type="string" />   <!-- 服务器IP -->
+			<add key="serverId" value="7" type="string" />              <!-- 服务器ID -->
+			<add key="serverName" value="luoluo" type="string" />       <!-- 服务器名称 -->
+			<add key="logDbIp" value="192.168.1.207" type="string" />   <!-- logdb服务器ip -->
+		</elem>	
+		
+		<elem>
+			<add key="serverIp" value="192.168.1.213" type="string" />   <!-- 服务器IP -->
+			<add key="serverId" value="2" type="string" />              <!-- 服务器ID -->
+			<add key="serverName" value="wangwei" type="string" />       <!-- 服务器名称 -->
+			<add key="logDbIp" value="192.168.1.213" type="string" />   <!-- logdb服务器ip -->
+		</elem>	
+		
+		<elem>
+			<add key="serverIp" value="192.168.1.220" type="string" />   <!-- 服务器IP -->
+			<add key="serverId" value="12" type="string" />              <!-- 服务器ID -->
+			<add key="serverName" value="zhangyibiao" type="string" />       <!-- 服务器名称 -->
+			<add key="logDbIp" value="192.168.1.220" type="string" />      <!-- logdb服务器ip -->
+		</elem>
+
+		<elem>
+		  <add key="serverIp" value="192.168.1.137" type="string" />   <!-- 服务器IP -->
+		  <add key="serverId" value="14" type="string" />              <!-- 服务器ID -->
+		  <add key="serverName" value="sunxiaodong" type="string" />    <!-- 服务器名称 -->
+		  <add key="logDbIp" value="192.168.1.137" type="string" />   <!-- logdb服务器ip -->
+		</elem>
+    
+		<elem>
+		  <add key="serverIp" value="192.168.1.17" type="string" />    <!-- 服务器IP -->
+		  <add key="serverId" value="10" type="string" />              <!-- 服务器ID -->
+		  <add key="serverName" value="dwc_test17" type="string" />    <!-- 服务器名称 -->
+		  <add key="logDbIp" value="192.168.1.17" type="string" />    <!-- logdb服务器ip -->
+		</elem>
+  </add>
+</configuration>
+

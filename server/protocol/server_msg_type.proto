@@ -1,0 +1,43 @@
+package server_protocols;
+
+enum e_server_msg_type {
+    e_mst_server_register = 0;
+	e_mst_server_register_result = 1;
+	e_mst_other_server_connect = 2;
+	e_mst_other_server_disconnect = 3;
+	e_mst_updata_servers_info = 4;
+	e_mst_updata_self_info = 5;
+	e_mst_transmit_msg = 6;
+	e_mst_broadcast_msg = 7;
+	//e_mst_transmit_msglist = 8;
+	e_mst_heartbeat = 9;
+
+	e_mst_server_connect = 10;
+	e_mst_server_connect_result = 11;
+	
+	e_mst_player_connect = 12;
+	e_mst_player_disconnect = 13;
+
+	e_mst_regedit_route_msg = 14;
+
+	e_mst_gate_setlogic_ok = 15;
+
+	e_mst_clear_session = 16;
+
+	e_mst_broadcast_msg2 = 17;
+
+	e_mst_http_command = 18;
+
+	e_mst_get_ip = 19;
+	e_mst_get_ip_result = 20;
+
+	e_mst_maxcount = 255;
+  }
+
+  // http命令类型
+enum http_command_type 
+{
+    e_cmd_order = 1;           // 当前的post请求用来处理订单
+	e_cmd_recharge = 2;           // 通知玩家充值
+	e_cmd_addlucky = 3;           // 增加幸运
+}

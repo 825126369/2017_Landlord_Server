@@ -1,0 +1,4 @@
+							电玩城服务器框架
+数据库：
+AccountDB,ConfigDB,GameDB,LogDB_DWC,PaymentDB,PlayerDB_DWC
+

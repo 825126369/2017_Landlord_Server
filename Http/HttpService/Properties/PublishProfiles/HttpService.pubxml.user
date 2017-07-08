@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+此文件由 Web 项目的发布/打包过程使用。可以通过编辑此 MSBuild 文件
+自定义此过程的行为。为了解与此相关的更多内容，请访问 https://go.microsoft.com/fwlink/?LinkID=208121。 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>E:\IIS_Web\HttpService</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="AbroadCheck.aspx">
+      <publishTime>04/06/2017 02:00:18</publishTime>
+    </File>
+    <File Include="AccCheck.aspx">
+      <publishTime>04/06/2017 02:00:18</publishTime>
+    </File>
+    <File Include="bin/AccountCheck.dll">
+      <publishTime>04/24/2017 11:25:29</publishTime>
+    </File>
+    <File Include="bin/Common.dll">
+      <publishTime>04/24/2017 01:03:45</publishTime>
+    </File>
+    <File Include="bin/MongoDB.Bson.dll">
+      <publishTime>04/06/2017 02:00:15</publishTime>
+    </File>
+    <File Include="bin/MongoDB.Driver.dll">
+      <publishTime>04/06/2017 02:00:15</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>04/06/2017 02:00:12</publishTime>
+    </File>
+    <File Include="BindPhone.aspx">
+      <publishTime>04/06/2017 02:00:18</publishTime>
+    </File>
+    <File Include="CheckApple.aspx">
+      <publishTime>04/06/2017 02:00:18</publishTime>
+    </File>
+    <File Include="CheckCode.aspx">
+      <publishTime>04/06/2017 02:00:17</publishTime>
+    </File>
+    <File Include="CheckIcon.aspx">
+      <publishTime>04/06/2017 02:00:17</publishTime>
+    </File>
+    <File Include="CheckRecharge.aspx">
+      <publishTime>04/06/2017 02:00:17</publishTime>
+    </File>
+    <File Include="ClearFailedLoginCount.aspx">
+      <publishTime>04/06/2017 02:00:17</publishTime>
+    </File>
+    <File Include="FixRecharge.aspx">
+      <publishTime>04/06/2017 02:00:17</publishTime>
+    </File>
+    <File Include="JPushSingle.aspx">
+      <publishTime>04/06/2017 02:00:16</publishTime>
+    </File>
+    <File Include="PaymentOnce.aspx">
+      <publishTime>04/06/2017 02:00:16</publishTime>
+    </File>
+    <File Include="ServerCrashWarn.aspx">
+      <publishTime>04/06/2017 02:00:16</publishTime>
+    </File>
+    <File Include="ServerMonitor.aspx">
+      <publishTime>04/06/2017 02:00:16</publishTime>
+    </File>
+    <File Include="th_pay_check.aspx">
+      <publishTime>04/06/2017 02:00:15</publishTime>
+    </File>
+    <File Include="th_pay_process.aspx">
+      <publishTime>04/06/2017 02:00:15</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>04/24/2017 11:25:29</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

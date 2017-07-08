@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Data ID="ActivityTime1" Name="活动时间:2016年4月27日0:00至2016年5月3日23:59" />
+	<Data ID="ActivityTitle1" Name="四月充值有惊喜，单笔充值满即送钻石。充几次算几次千万别错过哦！" />
+	<Data ID="ActivityContent1" Name="充值198元送100钻石；{newline}充值328元送330钻石；" />
+	<Data ID="ActivityTime2" Name="" />
+	<Data ID="ActivityTitle2" Name="捕鱼新杀器“齐天大圣”炮台(原价3627钻石,现3折980钻石。劳动节前夕限时特卖。美猴王至尊法器,必杀开启虐杀鱼场。" />
+	<Data ID="ActivityContent2" Name="“齐天大圣”炮台再度优惠登场，不买睡不着！" />
+	<Data ID="ActivityTime3" Name="" />
+	<Data ID="ActivityTitle3" Name="新版本火热上线——VIP权限再度强化，VIP3买炮台折扣3折！一日VIP终生VIP，马上加入到VIP队伍中来吧。这等福利就是要让老板跳楼的节奏啊！！！" />
+	<Data ID="ActivityShowBegin" Name="2016-04-01 00:00:00" />
+	<Data ID="ActivityShowEnd" Name="2016-06-01 00:00:00" />
+	<Data ID="ActivityShowThree" Name="2016-04-01 00:00:00" />
+</Root>

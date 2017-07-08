@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Data Key="1" Icon="resource/AnimalIcon_1.png" Color="Red" Name="红鳄鱼" RateGroup1="46" RateGroup2="40" RateGroup3="46" RateGroup4="40" RateGroup5="25" RateGroup6="25" />
+	<Data Key="2" Icon="resource/AnimalIcon_1.png" Color="Green" Name="绿鳄鱼" RateGroup1="40" RateGroup2="46" RateGroup3="25" RateGroup4="25" RateGroup5="40" RateGroup6="46" />
+	<Data Key="3" Icon="resource/AnimalIcon_1.png" Color="Yellow" Name="黄鳄鱼" RateGroup1="25" RateGroup2="25" RateGroup3="40" RateGroup4="46" RateGroup5="46" RateGroup6="40" />
+	<Data Key="4" Icon="resource/AnimalIcon_2.png" Color="Red" Name="红大象" RateGroup1="23" RateGroup2="20" RateGroup3="23" RateGroup4="20" RateGroup5="12" RateGroup6="12" />
+	<Data Key="5" Icon="resource/AnimalIcon_2.png" Color="Green" Name="绿大象" RateGroup1="20" RateGroup2="23" RateGroup3="12" RateGroup4="12" RateGroup5="20" RateGroup6="23" />
+	<Data Key="6" Icon="resource/AnimalIcon_2.png" Color="Yellow" Name="黄大象" RateGroup1="12" RateGroup2="12" RateGroup3="20" RateGroup4="23" RateGroup5="23" RateGroup6="20" />
+	<Data Key="7" Icon="resource/AnimalIcon_3.png" Color="Red" Name="红老虎" RateGroup1="13" RateGroup2="11" RateGroup3="13" RateGroup4="11" RateGroup5="7" RateGroup6="7" />
+	<Data Key="8" Icon="resource/AnimalIcon_3.png" Color="Green" Name="绿老虎" RateGroup1="11" RateGroup2="13" RateGroup3="7" RateGroup4="7" RateGroup5="11" RateGroup6="13" />
+	<Data Key="9" Icon="resource/AnimalIcon_3.png" Color="Yellow" Name="黄老虎" RateGroup1="7" RateGroup2="7" RateGroup3="11" RateGroup4="13" RateGroup5="13" RateGroup6="11" />
+	<Data Key="10" Icon="resource/AnimalIcon_4.png" Color="Red" Name="红熊猫" RateGroup1="8" RateGroup2="7" RateGroup3="8" RateGroup4="7" RateGroup5="4" RateGroup6="4" />
+	<Data Key="11" Icon="resource/AnimalIcon_4.png" Color="Green" Name="绿熊猫" RateGroup1="7" RateGroup2="8" RateGroup3="4" RateGroup4="4" RateGroup5="7" RateGroup6="8" />
+	<Data Key="12" Icon="resource/AnimalIcon_4.png" Color="Yellow" Name="黄熊猫" RateGroup1="4" RateGroup2="4" RateGroup3="7" RateGroup4="8" RateGroup5="8" RateGroup6="7" />
+	<Data Key="13" Icon="" Color="" Name="人人有奖" RateGroup1="" RateGroup2="" RateGroup3="" RateGroup4="" RateGroup5="" RateGroup6="" />
+	<Data Key="14" Icon="" Color="" Name="幸运射灯" RateGroup1="" RateGroup2="" RateGroup3="" RateGroup4="" RateGroup5="" RateGroup6="" />
+	<Data Key="15" Icon="" Color="" Name="欢乐彩金" RateGroup1="" RateGroup2="" RateGroup3="" RateGroup4="" RateGroup5="" RateGroup6="" />
+	<Data Key="16" Icon="" Color="" Name="空门" RateGroup1="" RateGroup2="" RateGroup3="" RateGroup4="" RateGroup5="" RateGroup6="" />
+</Root>

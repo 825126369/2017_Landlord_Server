@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ServerMonitor.aspx.cs" Inherits="SearchAccount.ServerMonitor" %>

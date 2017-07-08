@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Data ChannelID="999000" Platform="baiduview" LuaFilePath="plugin.baiduViewPCPlugin" Remark="棋牌官网PC" />
+	<Data ChannelID="999001" Platform="baiduview" LuaFilePath="plugin.baiduViewPCPlugin" Remark="影音官网PC" />
+	<Data ChannelID="999002" Platform="baiduview" LuaFilePath="plugin.baiduViewPCPlugin" Remark="影音吊起PC" />
+	<Data ChannelID="999003" Platform="otherpc" LuaFilePath="plugin.PCWebPlugin" Remark="金山软件管家" />
+	<Data ChannelID="999004" Platform="baiduview" LuaFilePath="plugin.baiduViewPCPlugin" Remark="影音静默PC" />
+	<Data ChannelID="999005" Platform="otherpc" LuaFilePath="plugin.PCWebPlugin" Remark="360软件管家" />
+	<Data ChannelID="991000" Platform="pc360" LuaFilePath="plugin.PC360Plugin" Remark="360PC" />
+	<Data ChannelID="990001" Platform="otherpc" LuaFilePath="plugin.PCWebPlugin" Remark="其他PC" />
+	<Data ChannelID="800017" Platform="baiduview" LuaFilePath="plugin.baiduViewAndroidPlugin" Remark="7091百度安卓" />
+	<Data ChannelID="800018" Platform="iapppay" LuaFilePath="plugin.iapppayPlugin" Remark="爱贝web支付" />
+	<Data ChannelID="800021" Platform="iapppay" LuaFilePath="plugin.iapppayPlugin" Remark="爱贝web支付" />
+	<Data ChannelID="800033" Platform="iapppay" LuaFilePath="plugin.iapppayPlugin" Remark="爱贝web支付" />
+</Root>

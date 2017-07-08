@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="game_landlord.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="game_db.cpp">
+      <Filter>game_mgr</Filter>
+    </ClCompile>
+    <ClCompile Include="game_db_log.cpp">
+      <Filter>game_mgr</Filter>
+    </ClCompile>
+    <ClCompile Include="game_engine.cpp">
+      <Filter>game_mgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\share\protocol\msg_type_def.pb.cc">
+      <Filter>protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="proc_game_landlord_protocol.cpp">
+      <Filter>proc</Filter>
+    </ClCompile>
+    <ClCompile Include="logic_lobby.cpp">
+      <Filter>game_logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic_player.cpp">
+      <Filter>game_logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic_table.cpp">
+      <Filter>game_logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic_jipaiqi.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="logic_playhandAI.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="logic_robLandlordAI.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="logic_core.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\share\protocol\game_landlord_net_human_def.pb.cc">
+      <Filter>protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\share\protocol\game_landlord_net_human_protocol.pb.cc">
+      <Filter>protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="LandlordNetHuman_RoomCFG.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="game_landlord.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="game_db.h">
+      <Filter>game_mgr</Filter>
+    </ClInclude>
+    <ClInclude Include="game_db_log.h">
+      <Filter>game_mgr</Filter>
+    </ClInclude>
+    <ClInclude Include="game_engine.h">
+      <Filter>game_mgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\share\protocol\msg_type_def.pb.h">
+      <Filter>protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="proc_game_landlord_protocol.h">
+      <Filter>proc</Filter>
+    </ClInclude>
+    <ClInclude Include="logic_def.h">
+      <Filter>game_logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic_lobby.h">
+      <Filter>game_logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic_player.h">
+      <Filter>game_logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic_table.h">
+      <Filter>game_logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic_jipaiqi.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="logic_playhandAI.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="logic_robLandlordAI.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="logic_core.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\share\protocol\game_landlord_net_human_def.pb.h">
+      <Filter>protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\share\protocol\game_landlord_net_human_protocol.pb.h">
+      <Filter>protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="LandlordNetHuman_RoomCFG.h">
+      <Filter>config</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="AI">
+      <UniqueIdentifier>{6ee3b598-5746-4f62-b3c0-e1ff3e9e776f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="config">
+      <UniqueIdentifier>{68afa81f-4582-4ec2-ae56-5b3e109b8234}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game_mgr">
+      <UniqueIdentifier>{342886f7-6413-40e0-a920-c75f8ad6e381}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="proc">
+      <UniqueIdentifier>{a39762fd-39d9-406e-a3a3-acaa0a034201}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol">
+      <UniqueIdentifier>{f99504eb-d829-4d09-ba22-339139c5570b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game_logic">
+      <UniqueIdentifier>{341c1d6c-1968-40fb-8966-d75a2969d0ef}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

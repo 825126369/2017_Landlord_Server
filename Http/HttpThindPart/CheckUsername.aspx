@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CheckUsername.aspx.cs" Inherits="HttpThindPart.CheckUsername" %>

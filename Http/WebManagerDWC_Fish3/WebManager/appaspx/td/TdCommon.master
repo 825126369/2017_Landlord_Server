@@ -1,0 +1,28 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="TdCommon.master.cs" Inherits="WebManager.appaspx.td.TdCommon" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
+    <asp:ContentPlaceHolder ID="tdHeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+    <ul class="cMenuList">
+        <li><a href="/appaspx/td/TdActivation.aspx">留存相关</a></li>
+         <li><a href="/appaspx/td/TdLTV.aspx">LTV统计</a></li>
+        <li><a href="/appaspx/td/TdLose.aspx">大R流失</a></li>
+        <li><a href="/appaspx/td/TdRechargePlayer.aspx">充值用户统计</a></li>
+        <li><a href="/appaspx/td/TdPlayerDragonBall.aspx">玩家龙珠监控</a></li>
+        <li><a href="/appaspx/td/TdDragonBallDaily.aspx">每日龙珠</a></li>
+        <li><a href="/appaspx/td/TdRechargePlayerMonitor.aspx">充值玩家监控</a></li>
+        <li><a href="/appaspx/td/TdPlayerIncomeExpenses.aspx">活跃玩家收支统计</a></li>
+        <li><a href="/appaspx/td/TdRechargePerHour.aspx">实时付费</a></li>
+        <li><a href="/appaspx/td/TdOnlinePerHour.aspx">实时在线</a></li>
+        <li><a href="/appaspx/td/TdGameTimeDistribution.aspx">平均游戏时长分布</a></li>
+        <li><a href="/appaspx/td/TdGameTimePlayerFavor.aspx">平均在线游戏时间</a></li>
+        <li><a href="/appaspx/td/TdFirstRechargeGameTimeDistribution.aspx">首付游戏时长分布</a></li>
+        <li><a href="/appaspx/td/TdFirstRechargePointDistribution.aspx">首付计费点分布</a></li>
+        <li><a href="/appaspx/td/TdNewPlayerAnalyze.aspx">新进用户分析</a></li>
+    </ul> 
+    <div class="clear"></div>
+    <asp:ContentPlaceHolder ID="td_common" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>

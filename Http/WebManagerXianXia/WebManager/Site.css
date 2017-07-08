@@ -1,0 +1,725 @@
+﻿/* DEFAULTS
+----------------------------------------------------------*/
+*
+{
+    margin:0;padding:0;
+}
+
+body   
+{
+    font-size: 14px;
+    font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: black;
+    height: 100%;
+    background-image:url(/data/image/bg1.jpg);
+}
+
+p
+{
+    margin-bottom: 10px;
+    line-height: 1.6em;
+    color: #000000;
+}
+
+a { cursor:pointer;}
+
+/* HEADINGS   
+----------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6
+{
+    font-size: 1.5em;
+    color: #000000;
+    /*font-variant: small-caps;*/
+    text-transform: none;
+    font-weight: 200;
+    margin-bottom: 0px;
+}
+
+h1
+{
+    font-size: 1.6em;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+h2
+{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+h3
+{
+    font-size: 1.2em;
+}
+
+h4
+{
+    font-size: 1.1em;
+}
+
+h5, h6
+{
+    font-size: 1em;
+}
+
+/* this rule styles <h1> and <h2> tags that are the 
+first child of the left and right table columns */
+.rightColumn > h1, .rightColumn > h2, .leftColumn > h1, .leftColumn > h2
+{
+    margin-top: 0px;
+}
+
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+.header
+{
+   width:100%;
+   height: 50px;
+   background: url(/data/image/header_bg.png) left top repeat-x black;
+   line-height:50px;
+}
+
+    .header .cheadTitle
+    {
+        float:left;
+        margin-left:5px;
+    }
+
+    .header .Online
+    {
+        float:left;
+        margin-left:50px;
+    }
+        .header .Online p
+        {
+            float:left;
+            font-size:14px;
+        }
+    .header p
+    {
+         color: #ffe6a7;
+         line-height:50px;
+         font-size:20px;
+    }
+
+    .header .cheadOp
+    {
+        width:200px;
+        text-align:right;
+        float:right;
+        height:50px;
+        line-height:50px;
+        margin-right:5px;
+    }
+
+        .header .cheadOp a
+        {
+            color: #ffe6a7;
+            text-decoration: none;
+        }
+        .header .Icon
+        {
+            float:left;
+            margin-left:40px;
+            line-height:50px;
+            padding-top:4px;
+        }
+            .header .Icon img { display:block;}
+.header h1
+{
+    font-weight: 700;
+    margin: 0px;
+    padding: 0px 0px 0px 20px;
+    color: #f9f9f9;
+    border: none;
+    line-height: 2em;
+    font-size: 2em;
+}
+
+.main
+{
+    padding: 0px 12px;
+    margin: 12px 8px 8px 8px;
+    min-height: 420px;
+}
+
+.leftCol
+{
+    padding: 6px 0px;
+    margin: 12px 8px 8px 8px;
+    width: 200px;
+    min-height: 200px;
+}
+
+.footer
+{
+    color: white;
+    padding: 8px 0px 8px 0px;
+    margin: 2px 0 0 0;
+    text-align: center;
+    line-height: normal;
+    background-color : #4b6c9e;
+}
+
+
+/* TAB MENU   
+----------------------------------------------------------*/
+
+div.hideSkiplink
+{
+     background-color:#DCDCDC;
+    /*background-color:#3a4f63;*/
+    width:100%;
+}
+
+div.menu
+{
+    padding: 4px 0px 4px 8px;
+}
+
+div.menu ul
+{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    width: auto;  
+}
+
+div.menu ul li a, div.menu ul li a:visited
+{
+    background-color: #F5DEB3; /*#465c71;*/
+    border: 1px #1E90FF/*#4e667d*/ solid;
+    color: black; /*#dde4ec;;*/
+    display: block;
+    line-height: 1.35em;
+    padding: 4px 20px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+div.menu ul li a:hover
+{
+    background-color: #bfcbd6;
+    color: #465c71;
+    text-decoration: none;
+}
+
+div.menu ul li a:active
+{
+    background-color: #465c71;
+    color: #cfdbe6;
+    text-decoration: none;
+}
+
+/* FORM ELEMENTS   
+----------------------------------------------------------*/
+
+fieldset
+{
+    margin: 1em 0px;
+    padding: 1em;
+    border: 1px solid #ccc;
+}
+
+fieldset p 
+{
+    margin: 2px 12px 10px 10px;
+}
+
+fieldset.login label, fieldset.register label, fieldset.changePassword label
+{
+    display: block;
+}
+
+fieldset label.inline 
+{
+    display: inline;
+}
+
+legend 
+{
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 2px 4px 8px 4px;
+}
+
+input.textEntry 
+{
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+input.passwordEntry 
+{
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+div.accountInfo
+{
+    width: auto;
+}
+
+/* MISC  
+----------------------------------------------------------*/
+
+.clear
+{
+    clear: both;
+}
+
+.title
+{
+    display: block;
+    float: left;
+    text-align: left;
+    width: auto;
+}
+
+.loginDisplay
+{
+    font-size: 1.1em;
+    display: block;
+    text-align: right;
+    padding: 10px;
+    color: White;
+}
+
+.loginDisplay a:link
+{
+    color: white;
+}
+
+.loginDisplay a:visited
+{
+    color: white;
+}
+
+.loginDisplay a:hover
+{
+    color: white;
+}
+
+.failureNotification
+{
+    font-size: 1.2em;
+    color: Red;
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+.submitButton
+{
+    text-align: right;
+    padding-right: 10px;
+}
+
+tr.alt td 
+{
+    color:#000000;
+    background-color:#D8D8D8;/*#EAF2D3*/
+}
+
+table.result
+{
+    text-align : center;
+    margin : 0px auto; 
+    width : auto
+}
+
+table.hide
+{
+    display:none;
+}
+
+/*-------------------------------------------------*/
+
+.statMenu
+{
+    padding: 4px 0px 4px 8px;
+}
+
+.statMenu ul
+{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+}
+
+.statMenu ul li
+{
+     float:left;margin-right:1px;
+}
+
+.statMenu ul li a:link, .statMenu ul li a:visited
+{
+    background-color: #D0D0D0;
+    border: 1px #4e667d solid;
+    color: black;
+    display: block;
+    line-height: 1.35em;
+    padding: 4px 20px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.statMenu ul li a:hover
+{
+    background-color: #bfcbd6;
+    color: #465c71;
+    text-decoration: none;
+}
+
+.statMenu ul li a:active
+{
+    background-color: #465c71;
+    color: #cfdbe6;
+    text-decoration: none;
+}
+
+/*-----------------------------------------------------------*/
+
+div.twoLevelMenu
+{
+}
+
+div.twoLevelMenu ul
+{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+}
+
+div.twoLevelMenu ul li
+{
+    float:left;
+    margin-right : 1px;
+    margin-bottom : 1px;
+    margin-top : 1px;
+    display : inline;
+}
+
+div.twoLevelMenu a:link
+{
+    display:block !important;
+    width:120px;
+    color:white;
+    background-color:#4169E1;
+    text-align:center;
+    padding:4px;
+    text-decoration:none;
+    text-transform:uppercase;
+}
+
+div.twoLevelMenu a:hover
+{
+    background-color:#cc0000;
+}
+
+div.SplitBorder
+{
+    width : auto;
+    height : auto;
+    border-style : solid;
+    border-color : black;
+    border-width : 2px;
+    padding : 5px;
+    margin-bottom : 10px;
+}
+
+/*---------------------------------------------------------*/
+
+td
+{
+    color:black;
+}
+
+.cTable
+{
+	font-size:12px;
+	color:#333333;
+	border:1px solid black;
+	border-collapse: collapse;
+    text-align : center;
+    width:1100px;
+    margin:5px auto;
+    /*table-layout:fixed;*/
+    word-break:break-all; 
+    word-wrap:break-word;
+}
+
+.cTable th 
+{
+	padding: 8px;
+	border-width:1px;border-color:black;border-style:solid;
+	background-color: #dedede;
+}
+
+.cTable td 
+{
+    border-width:1px;
+    padding: 8px;
+    border-color:black;
+    border-style:solid;
+    background-color: #ffffff;
+}
+
+.cDropDownList /*列表框*/
+{
+    width:180px;height:30px;
+}
+
+.cButton
+{
+    width:60px;height:30px;padding:2px;
+}
+
+.cDivPageFoot
+{
+    margin-top:5px;
+}
+
+.cSafeWidth
+{
+   
+}
+
+.cTextBox
+{
+   width:300px;height:22px;
+}
+
+/*---------------------------------------------------------------*/
+.cShortCutMenu
+{
+    background-color:#fab41e;
+    margin:20px 0px 0px 0px;
+    padding:10px;
+}
+
+.cShortCutMenu table
+{
+    margin:0px auto;
+}
+
+.cShortCutMenu .cShortCutTitle
+{
+    font-size:16px;
+}
+
+.cShortCutMenu td
+{
+    text-align:center;
+    vertical-align:top;
+}
+
+.cShortCutMenu td+td
+{
+    border-left:2px solid white;
+}
+
+.cShortCutMenu ul
+{
+    list-style:none;
+    text-align:center;
+}
+
+.cShortCutMenu ul li
+{
+    padding:3px;display:block;margin:0px auto;
+}
+
+.cShortCutMenu ul li a
+{
+    outline:none;color:blue;text-decoration:none; font-size:14px;text-align:center;
+}
+
+.cShortCutMenu ul li a:hover
+{
+    color:black;
+}
+
+/*----------------------------------------------------------*/
+
+a.cLevelLink 
+{
+    outline:none;text-decoration:none;font-size:14px;text-align:center;
+}
+a.cLevelLink:link
+{
+    color:blue;
+}
+a.cLevelLink:visited
+{
+    color:#339933;
+}
+
+a.cLevelLink:hover
+{
+     color:#cc0000;
+}
+
+/*下线的数字显示*/
+a.cSubLevelNum
+{
+    outline:none;
+    background-color:#F5F5DC;
+    padding:5px 10px 5px 10px;
+    font-size:18px;
+    text-decoration : none;
+    font-weight:bold;
+    color:black;
+}
+
+.cSubLevelTable input[type='submit']
+{
+    width:60px;
+    height:30px;
+    padding:5px;
+    margin-right:5px;
+    margin-top:5px;
+    font-size:12px;
+}
+
+/*-----------------------------------*/
+/*代理层级链接样式*/
+a.cAgentLevelStr
+{
+    font-size:medium;
+    color:black;
+    font-weight:bold;
+}
+
+    a.cAgentLevelStr:hover
+    {
+        text-decoration:none;
+        color:#ff7f50;
+    }
+
+/*-------------------------------------*/
+.Page
+{
+    min-width:1600px;
+    overflow:auto;
+    padding-left:240px;
+}
+
+/*------------------侧边主菜单--------------------------*/
+ul
+{
+    list-style-type:none;
+}
+
+.asideMenu
+{
+    text-align: center;
+    margin: 0px 10px;
+    width: 230px;
+    background: url("/data/image/pat.jpg") left top repeat;
+    padding-bottom: 20px;
+    /*max-height: 505px;*/
+    height: auto;
+    vertical-align: top;
+    float:left;
+    /*overflow:auto;*/
+    position:absolute;
+    left:0;
+    top:50px;
+}
+    .asideMenu a
+    {
+        text-decoration:none;
+    }
+
+    .cmenuOut>li
+    {
+        padding:10px;
+    }
+
+.cmenuOut li .cdyMenu
+{
+    background-image:url(/data/image/sub-header.png);
+    background-repeat:repeat-x;
+    border-top-right-radius: 10px;
+}
+
+.cmenuOut li h3
+{
+    padding:5px 2px 5px 2px;
+    color:white;
+    font-size:14px;
+    font-weight:bold;
+    margin:0;
+}
+
+.cdyMenu:hover {
+    cursor:pointer;
+}
+
+.cmenuOut li h4
+{
+    color:white;
+    font-size:12px;
+}
+
+.cmenuSub li
+{
+    text-align:left;
+    background-color:#fff;
+    border-bottom:2px solid black;
+    padding:4px 4px 4px 6px;
+}
+    .cmenuSub li a
+    {
+        color:black;
+    }
+
+/*------------------账户概览----------------------*/
+.caccInfo
+{
+    width:100%;
+    background-color:white;
+    border-collapse: collapse;
+}
+    .caccInfo td
+    {
+        width:50%;
+        text-align:left;
+        padding:5px;
+        color:black;
+        border-bottom:2px solid black;
+    }
+
+/*------------------------内容------------------------------*/
+.cmainContent
+{
+    /*float:right;*/
+    margin-left: 5px;
+    min-width: 1100px;
+    background-color:rgb(255,255,255);
+    padding:5px;
+    overflow:auto;
+    margin-bottom:50px;
+}
+
+.PopDialog{
+    display:none;position:absolute;width:100%;height:100%;
+    background:rgba(0,0,0,0.7);left:0;top:0;
+    padding-top:200px;z-index:2000;
+}
+
+.PopDialog .PopDialogBg
+{
+    background:rgb(255,255,255);padding-bottom:20px
+}

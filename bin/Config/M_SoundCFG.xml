@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Data SoundID="1" SoundName="点击" SoundPath="Sound/click.mp3" SoundTime="1" />
+	<Data SoundID="2" SoundName="取消" SoundPath="Sound/back.mp3" SoundTime="1" />
+	<Data SoundID="3" SoundName="奖励" SoundPath="Sound/bonus.mp3" SoundTime="1" />
+	<Data SoundID="4" SoundName="筹码" SoundPath="Sound/coins.mp3" SoundTime="1" />
+	<Data SoundID="5" SoundName="弹出框" SoundPath="Sound/popup.mp3" SoundTime="1" />
+	<Data SoundID="6" SoundName="升级" SoundPath="Sound/lvup.mp3" SoundTime="1" />
+	<Data SoundID="7" SoundName="在线奖励" SoundPath="Sound/charge.mp3" SoundTime="1" />
+	<Data SoundID="8" SoundName="大厅音乐" SoundPath="Sound/BG00.mp3" SoundTime="58" />
+	<Data SoundID="9" SoundName="标题界面音乐" SoundPath="Sound/BG309" SoundTime="112" />
+	<Data SoundID="10" SoundName="收集金币音效" SoundPath="Sound/ReceiveGold1.mp3" SoundTime="2" />
+	<Data SoundID="11" SoundName="街机台选中音效" SoundPath="Sound/arcade.mp3" SoundTime="2" />
+	<Data SoundID="12" SoundName="金币音效" SoundPath="Sound/gold.mp3" SoundTime="5" />
+</Root>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Data ID="1" Name="小黄牛" Model="xiaohuangniudongzuo" HitAct="xiaohuangniubeitao" DizzyHeight="50" HeadIcon="calf2" HeadWidth="50" Deviate="50" />
+	<Data ID="2" Name="奶牛" Model="nainiudongzuo" HitAct="nainiuniubeitao" DizzyHeight="150" HeadIcon="calf3" HeadWidth="70" Deviate="50" />
+	<Data ID="3" Name="帅哥牛" Model="shuaigeniu" HitAct="shuaigeniuniubeitao" DizzyHeight="150" HeadIcon="calf5" HeadWidth="80" Deviate="50" />
+	<Data ID="4" Name="蓝牛" Model="lanniudongzuo" HitAct="lanniuniubeitao" DizzyHeight="150" HeadIcon="calf4" HeadWidth="100" Deviate="50" />
+	<Data ID="5" Name="咖啡牛" Model="kafeixiaoniudongzuo" HitAct="kafeiniubeitao" DizzyHeight="60" HeadIcon="calf1" HeadWidth="50" Deviate="50" />
+	<Data ID="6" Name="红牛" Model="hongniu" HitAct="hongniubeitao" DizzyHeight="150" HeadIcon="calf7" HeadWidth="90" Deviate="50" />
+	<Data ID="7" Name="狂牛" Model="kuangniu" HitAct="kuangniubeitao" DizzyHeight="150" HeadIcon="calf6" HeadWidth="90" Deviate="50" />
+</Root>

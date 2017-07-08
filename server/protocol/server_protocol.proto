@@ -1,0 +1,137 @@
+import "server_base.proto";
+import "server_msg_type.proto";
+
+package server_protocols;
+
+//服务器注册
+message packet_server_register {
+	optional e_server_msg_type packet_id = 1 [default = e_mst_server_register];
+	optional e_server_type server_type = 2;
+	optional fixed32 server_port = 3;
+	optional server_attributes attributes = 4;
+}
+
+//返回注册的服务器
+message packet_server_register_result {
+	optional e_server_msg_type packet_id = 1 [default = e_mst_server_register_result];	
+	optional fixed64 server_time = 2;
+	optional fixed32 group_id = 3;
+}
+
+//monitor通知其他服务器有新服务器注册
+message packet_other_server_connect {
+	optional e_server_msg_type packet_id = 1 [default = e_mst_other_server_connect];
+	optional server_info sinfo = 2;
+}
+
+//monitor通知其他服务器有服务器断开
+message packet_other_server_disconnect {
+	optional e_server_msg_type packet_id = 1 [default = e_mst_other_server_disconnect];	
+	optional fixed32 server_id = 2;
+}
+
+//monitor向其他服务器更新服务器信息列表
+message packet_updata_servers_info {
+	optional e_server_msg_type packet_id = 1 [default = e_mst_updata_servers_info];
+	repeated server_info sinfos = 2;
+}
+
+//服务器向monitor更新自己的信息,定时
+message packet_updata_self_info {
+	optional e_server_msg_type packet_id = 1 [default = e_mst_updata_self_info];
+	optional server_attributes attributes = 2;
+}
+
+message packet_server_connect {
+	optional e_server_msg_type packet_id = 1 [default = e_mst_server_connect];
+	optional fixed32 server_id = 2;
+	optional e_server_type server_type = 3;
+}
+
+message packet_server_connect_result {
+	enum e_server_connect_result 
+	{
+		e_scr_success = 0;
+		e_scr_fail = 1;
+	}
+	optional e_server_msg_type packet_id = 1 [default = e_mst_server_connect_result];
+	optional e_server_type server_type = 2;
+	optional e_server_connect_result ret = 3 [default = e_scr_success];
+}
+
+//---gate辅助协议--转发协议给客户端-
+message packet_transmit_msg {
+	optional e_server_msg_type packet_id = 1 [default = e_mst_transmit_msg];
+	optional fixed32 sessionid = 2;
+	optional msg_packet msgpak = 3;
+}
+
+//广播消息给client
+message packet_broadcast_msg {
+	optional e_server_msg_type packet_id = 1 [default = e_mst_broadcast_msg];
+	repeated fixed32 sessionids = 2 [packed=true];
+	optional msg_packet msgpak = 3;
+}
+
+//广播消息给client （聊天）
+message packet_broadcast_msg2 {
+	optional e_server_msg_type packet_id = 1 [default = e_mst_broadcast_msg2];	
+	optional fixed32 game_sid = 2[default = 0];	//??Ϸ??????id 0Ϊȫ??Ϸ?㲥
+	optional msg_packet msgpak = 3;
+}
+
+//服务器内部使用心跳包
+message packet_heartbeat {
+	optional e_server_msg_type packet_id = 1 [default = e_mst_heartbeat];
+}
+
+//玩家连接
+message packet_player_connect {
+	optional e_server_msg_type packet_id = 1 [default = e_mst_player_connect];
+	optional fixed32 sessionid = 2;
+	optional fixed32 logicid = 3;	
+}
+
+//玩家断开连接
+message packet_player_disconnect {
+	optional e_server_msg_type packet_id = 1 [default = e_mst_player_disconnect];
+	optional fixed32 sessionid = 2;
+}
+
+//向gate注册转发协议
+message packet_regedit_route_msg {
+	optional e_server_msg_type packet_id = 1 [default = e_mst_regedit_route_msg];
+	repeated fixed32 msgids = 2 [packed=true];
+}
+
+//世界服务器告诉逻辑服务器的玩家的peer
+message packet_gate_setlogic_ok {
+	optional e_server_msg_type packet_id = 1 [default = e_mst_gate_setlogic_ok];
+	optional fixed32 sessionid = 2;
+}
+
+//清除session
+message packet_clear_session {
+	optional e_server_msg_type packet_id = 1 [default = e_mst_clear_session];
+	optional fixed32 sessionid = 2;
+}
+
+//http cmd
+message packet_http_command {
+	optional e_server_msg_type packet_id = 1 [default = e_mst_http_command];
+	repeated string cmdstr = 2;
+}
+
+
+//获取IP
+message packet_get_ip{
+	optional e_server_msg_type packet_id = 1 [default = e_mst_get_ip];
+	optional fixed32 sessionid = 2;
+}
+
+message packet_get_ip_result{
+	optional e_server_msg_type packet_id = 1 [default = e_mst_get_ip_result];
+	optional fixed32 sessionid = 2;
+	optional string ip = 3;
+	optional fixed32 port = 4;
+}

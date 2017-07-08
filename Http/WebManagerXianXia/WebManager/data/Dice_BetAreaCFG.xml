@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Data Key="1" AreaName="大" Type="2" odds="1赔1"/>
+	<Data Key="2" AreaName="一豹子" Type="1" odds="1赔150" span="6"/>
+	<Data Key="3" AreaName="二豹子" Type="1" />
+	<Data Key="4" AreaName="三豹子" Type="1" />
+	<Data Key="5" AreaName="四豹子" Type="1" />
+	<Data Key="6" AreaName="五豹子" Type="1" />
+	<Data Key="7" AreaName="六豹子" Type="1" />
+	<Data Key="8" AreaName="任意豹子" Type="1" odds="1赔24" />
+	<Data Key="9" AreaName="小" Type="2" odds="1赔1" />
+	<Data Key="10" AreaName="4" Type="3" odds="1赔50" />
+	<Data Key="11" AreaName="5" Type="3" odds="1赔18" />
+	<Data Key="12" AreaName="6" Type="3" odds="1赔14" />
+	<Data Key="13" AreaName="7" Type="3" odds="1赔12" />
+	<Data Key="14" AreaName="8" Type="3" odds="1赔8" />
+	<Data Key="15" AreaName="9" Type="3" odds="1赔6" />
+	<Data Key="16" AreaName="10" Type="3" odds="1赔6" />
+	<Data Key="17" AreaName="11" Type="3" odds="1赔6" />
+	<Data Key="18" AreaName="12" Type="3" odds="1赔6" />
+	<Data Key="19" AreaName="13" Type="3" odds="1赔8" />
+	<Data Key="20" AreaName="14" Type="3" odds="1赔12" />
+	<Data Key="21" AreaName="15" Type="3" odds="1赔14" />
+	<Data Key="22" AreaName="16" Type="3" odds="1赔18" />
+	<Data Key="23" AreaName="17" Type="3" odds="1赔50" />
+	<Data Key="24" AreaName="一" Type="3" odds="单骰1赔1 &lt;br /&gt;双骰1赔2 &lt;br /&gt; 三骰1赔3"  span="6"/>
+	<Data Key="25" AreaName="二" Type="3" />
+	<Data Key="26" AreaName="三" Type="3" />
+	<Data Key="27" AreaName="四" Type="3" />
+	<Data Key="28" AreaName="五" Type="3" />
+	<Data Key="29" AreaName="六" Type="3" />
+</Root>

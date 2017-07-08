@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="../monitor/stdafx.h" />
+    <ClInclude Include="../monitor/targetver.h" />
+    <ClInclude Include="..\monitor\monitor_peer.h">
+      <Filter>unit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\monitor\monitor_server.h">
+      <Filter>unit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\monitor\monitor_peer_manager.h">
+      <Filter>unit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\monitor\servers_manager.h">
+      <Filter>unit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\monitor\proc_server_packet.h">
+      <Filter>proc_packet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\monitor\exception_warn_task.h">
+      <Filter>unit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\monitor\http_cmd_manager.h">
+      <Filter>unit</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="../monitor/monitor.cpp" />
+    <ClCompile Include="../monitor/stdafx.cpp" />
+    <ClCompile Include="..\monitor\monitor_peer.cpp">
+      <Filter>unit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\monitor\monitor_server.cpp">
+      <Filter>unit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\monitor\servers_manager.cpp">
+      <Filter>unit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\monitor\monitor_peer_manager.cpp">
+      <Filter>unit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\monitor\proc_server_packet.cpp">
+      <Filter>proc_packet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\monitor\monitor_init_packet.cpp">
+      <Filter>proc_packet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\monitor\exception_warn_task.cpp">
+      <Filter>unit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\monitor\http_cmd_manager.cpp">
+      <Filter>unit</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="unit">
+      <UniqueIdentifier>{e4112fe5-bd4c-4a6d-9816-59899a4fdb3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="proc_packet">
+      <UniqueIdentifier>{68864536-fcc0-4bff-8412-729489b8062d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

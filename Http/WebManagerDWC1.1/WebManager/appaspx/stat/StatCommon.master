@@ -1,0 +1,81 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="StatCommon.master.cs" Inherits="WebManager.appaspx.stat.StatCommon" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
+    <style type="text/css">
+    ul
+    {
+        list-style-type:none;
+        margin:0;
+        padding:0;
+        overflow:hidden;
+    }
+    li
+    {
+        float:left;
+        margin-right : 1px;
+        margin-bottom : 1px;
+        margin-top : 1px;
+        display : inline;
+    }
+    a.statCommonMenu:link,a.statCommonMenu:visited
+    {
+        display:block;
+        width:120px;
+        color:white;
+        background-color:#4169E1;
+        text-align:center;
+        padding:4px;
+        text-decoration:none;
+        text-transform:uppercase;
+    }
+    a.statCommonMenu:hover
+    {
+        background-color:#cc0000;
+    }
+    div.SplitBorder
+    {
+        width : auto;
+        height : auto;
+        border-style : solid;
+        border-color : black;
+        border-width : 2px;
+        padding : 5px;
+        margin-bottom : 10px;
+    }
+</style>
+    <asp:ContentPlaceHolder ID="stat_comm_HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+    <ul>
+        <li><a href="/appaspx/stat/StatFishlordControl.aspx" class="statCommonMenu">经典捕鱼</a></li>
+        <li><a href="/appaspx/stat/StatCrocodile.aspx" class="statCommonMenu">鳄鱼大亨</a></li>
+        <li><a href="/appaspx/stat/StatDice.aspx" class="statCommonMenu">欢乐骰宝</a></li>
+
+        <li><a href="/appaspx/stat/StatOldEarningsRate.aspx" class="statCommonMenu">盈利率重置查询</a></li>
+        <li><a href="/appaspx/stat/StatPlayerFavor.aspx" class="statCommonMenu">玩家喜好</a></li>
+        <li><a href="/appaspx/stat/StatLobby.aspx" class="statCommonMenu">独立数据-大厅</a></li>
+        <li><a href="/appaspx/stat/StatServerEarnings.aspx" class="statCommonMenu">服务器收益总计</a></li>
+        <li><a href="/appaspx/stat/StatTotalConsume.aspx" class="statCommonMenu">消耗收入总计</a></li>
+        <li><a href="/appaspx/stat/StatGameRecharge.aspx" class="statCommonMenu">游戏每天收入统计</a></li>
+        <li><a href="/appaspx/stat/StatReloadTable.aspx" class="statCommonMenu">重新加载表格</a></li>
+    </ul>
+
+    <ul>
+       <%-- <li><a href="StatCrocodile.aspx" class="stat_menu">鳄鱼大亨参数调整</a></li> --%>
+       <%--  <li><a href="StatDice.aspx" class="stat_menu">欢乐骰宝</a></li> --%>
+       <%--  <li><a href="StatFishlordControl.aspx" class="stat_menu">经典捕鱼参数调整</a></li> --%>
+       <%--  <li><a href="StatFishlordStage.aspx" class="stat_menu">经典捕鱼算法分析</a></li> --%>
+       <%--    <li><a href="StatFish.aspx" class="stat_menu">鱼的统计</a></li>--%> 
+       <%--   <li><a href="StatIndependentFishlord.aspx" class="stat_menu">独立数据-捕鱼</a></li> --%>
+       <%--   <li><a href="StatIndependentCrocodile.aspx" class="stat_menu">独立数据-鳄鱼</a></li> --%>
+       <%--   <li><a href="StatIndependentDice.aspx" class="stat_menu">独立数据-骰宝</a></li> --%>
+
+       <%--  <li><a href="StatOldEarningsRate.aspx" class="stat_menu">盈利率重置查询</a></li>  --%>
+       <%--   <li><a href="StatPlayerFavor.aspx" class="stat_menu">玩家喜好</a></li>  --%>
+       <%--   <li><a href="StatLobby.aspx" class="stat_menu">独立数据-大厅</a></li>  --%>
+       <%--   <li><a href="StatServerEarnings.aspx" class="stat_menu">服务器收益总计</a></li> --%>
+       <%--   <li><a href="StatReloadTable.aspx" class="stat_menu">重新加载表格</a></li> --%>
+    </ul>
+    <asp:ContentPlaceHolder ID="stat_common" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>

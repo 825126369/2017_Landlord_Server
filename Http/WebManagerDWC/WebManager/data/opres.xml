@@ -1,0 +1,24 @@
+﻿<?xml version="1.0"?>
+
+<configuration>
+  <add opres="0" fmt="操作成功" />
+  <add opres="1" fmt="操作失败" />
+  <add opres="2" fmt="时间格式错误" />
+  <add opres="3" fmt="没有找到相关数据" />
+  <add opres="4" fmt="没有选择任何项目" />
+  <add opres="5" fmt="参数非法" />
+  <add opres="6" fmt="不存在该道具" />
+  <add opres="7" fmt="密码格式不正确" />
+  <add opres="8" fmt="后台服务未开启" />
+  <add opres="9" fmt="已提交导出，稍候到[Excel下载]页面获取表格" />
+  <add opres="10" fmt="后台服务繁忙，请稍候重试" />
+  <add opres="11" fmt="至少需要输入一个条件" />
+  <add opres="12" fmt="已绑定手机，需自行找回" />
+  <add opres="13" fmt="需要选择平台" />
+  <add opres="14" fmt="没有绑定手机" />
+  <add opres="15" fmt="指定玩家不存在" />
+  <add opres="16" fmt="数据重复" />
+  <add opres="17" fmt="发放奖励超出限额" />
+  <add opres="18" fmt="这是第三方平台，无法完成操作" />
+  <add opres="19" fmt="没有权限操作" />
+</configuration>

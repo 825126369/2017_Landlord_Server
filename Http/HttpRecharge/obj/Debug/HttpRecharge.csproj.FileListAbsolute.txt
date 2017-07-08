@@ -1,0 +1,12 @@
+F:\Pubic_Project\Pubic_Project\Http\HttpRecharge\obj\Debug\HttpRecharge.csprojResolveAssemblyReference.cache
+F:\Pubic_Project\Pubic_Project\Http\HttpRecharge\bin\HttpRecharge.dll.config
+F:\Pubic_Project\Pubic_Project\Http\HttpRecharge\bin\HttpRecharge.dll
+F:\Pubic_Project\Pubic_Project\Http\HttpRecharge\bin\HttpRecharge.pdb
+F:\Pubic_Project\Pubic_Project\Http\HttpRecharge\bin\BeeCloud.dll
+F:\Pubic_Project\Pubic_Project\Http\HttpRecharge\bin\Common.dll
+F:\Pubic_Project\Pubic_Project\Http\HttpRecharge\bin\MongoDB.Bson.dll
+F:\Pubic_Project\Pubic_Project\Http\HttpRecharge\bin\MongoDB.Driver.dll
+F:\Pubic_Project\Pubic_Project\Http\HttpRecharge\bin\Newtonsoft.Json.dll
+F:\Pubic_Project\Pubic_Project\Http\HttpRecharge\bin\Common.pdb
+F:\Pubic_Project\Pubic_Project\Http\HttpRecharge\obj\Debug\HttpRecharge.dll
+F:\Pubic_Project\Pubic_Project\Http\HttpRecharge\obj\Debug\HttpRecharge.pdb

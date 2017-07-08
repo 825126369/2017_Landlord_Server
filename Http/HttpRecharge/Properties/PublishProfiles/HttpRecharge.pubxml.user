@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+此文件由 Web 项目的发布/打包过程使用。可以通过编辑此 MSBuild 文件
+自定义此过程的行为。为了解与此相关的更多内容，请访问 https://go.microsoft.com/fwlink/?LinkID=208121。 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>E:\IIS_Web\HttpRecharge</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="anysdk_bzhwpay.aspx">
+      <publishTime>04/06/2017 02:00:21</publishTime>
+    </File>
+    <File Include="anysdk_google.aspx">
+      <publishTime>04/06/2017 02:00:21</publishTime>
+    </File>
+    <File Include="anysdk_pay.aspx">
+      <publishTime>04/06/2017 02:00:21</publishTime>
+    </File>
+    <File Include="anysdk_thpay.aspx">
+      <publishTime>04/06/2017 02:00:20</publishTime>
+    </File>
+    <File Include="baidu_pay.aspx">
+      <publishTime>04/06/2017 02:00:20</publishTime>
+    </File>
+    <File Include="beecloud_pay.aspx">
+      <publishTime>04/06/2017 02:00:20</publishTime>
+    </File>
+    <File Include="bin/BeeCloud.dll">
+      <publishTime>04/06/2017 02:00:11</publishTime>
+    </File>
+    <File Include="bin/Common.dll">
+      <publishTime>04/07/2017 00:46:38</publishTime>
+    </File>
+    <File Include="bin/HttpRecharge.dll">
+      <publishTime>04/07/2017 00:47:47</publishTime>
+    </File>
+    <File Include="bin/MongoDB.Bson.dll">
+      <publishTime>04/06/2017 02:00:15</publishTime>
+    </File>
+    <File Include="bin/MongoDB.Driver.dll">
+      <publishTime>04/06/2017 02:00:15</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>04/06/2017 02:00:12</publishTime>
+    </File>
+    <File Include="cgamebt_pay.aspx">
+      <publishTime>04/06/2017 02:00:20</publishTime>
+    </File>
+    <File Include="shuanglong_pay.aspx">
+      <publishTime>04/06/2017 02:00:19</publishTime>
+    </File>
+    <File Include="third_pay.aspx">
+      <publishTime>04/06/2017 02:00:19</publishTime>
+    </File>
+    <File Include="th_web_pay.aspx">
+      <publishTime>04/06/2017 02:00:19</publishTime>
+    </File>
+    <File Include="wanke_pay.aspx">
+      <publishTime>04/06/2017 02:00:19</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>04/07/2017 00:47:47</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

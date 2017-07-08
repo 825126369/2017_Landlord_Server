@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="cgamebt_login.aspx.cs" Inherits="HttpLogin.Platform.cgamebt_login" %>

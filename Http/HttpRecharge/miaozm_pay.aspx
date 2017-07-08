@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="miaozm_pay.aspx.cs" Inherits="HttpRecharge.miaozm_pay" %>

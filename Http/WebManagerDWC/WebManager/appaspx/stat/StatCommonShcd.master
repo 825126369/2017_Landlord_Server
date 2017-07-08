@@ -1,0 +1,19 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/appaspx/stat/StatCommon.master" AutoEventWireup="true" CodeBehind="StatCommonShcd.master.cs" Inherits="WebManager.appaspx.stat.StatCommonShcd" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="stat_comm_HeadContent" runat="server">
+
+    <asp:ContentPlaceHolder ID="StatCommonShcd_HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="stat_common" runat="server">
+    <div class="statMenu">
+        <ul>
+            <li><a href="/appaspx/stat/shcd/ShcdResult.aspx" >黑红梅方结果控制</a></li>
+            <li><a href="/appaspx/stat/shcd/ShcdControl.aspx" >黑红梅方参数调整</a></li>
+            <li><a href="/appaspx/stat/shcd/ShcdIndependent.aspx" >独立数据-黑红梅方</a></li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+     <asp:ContentPlaceHolder ID="StatCommonShcd_Content" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>

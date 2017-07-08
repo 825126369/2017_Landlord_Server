@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ysdk_checkpay.aspx.cs" Inherits="HttpRecharge.ysdk_checkpay" %>

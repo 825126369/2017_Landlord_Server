@@ -1,0 +1,19 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/appaspx/stat/StatCommon.master" AutoEventWireup="true" CodeBehind="StatCommonBaccarat.master.cs" Inherits="WebManager.appaspx.stat.StatCommonBaccarat" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="stat_comm_HeadContent" runat="server">
+    <link href="../../Site.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="StatCommonBaccarat_HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="stat_common" runat="server">
+    <div class="statMenu">
+        <ul>
+            <li><a href="/appaspx/stat/baccarat/BaccaratControl.aspx" >百家乐参数调整</a></li>
+            <li><a href="/appaspx/stat/baccarat/BaccaratPlayerBanker.aspx" >上庄情况</a></li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+     <asp:ContentPlaceHolder ID="StatCommonBaccarat_Content" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>

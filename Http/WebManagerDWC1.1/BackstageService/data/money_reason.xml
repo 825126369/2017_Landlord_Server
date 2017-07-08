@@ -1,0 +1,33 @@
+﻿<?xml version="1.0"?>
+
+<configuration>  
+  <add key="1" value="每日登录转盘抽奖" type="string" />
+  <add key="2" value="在线奖励" type="string" />
+  <add key="3" value="保险箱存入" type="string" />
+  <add key="4" value="保险箱取出" type="string" />
+  <add key="5" value="赠送礼物" type="string" />
+  
+  <add key="6" value="接收礼物" type="string" />
+  <add key="7" value="玩家发小喇叭" type="string" />
+  <add key="8" value="玩家兑换礼物" type="string" />
+  <add key="9" value="购买商品获得" type="string" />
+  <add key="10" value="领取救济金" type="string" />
+  
+  <add key="11" value="单局结算" type="string" />
+  <add key="12" value="购买商品消耗" type="string" />
+  <add key="13" value="购买捕鱼等级" type="string" />
+  <add key="14" value="购买捕鱼道具" type="string" />
+  <add key="15" value="捕鱼升级" type="string" />
+  <add key="16" value="新手引导" type="string" />
+
+  <add key="17" value="修改头像" type="string" />
+  <add key="18" value="充值" type="string" />
+  <add key="19" value="修改昵称" type="string" />
+  <add key="20" value="充值赠送" type="string" />
+  <add key="21" value="后台充值" type="string" />
+
+  <add key="22" value="后台充值赠送" type="string" />
+  <add key="23" value="月卡每日领取" type="string" />
+  <add key="24" value="充值礼包" type="string" />
+</configuration>
+

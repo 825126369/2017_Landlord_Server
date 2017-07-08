@@ -1,0 +1,18 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AccCommonScore.master.cs" Inherits="WebManager.appaspx.account.AccCommonAccountMgr" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
+    <asp:ContentPlaceHolder ID="AccCommonScore_HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="statMenu">
+        <ul>
+            <li><a href="/appaspx/account/AccountScore.aspx" >代理上分/下分</a></li>
+            <li><a href="/appaspx/account/AccountScorePlayer.aspx" >会员上分/下分</a></li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+
+     <asp:ContentPlaceHolder ID="AccCommonScore_BodyContent" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>

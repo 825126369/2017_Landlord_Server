@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="logic_lobby.cpp">
+      <Filter>game_logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic_player.cpp">
+      <Filter>game_logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic_room.cpp">
+      <Filter>game_logic</Filter>
+    </ClCompile>
+    <ClCompile Include="game_db.cpp">
+      <Filter>game_mgr</Filter>
+    </ClCompile>
+    <ClCompile Include="game_db_log.cpp">
+      <Filter>game_mgr</Filter>
+    </ClCompile>
+    <ClCompile Include="game_engine.cpp">
+      <Filter>game_mgr</Filter>
+    </ClCompile>
+    <ClCompile Include="game_HappySupremacy.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="..\..\..\share\protocol\msg_type_def.pb.cc">
+      <Filter>protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="proc_game_happysupremacy_protocol.cpp">
+      <Filter>proc</Filter>
+    </ClCompile>
+    <ClCompile Include="logic_core.cpp">
+      <Filter>game_logic</Filter>
+    </ClCompile>
+    <ClCompile Include="HappySupremacy_BaseCFG.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="HappySupremacy_RobAICFG.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="HappySupremacy_RobCFG.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="HappySupremacy_RoomCFG.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="HappySupremacy_BetMaxCFG.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="logic_player_robot.cpp">
+      <Filter>game_logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic_room_db.cpp">
+      <Filter>game_logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic_player_db.cpp">
+      <Filter>game_logic</Filter>
+    </ClCompile>
+    <ClCompile Include="HappySupremacy_MultiLanguageCFG.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="HappySupremacy_RateCFG.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="HappySupremacy_RoomStockCFG.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\share\protocol\game_happysupremacy_def.pb.cc">
+      <Filter>protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\share\protocol\game_happysupremacy_protocol.pb.cc">
+      <Filter>protocol</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="config">
+      <UniqueIdentifier>{4b7a6c63-1f34-40f0-a131-e91c2b0870ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game_logic">
+      <UniqueIdentifier>{40d1bb78-626b-40bb-a7e7-8e016b1b7fbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game_mgr">
+      <UniqueIdentifier>{d19eb746-f163-46f4-84b1-b335008334a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol">
+      <UniqueIdentifier>{7b2de3a2-2682-4ffc-8bfb-88b6ef68de19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="proc">
+      <UniqueIdentifier>{914460be-e535-404e-a075-717665fe0a0a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="logic_def.h">
+      <Filter>game_logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic_lobby.h">
+      <Filter>game_logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic_player.h">
+      <Filter>game_logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic_room.h">
+      <Filter>game_logic</Filter>
+    </ClInclude>
+    <ClInclude Include="game_db.h">
+      <Filter>game_mgr</Filter>
+    </ClInclude>
+    <ClInclude Include="game_db_log.h">
+      <Filter>game_mgr</Filter>
+    </ClInclude>
+    <ClInclude Include="game_engine.h">
+      <Filter>game_mgr</Filter>
+    </ClInclude>
+    <ClInclude Include="game_HappySupremacy.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="..\..\..\share\protocol\msg_type_def.pb.h">
+      <Filter>protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="proc_game_happysupremacy_protocol.h">
+      <Filter>proc</Filter>
+    </ClInclude>
+    <ClInclude Include="logic_core.h">
+      <Filter>game_logic</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="HappySupremacy_BaseCFG.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="HappySupremacy_RobAICFG.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="HappySupremacy_RobCFG.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="HappySupremacy_RoomCFG.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="HappySupremacy_BetMaxCFG.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="HappySupremacy_MultiLanguageCFG.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="HappySupremacy_RateCFG.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="HappySupremacy_RoomStockCFG.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\share\protocol\game_happysupremacy_def.pb.h">
+      <Filter>protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\share\protocol\game_happysupremacy_protocol.pb.h">
+      <Filter>protocol</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

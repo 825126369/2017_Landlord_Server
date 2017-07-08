@@ -1,0 +1,53 @@
+﻿<?xml version="1.0"?>
+
+<configuration>
+  <!-- default用的是anysdk表 -->
+  <add key="0" type="table" >
+    <elem>
+      <add key="eng" value="default" type="string" />
+      <add key="cha" value="default" type="string" />
+      <add key="table" value="anysdk_pay" type="string" />
+    </elem>
+  </add>
+  
+  <add key="1" type="table" >
+    <elem>
+      <add key="eng" value="anysdk" type="string" />
+      <add key="cha" value="anysdk" type="string" />
+      <add key="table" value="anysdk_pay" type="string" />
+    </elem>
+  </add>
+
+  <add key="2" type="table" >
+    <elem>
+      <add key="eng" value="qbao" type="string" />
+      <add key="cha" value="钱宝" type="string" />
+      <add key="table" value="qbao_pay" type="string" />
+    </elem>
+  </add>
+
+  <add key="3" type="table" >
+    <elem>
+      <add key="eng" value="baidu" type="string" />
+      <add key="cha" value="百度" type="string" />
+      <add key="table" value="baidu_pay" type="string" />
+    </elem>
+  </add>
+
+  <add key="4" type="table" >
+    <elem>
+      <add key="eng" value="yoyangs" type="string" />
+      <add key="cha" value="yoyangs" type="string" />
+      <add key="table" value="beecloud_pay" type="string" />
+    </elem>
+  </add>
+
+  <add key="5" type="table" >
+    <elem>
+      <add key="eng" value="shuanglong" type="string" />
+      <add key="cha" value="双龙" type="string" />
+      <add key="table" value="shuanglong_pay" type="string" />
+    </elem>
+  </add>
+</configuration>
+

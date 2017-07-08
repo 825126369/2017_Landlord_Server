@@ -1,0 +1,37 @@
+import "logic2world_msg_type.proto";
+import "msg_info_def.proto";
+import "msg_type_def.proto";
+
+package logic2world_protocols;
+
+// 进入好友房间
+message packetw2l_enter_friend_room
+{
+	optional e_server_msg_type packet_id = 1 [default = e_mst_w2l_enter_friend_room];		
+
+	optional fixed32 sessionid = 2;
+
+	// 好友ID
+	optional int32 friendId = 3;	
+
+	optional int32 gameId = 4;
+
+	// 账号信息
+	optional msg_info_def.msg_account_info account_info = 5;
+
+	optional fixed32 playerid = 6;
+
+	optional msg_info_def.msg_account_info_ex account_info_ex = 7;	//扩展信息
+}
+
+// 进入好友房间结果
+message packetl2w_enter_friend_room_result 
+{
+	optional e_server_msg_type packet_id = 1 [default = e_mst_l2w_enter_friend_room_result];		
+	 
+	optional fixed32 playerid = 2;
+
+	optional int32 result = 3;
+
+	optional int32 gameId = 4;
+}

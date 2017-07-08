@@ -1,0 +1,25 @@
+﻿<?xml version="1.0"?>
+
+<configuration>  
+  <add key="0" value="捕鱼专家" type="string" />
+  <add key="1" value="解锁中级场" type="string" />
+  <add key="2" value="解锁高级场" type="string" />
+  <add key="3" value="解锁大师场" type="string" />
+  
+  <add key="4" value="火神永久" type="string" />
+  <add key="5" value="海神永久" type="string" />
+  <add key="6" value="雷神永久" type="string" />
+  <add key="7" value="战神永久" type="string" />
+  
+  <add key="8" value="火神7天" type="string" />
+  <add key="9" value="海神7天" type="string" />
+  
+  <add key="10" value="火神大招" type="string" />
+  <add key="11" value="海神大招" type="string" />
+  <add key="12" value="雷神大招" type="string" />
+  <add key="13" value="战神大招" type="string" />
+  <add key="14" value="火龙炮大招" type="string" />
+
+  <add key="15" value="炮台升级" type="string" />
+</configuration>
+

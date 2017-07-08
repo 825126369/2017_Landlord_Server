@@ -1,0 +1,39 @@
+﻿<?xml version="1.0"?>
+
+<configuration>
+	<!--客服限制-->
+	<add key="service" type="table" >
+		<elem> 
+			<add key="sendRewardLimit" value="50" type="int" />
+		</elem>	
+    </add>
+	
+	<!--运营限制-->
+	<add key="operation" type="table" >
+		<elem> 
+			<add key="sendRewardLimit" value="500" type="int" />
+		</elem>	
+    </add>
+	
+	<!--运营总监限制-->
+	<add key="opDirector" type="table" >
+		<elem> 
+			<add key="sendRewardLimit" value="5000" type="int" />
+		</elem>	
+    </add>
+	
+	<!--CEO限制-->
+	<add key="ceo" type="table" >
+		<elem>  <!--0为不受限制-->
+			<add key="sendRewardLimit" value="0" type="int" />
+		</elem>	
+    </add>
+	
+	<!--管理员限制-->
+	<add key="admin" type="table" >
+		<elem>  <!--0为不受限制-->
+			<add key="sendRewardLimit" value="0" type="int" />
+		</elem>	
+    </add>
+</configuration>
+

@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ysdk_login.aspx.cs" Inherits="HttpLogin.Platform.ysdk_login" %>

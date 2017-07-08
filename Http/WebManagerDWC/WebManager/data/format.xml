@@ -1,0 +1,27 @@
+﻿<?xml version="1.0"?>
+
+<configuration>
+  <add opid="0" opname="发邮件" fmt="向[{0}]发送了邮件&lt;br /&gt; 标题[{1}]&lt;br /&gt; 发送者[{2}]&lt;br /&gt; 内容[{3}] &lt;br /&gt; 道具列表[{4}] &lt;br /&gt; 有效时间[{5}]天" class="LogSendMail" />
+
+  <add opid="1" opname="解/封IP" fmt="[{0}]了IP[{1}]" class="LogBlockIP" />
+  
+  <add opid="2" opname="解/封账号" fmt="[{0}]了账号[{1}]" class="LogBlockAcc" />
+
+  <add opid="3" opname="重置密码" fmt="账号[{0}],手机号[{1}]" class="LogResetPwd" />
+
+  <add opid="4" opname="后台充值" fmt="给玩家[{0}]充值了[{1}],金额[{2}]" class="LogGmRecharge" />
+
+  <add opid="5" opname="解/封玩家ID" fmt="[{0}]了玩家ID[{1}]" class="LogBlockId" />
+
+  <add opid="6" opname="修改盈利率" fmt="修改房间[{0}]的盈利率为[{1}]-{2}" class="LogModifyFishlordRoomExpRate" />
+
+  <add opid="7" opname="重置盈利率" fmt="重置了房间[{0}]的盈利率-{1}" class="LogResetFishlordRoomExpRate" />
+
+  <add opid="8" opname="冻结头像" fmt="冻结了玩家[{0}]的头像，截止到[{1}]" class="LogFreezeHead" />
+  
+  <add opid="9" opname="牛牛牌型" fmt="增加了牛牛牌型， 庄家[{0}],闲家-东[{1}],闲家-南[{2}],闲家-西[{3}],闲家-北[{4}]" class="LogCowsAddCardType" />
+
+  <add opid="10" opname="祝福诅咒" fmt="在游戏[{0}]内，给玩家ID[{1}] [{2}] 了 [{3}]" class="LogWishCurse" />
+</configuration>
+
+

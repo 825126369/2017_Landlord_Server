@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Data ID="1" BuffName="锁定" BuffIcon="UI/Image/lockIcon.png" BuffType="1" Duration="0" NeedVIP="2" BulletType="1" BulletCount="0" Param="" GuideImage="UI/Image/lock_guide.jpg" GuideInfo="到达VIP 2级解锁，组合使用这些技能效果更佳。" />
+	<Data ID="2" BuffName="急速" BuffIcon="UI/Image/fastIcon.png" BuffType="1" Duration="0" NeedVIP="4" BulletType="1" BulletCount="0" Param="" GuideImage="UI/Image/fast_guide.jpg" GuideInfo="到达VIP 4级解锁，组合使用这些技能效果更佳。" />
+	<Data ID="3" BuffName="散弹" BuffIcon="UI/Image/mutilIcon.png" BuffType="1" Duration="0" NeedVIP="3" BulletType="1" BulletCount="0" Param="" GuideImage="UI/Image/multi_guide.jpg" GuideInfo="到达VIP 3级解锁，组合使用这些技能效果更佳。" />
+	<Data ID="4" BuffName="自动" BuffIcon="UI/Image/autoIcon.png" BuffType="1" Duration="0" NeedVIP="1" BulletType="1" BulletCount="0" Param="" GuideImage="UI/Image/auto_guide.jpg" GuideInfo="到达VIP 1级解锁，组合使用这些技能效果更佳。" />
+	<Data ID="5" BuffName="普通大招" BuffIcon="" BuffType="2" Duration="5" NeedVIP="0" BulletType="2" BulletCount="23" Param="9" GuideImage="" GuideInfo="" />
+	<Data ID="6" BuffName="火神大招" BuffIcon="" BuffType="2" Duration="6" NeedVIP="0" BulletType="3" BulletCount="3" Param="30" GuideImage="" GuideInfo="" />
+	<Data ID="7" BuffName="海神大招" BuffIcon="" BuffType="2" Duration="3" NeedVIP="0" BulletType="4" BulletCount="1" Param="60" GuideImage="" GuideInfo="" />
+	<Data ID="8" BuffName="雷神大招" BuffIcon="" BuffType="2" Duration="7" NeedVIP="0" BulletType="5" BulletCount="23" Param="6" GuideImage="" GuideInfo="" />
+	<Data ID="9" BuffName="战神大招" BuffIcon="" BuffType="2" Duration="6" NeedVIP="0" BulletType="6" BulletCount="1" Param="96" GuideImage="" GuideInfo="" />
+	<Data ID="10" BuffName="冰冻" BuffIcon="UI/Image/autoIcon.png" BuffType="1" Duration="0" NeedVIP="1" BulletType="1" BulletCount="0" Param="" GuideImage="UI/Image/auto_guide.jpg" GuideInfo="" />
+</Root>

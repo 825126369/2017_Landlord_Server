@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="thdwc_login.aspx.cs" Inherits="HttpLogin.Platform.thdwc_login" %>

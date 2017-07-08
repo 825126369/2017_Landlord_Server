@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="anysdk_baidupay.aspx.cs" Inherits="PaymentCheck.anysdk_baidupay" %>

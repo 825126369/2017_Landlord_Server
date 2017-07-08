@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Data Key="1" AreaName="大" Type="2" />
+	<Data Key="2" AreaName="一豹子" Type="1" />
+	<Data Key="3" AreaName="二豹子" Type="1" />
+	<Data Key="4" AreaName="三豹子" Type="1" />
+	<Data Key="5" AreaName="四豹子" Type="1" />
+	<Data Key="6" AreaName="五豹子" Type="1" />
+	<Data Key="7" AreaName="六豹子" Type="1" />
+	<Data Key="8" AreaName="任意豹子" Type="1" />
+	<Data Key="9" AreaName="小" Type="2" />
+	<Data Key="10" AreaName="点数4" Type="3" />
+	<Data Key="11" AreaName="点数5" Type="3" />
+	<Data Key="12" AreaName="点数6" Type="3" />
+	<Data Key="13" AreaName="点数7" Type="3" />
+	<Data Key="14" AreaName="点数8" Type="3" />
+	<Data Key="15" AreaName="点数9" Type="3" />
+	<Data Key="16" AreaName="点数10" Type="3" />
+	<Data Key="17" AreaName="点数11" Type="3" />
+	<Data Key="18" AreaName="点数12" Type="3" />
+	<Data Key="19" AreaName="点数13" Type="3" />
+	<Data Key="20" AreaName="点数14" Type="3" />
+	<Data Key="21" AreaName="点数15" Type="3" />
+	<Data Key="22" AreaName="点数16" Type="3" />
+	<Data Key="23" AreaName="点数17" Type="3" />
+	<Data Key="24" AreaName="点数1" Type="3" />
+	<Data Key="25" AreaName="点数2" Type="3" />
+	<Data Key="26" AreaName="点数3" Type="3" />
+	<Data Key="27" AreaName="点数4" Type="3" />
+	<Data Key="28" AreaName="点数5" Type="3" />
+	<Data Key="29" AreaName="点数6" Type="3" />
+</Root>

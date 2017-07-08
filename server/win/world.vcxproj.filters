@@ -1,0 +1,724 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="../world/stdafx.h" />
+    <ClInclude Include="../world/targetver.h" />
+    <ClInclude Include="..\world\world_server.h">
+      <Filter>unit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\world_peer_manager.h">
+      <Filter>unit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\world_peer.h">
+      <Filter>unit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\servers_manager.h">
+      <Filter>unit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\server_peer.h">
+      <Filter>unit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\backstage_manager.h">
+      <Filter>unit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\proc_server_packet.h">
+      <Filter>proc_packet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\proc_world_packet.h">
+      <Filter>proc_packet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\game_player.h">
+      <Filter>game_obj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\game_player_mgr.h">
+      <Filter>game_mgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\check_recharge_task.h">
+      <Filter>task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\payment_task.h">
+      <Filter>task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\proc_logic2world_protocol.h">
+      <Filter>proc_packet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\timer_manager.h">
+      <Filter>game_sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\game_db.h">
+      <Filter>game_sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\check_account_task.h">
+      <Filter>task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\game_sys_def.h">
+      <Filter>game_sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\global_sys_mgr.h">
+      <Filter>game_mgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\command_base.h">
+      <Filter>cmd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\command_mgr.h">
+      <Filter>cmd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\commands.h">
+      <Filter>cmd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\proc_c2w_lobby_protocol.h">
+      <Filter>proc_packet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\game_check.h">
+      <Filter>game_obj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\game_def.h">
+      <Filter>game_sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\game_engine_mgr.h">
+      <Filter>game_mgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\dial_lottery_mgr.h">
+      <Filter>game_mgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\dial_lottery_sys.h">
+      <Filter>game_sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\probability.h">
+      <Filter>game_sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\proc_dial_lottery.h">
+      <Filter>proc_packet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\proc_player_property.h">
+      <Filter>proc_packet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\name_valid.h">
+      <Filter>game_sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\mail_sys.h">
+      <Filter>game_sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\gift_def.h">
+      <Filter>game_obj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\mail_def.h">
+      <Filter>game_obj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\proc_mail.h">
+      <Filter>proc_packet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\game_rank_sys.h">
+      <Filter>game_sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\proc_rank.h">
+      <Filter>proc_packet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\chat_sys.h">
+      <Filter>game_sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\proc_chat.h">
+      <Filter>proc_packet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\exchange_sys.h">
+      <Filter>game_sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\proc_exchange.h">
+      <Filter>proc_packet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\bag_def.h">
+      <Filter>game_obj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\bag_mgr.h">
+      <Filter>game_mgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\shop_sys.h">
+      <Filter>game_sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\proc_shop.h">
+      <Filter>proc_packet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\friend_mgr.h">
+      <Filter>game_mgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\friend_def.h">
+      <Filter>game_obj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\proc_friend.h">
+      <Filter>proc_packet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\online_reward_mgr.h">
+      <Filter>game_mgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\proc_online_reward.h">
+      <Filter>proc_packet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\safe_deposit_box_mgr.h">
+      <Filter>game_mgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\proc_safe_deposit_box.h">
+      <Filter>proc_packet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\proc_logic2world_friend.h">
+      <Filter>proc_packet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sshare\M_ExchangeCFG.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sshare\M_CommodityCFG.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sshare\M_BaseInfoCFG.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sshare\M_DialLotteryCFG.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sshare\M_ItemCFG.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sshare\M_MultiLanguageCFG.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sshare\M_RechangeCFG.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sshare\M_VIPProfitCFG.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\id_generator_sys.h">
+      <Filter>game_sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\benefits_mgr.h">
+      <Filter>game_mgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\proc_benefits.h">
+      <Filter>proc_packet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sshare\M_GiftCFG.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\pump_sys.h">
+      <Filter>game_sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\game_db_log.h">
+      <Filter>game_sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\pump_type.h">
+      <Filter>game_sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\notice_sys.h">
+      <Filter>game_sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\proc_notice.h">
+      <Filter>proc_packet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\mobile_phone_binding_sys.h">
+      <Filter>game_sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\send_code_task.h">
+      <Filter>task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\proc_bind_phone.h">
+      <Filter>proc_packet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\player_log_mgr.h">
+      <Filter>game_mgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\player_log_def.h">
+      <Filter>game_obj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\gm_sys.h">
+      <Filter>game_sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sshare\M_GiftRewardCFG.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\check_apple_task.h">
+      <Filter>task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sshare\M_DailyLoginCFG.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\daily_box_lottery_mgr.h">
+      <Filter>game_mgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\daily_box_lottery_sys.h">
+      <Filter>game_sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\proc_daily_box_lottery.h">
+      <Filter>proc_packet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\operation_activity_type.h">
+      <Filter>game_sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\operation_activity_condition.h">
+      <Filter>game_sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\operation_activity_def.h">
+      <Filter>game_sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\operation_activity_factory.h">
+      <Filter>game_sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\operation_activity_sys.h">
+      <Filter>game_sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\tool_helper.h">
+      <Filter>game_sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sshare\M_ActivityCFG.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\operation_activity.h">
+      <Filter>game_sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\operation_activity_mgr.h">
+      <Filter>game_mgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sshare\M_RechangeExCFG.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\robots_sys.h">
+      <Filter>game_sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\proc_logic2world_robot.h">
+      <Filter>proc_packet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\game_check_def.h">
+      <Filter>game_obj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sshare\M_RobotNameCFG.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sshare\M_OnlineRewardCFG.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\proc_activity.h">
+      <Filter>proc_packet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\game_quest.h">
+      <Filter>game_obj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\quest_def.h">
+      <Filter>game_obj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\game_quest_mgr.h">
+      <Filter>game_mgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sshare\M_QuestCFG.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\proc_player_quest.h">
+      <Filter>proc_packet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\payment_fix.h">
+      <Filter>task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sshare\M_GameCFG.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sshare\M_RechangeLotteryCFG.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\proc_star_lottery.h">
+      <Filter>proc_packet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\star_lottery_mgr.h">
+      <Filter>game_mgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sshare\M_StarLotteryCFG.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\star_lottery_sys.h">
+      <Filter>game_sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sshare\M_FreeLotteryCFG.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\order_sys.h">
+      <Filter>game_sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\url_param.h">
+      <Filter>game_sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\th_pay_check.h">
+      <Filter>task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\th_pay_process.h">
+      <Filter>task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\world\game_sys_recharge.h">
+      <Filter>game_mgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sshare\M_ShopCFG.h">
+      <Filter>config</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="../world/stdafx.cpp" />
+    <ClCompile Include="../world/world.cpp" />
+    <ClCompile Include="..\world\world_server.cpp">
+      <Filter>unit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\world_peer.cpp">
+      <Filter>unit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\world_peer_manager.cpp">
+      <Filter>unit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\servers_manager.cpp">
+      <Filter>unit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\server_peer.cpp">
+      <Filter>unit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\backstage_manager.cpp">
+      <Filter>unit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\proc_server_packet.cpp">
+      <Filter>proc_packet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\proc_world_packet.cpp">
+      <Filter>proc_packet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\world_init_packet.cpp">
+      <Filter>proc_packet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\game_player.cpp">
+      <Filter>game_obj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\game_player_mgr.cpp">
+      <Filter>game_mgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\check_recharge_task.cpp">
+      <Filter>task</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\payment_task.cpp">
+      <Filter>task</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\proc_logic2world_protocol.cpp">
+      <Filter>proc_packet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\timer_manager.cpp">
+      <Filter>game_sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\game_db.cpp">
+      <Filter>game_sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\check_account_task.cpp">
+      <Filter>task</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\game_player_sys.cpp">
+      <Filter>game_obj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\global_sys_mgr.cpp">
+      <Filter>game_mgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\world_init_config.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\command_mgr.cpp">
+      <Filter>cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\commands.cpp">
+      <Filter>cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\proc_c2w_lobby_protocol.cpp">
+      <Filter>proc_packet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\game_check.cpp">
+      <Filter>game_obj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\game_engine_mgr.cpp">
+      <Filter>game_mgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\dial_lottery_mgr.cpp">
+      <Filter>game_mgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\dial_lottery_sys.cpp">
+      <Filter>game_sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\probability.cpp">
+      <Filter>game_sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\proc_dial_lottery.cpp">
+      <Filter>proc_packet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\proc_player_property.cpp">
+      <Filter>proc_packet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\name_valid.cpp">
+      <Filter>game_sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\mail_sys.cpp">
+      <Filter>game_sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\proc_mail.cpp">
+      <Filter>proc_packet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\gift_def.cpp">
+      <Filter>game_obj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\game_rank_sys.cpp">
+      <Filter>game_sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\proc_rank.cpp">
+      <Filter>proc_packet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\chat_sys.cpp">
+      <Filter>game_sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\proc_chat.cpp">
+      <Filter>proc_packet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\exchange_sys.cpp">
+      <Filter>game_sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\proc_exchange.cpp">
+      <Filter>proc_packet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\bag_def.cpp">
+      <Filter>game_obj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\bag_mgr.cpp">
+      <Filter>game_mgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\shop_sys.cpp">
+      <Filter>game_sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\proc_shop.cpp">
+      <Filter>proc_packet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\friend_mgr.cpp">
+      <Filter>game_mgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\friend_def.cpp">
+      <Filter>game_obj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\proc_friend.cpp">
+      <Filter>proc_packet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\online_reward_mgr.cpp">
+      <Filter>game_mgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\proc_online_reward.cpp">
+      <Filter>proc_packet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\safe_deposit_box_mgr.cpp">
+      <Filter>game_mgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\proc_safe_deposit_box.cpp">
+      <Filter>proc_packet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\proc_logic2world_friend.cpp">
+      <Filter>proc_packet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sshare\M_ExchangeCFG.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sshare\M_CommodityCFG.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sshare\M_BaseInfoCFG.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sshare\M_DialLotteryCFG.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sshare\M_ItemCFG.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sshare\M_MultiLanguageCFG.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sshare\M_RechangeCFG.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sshare\M_VIPProfitCFG.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\id_generator_sys.cpp">
+      <Filter>game_sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\benefits_mgr.cpp">
+      <Filter>game_mgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\proc_benefits.cpp">
+      <Filter>proc_packet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sshare\M_GiftCFG.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\pump_sys.cpp">
+      <Filter>game_sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\game_db_log.cpp">
+      <Filter>game_sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\notice_sys.cpp">
+      <Filter>game_sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\proc_notice.cpp">
+      <Filter>proc_packet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\mobile_phone_binding_sys.cpp">
+      <Filter>game_sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\send_code_task.cpp">
+      <Filter>task</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\proc_bind_phone.cpp">
+      <Filter>proc_packet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\player_log_mgr.cpp">
+      <Filter>game_mgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\player_log_def.cpp">
+      <Filter>game_obj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\gm_sys.cpp">
+      <Filter>game_sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sshare\M_GiftRewardCFG.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\check_apple_task.cpp">
+      <Filter>task</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sshare\M_DailyLoginCFG.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\daily_box_lottery_mgr.cpp">
+      <Filter>game_mgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\daily_box_lottery_sys.cpp">
+      <Filter>game_sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\proc_daily_box_lottery.cpp">
+      <Filter>proc_packet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\operation_activity_condition.cpp">
+      <Filter>game_sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\operation_activity_def.cpp">
+      <Filter>game_sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\operation_activity_factory.cpp">
+      <Filter>game_sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\operation_activity_sys.cpp">
+      <Filter>game_sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\tool_helper.cpp">
+      <Filter>game_sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sshare\M_ActivityCFG.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\operation_activity.cpp">
+      <Filter>game_sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\operation_activity_mgr.cpp">
+      <Filter>game_mgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sshare\M_RechangeExCFG.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\robots_sys.cpp">
+      <Filter>game_sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\proc_logic2world_robot.cpp">
+      <Filter>proc_packet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sshare\M_RobotNameCFG.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sshare\M_OnlineRewardCFG.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\proc_activity.cpp">
+      <Filter>proc_packet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\game_quest.cpp">
+      <Filter>game_obj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\game_quest_mgr.cpp">
+      <Filter>game_mgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sshare\M_QuestCFG.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\proc_player_quest.cpp">
+      <Filter>proc_packet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\payment_fix.cpp">
+      <Filter>task</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sshare\M_GameCFG.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sshare\M_RechangeLotteryCFG.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\proc_star_lottery.cpp">
+      <Filter>proc_packet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\star_lottery_mgr.cpp">
+      <Filter>game_mgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sshare\M_StarLotteryCFG.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\star_lottery_sys.cpp">
+      <Filter>game_sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sshare\M_FreeLotteryCFG.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\order_sys.cpp">
+      <Filter>game_sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\url_param.cpp">
+      <Filter>game_sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\th_pay_check.cpp">
+      <Filter>task</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\th_pay_process.cpp">
+      <Filter>task</Filter>
+    </ClCompile>
+    <ClCompile Include="..\world\game_sys_recharge.cpp">
+      <Filter>game_mgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sshare\M_ShopCFG.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="unit">
+      <UniqueIdentifier>{f9071287-a1df-480f-8155-7c9cc1a460e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="proc_packet">
+      <UniqueIdentifier>{3e42d20b-3fc2-4518-aed3-0e4134957f37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="task">
+      <UniqueIdentifier>{1ef3a6b6-f1fc-41b2-8356-9c749f37a89e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game_obj">
+      <UniqueIdentifier>{c0248fc7-8095-4e0d-80dc-bb1755d033e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game_mgr">
+      <UniqueIdentifier>{956432a7-8f3a-4171-86e6-12ee4465f0da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="config">
+      <UniqueIdentifier>{7276faee-6992-46a7-a492-5474611b5f6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cmd">
+      <UniqueIdentifier>{bfdffec9-1982-4e8b-8509-0b002d71340f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game_sys">
+      <UniqueIdentifier>{6b703213-6b4b-4574-af86-2fedf04526f5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="../sshare/stdafx.h" />
+    <ClInclude Include="../sshare/targetver.h" />
+    <ClInclude Include="..\..\share\common\enable_singleton.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\enable_processinfo.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\enable_xml_config.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\enable_object_pool.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\enable_minidump.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\enable_string_convert.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\net\net_buffer.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\net\peer_tcp.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\net\peer_tcp_server.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sshare\db_base.h">
+      <Filter>unit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sshare\server_base.h">
+      <Filter>unit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\enable_object_factory.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\net\packet_manager.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\net\peer_handler.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\enable_object_manager.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\net\msg_queue.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\net\packet_head.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\enable_crypto.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\enable_hashmap.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sshare\server_manager_handler.h">
+      <Filter>unit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\enable_queue.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sshare\server_define.h">
+      <Filter>unit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\enable_json_map.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\enable_id_generate.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\com_log.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\enable_random.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\BigInteger.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\tinyxml2.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sshare\db_query.h">
+      <Filter>unit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\task_manager.h">
+      <Filter>unit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\server_log.h">
+      <Filter>unit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\time_helper.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sshare\game_object.h">
+      <Filter>object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sshare\game_object_array.h">
+      <Filter>object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sshare\game_object_def.h">
+      <Filter>object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sshare\game_object_field.h">
+      <Filter>object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sshare\game_object_handler.h">
+      <Filter>object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sshare\game_object_map.h">
+      <Filter>object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sshare\server_timer.h">
+      <Filter>unit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sshare\game_sys_base.h">
+      <Filter>object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sshare\game_sys_mgr.h">
+      <Filter>object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\enable_smart_ptr.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sshare\game_object_container.h">
+      <Filter>object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sshare\game_object_queue.h">
+      <Filter>object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sshare\i_game_player.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sshare\i_game_engine.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sshare\i_game_def.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sshare\i_game_ehandler.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sshare\i_game_phandler.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\net\peer_http.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\net\peer_http_mgr.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\http\connection.hpp">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\http\connection_manager.hpp">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\http\header.hpp">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\http\http_server.hpp">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\http\mime_types.hpp">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\http\reply.hpp">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\http\request.hpp">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\http\request_handler.hpp">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\http\request_parser.hpp">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\game_macro.h">
+      <Filter>common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="../sshare/stdafx.cpp" />
+    <ClCompile Include="..\..\share\common\enable_processinfo.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\common\enable_minidump.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\common\enable_string_convert.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\common\net\net_buffer.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\common\net\peer_tcp.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\common\net\peer_tcp_server.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sshare\db_base.cpp">
+      <Filter>unit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sshare\server_base.cpp">
+      <Filter>unit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\common\net\packet_head.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\common\enable_crypto.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\common\BigInteger.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\common\tinyxml2.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sshare\db_query.cpp">
+      <Filter>unit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\common\task_manager.cpp">
+      <Filter>unit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\common\server_log.cpp">
+      <Filter>unit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\common\time_helper.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sshare\game_object.cpp">
+      <Filter>object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sshare\game_object_array.cpp">
+      <Filter>object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sshare\game_object_field.cpp">
+      <Filter>object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sshare\game_object_map.cpp">
+      <Filter>object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sshare\server_timer.cpp">
+      <Filter>unit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sshare\game_sys_mgr.cpp">
+      <Filter>object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sshare\game_object_container.cpp">
+      <Filter>object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sshare\game_object_queue.cpp">
+      <Filter>object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sshare\i_game_player.cpp">
+      <Filter>interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sshare\i_game_engine.cpp">
+      <Filter>interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sshare\i_game_ehandler.cpp">
+      <Filter>interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sshare\i_game_phandler.cpp">
+      <Filter>interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\common\net\peer_http.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\common\net\peer_http_mgr.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\common\http\connection.cpp">
+      <Filter>http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\common\http\connection_manager.cpp">
+      <Filter>http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\common\http\http_server.cpp">
+      <Filter>http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\common\http\mime_types.cpp">
+      <Filter>http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\common\http\reply.cpp">
+      <Filter>http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\common\http\request_handler.cpp">
+      <Filter>http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\common\http\request_parser.cpp">
+      <Filter>http</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="common">
+      <UniqueIdentifier>{22a42e4d-df2d-48b3-8959-5e0bf13960e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="unit">
+      <UniqueIdentifier>{1ca48b40-7850-4fb7-a39b-873c8bf7eb54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="object">
+      <UniqueIdentifier>{01f611fe-651f-4953-a224-d8da6f2218dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="net">
+      <UniqueIdentifier>{8ee4131a-ba04-4304-80ac-01dec901380c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="interface">
+      <UniqueIdentifier>{396a7091-0853-43ae-a0a9-339c67955991}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="http">
+      <UniqueIdentifier>{afc976bb-072d-48aa-b270-fc49c7ec3935}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

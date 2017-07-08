@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Data RewardType="1" ItemId="1" ItemCount="20000" />
+	<Data RewardType="2" ItemId="1,2" ItemCount="50000,100" />
+</Root>

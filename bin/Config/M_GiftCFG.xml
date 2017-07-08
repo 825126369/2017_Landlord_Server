@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Data GiftId="30101" Coin="200000" isShow="1" Percent="0.01" Vip="2" Action="meijin" TextIcon="Common2/M_text_Gift_1.png" />
+	<Data GiftId="30102" Coin="2000000" isShow="1" Percent="0.01" Vip="3" Action="jintiao" TextIcon="Common2/M_text_Gift_2.png" />
+	<Data GiftId="30103" Coin="10000000" isShow="1" Percent="0.01" Vip="4" Action="yaoqianshu" TextIcon="Common2/M_text_Gift_3.png" />
+	<Data GiftId="30104" Coin="30000000" isShow="1" Percent="0.01" Vip="5" Action="paoche" TextIcon="Common2/M_text_Gift_4.png" />
+	<Data GiftId="30105" Coin="100000000" isShow="1" Percent="0.01" Vip="6" Action="youting" TextIcon="Common2/M_text_Gift_5.png" />
+	<Data GiftId="30106" Coin="300000000" isShow="1" Percent="0.01" Vip="7" Action="feiji" TextIcon="Common2/M_text_Gift_6.png" />
+	<Data GiftId="30107" Coin="1" isShow="0" Percent="0.01" Vip="0" Action="" TextIcon="" />
+</Root>

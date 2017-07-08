@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="GetAccountList.aspx.cs" Inherits="HttpLogin.thirdsdk.GetAccountList" %>

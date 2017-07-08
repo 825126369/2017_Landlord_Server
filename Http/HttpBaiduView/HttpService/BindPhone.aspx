@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="BindPhone.aspx.cs" Inherits="AccountCheck.BindPhone" %>

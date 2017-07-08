@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Root>
+  <mainMenu gameName="捕鱼后台" icon="FishIcon.png">
+    <subMenu url="http://114.215.208.238:7000" text="阿里云 114.215.208.238"></subMenu>
+    <subMenu url="http://115.28.144.10:7000" text="漫乐"></subMenu>
+    <subMenu url="http://115.159.85.190:7000" text="腾讯云 115.159.85.190"></subMenu>
+    <subMenu url="http://121.40.198.100:7000" text="1.5万人千炮捕鱼 121.40.198.100"></subMenu>
+    <subMenu url="http://114.215.208.238:7008" text="钱宝专服"></subMenu>
+    <subMenu url="http://115.159.45.118:7000" text="腾讯云--捕鱼2"></subMenu>
+  </mainMenu>
+
+  <!--<mainMenu gameName="魔兽战争后台" icon="SanguoIcon.jpg">
+    <subMenu url="http://120.26.38.64:7007" text="阿里云 120.26.38.64"></subMenu>
+    <subMenu url="http://120.26.38.64:7008" text="钱宝专服"></subMenu>
+  </mainMenu> -->
+
+  <mainMenu gameName="电玩城后台" icon="DwcIcon.png">
+    <subMenu url="http://121.199.75.142:7077" text="阿里云 121.199.75.142"></subMenu>
+    <subMenu url="http://121.199.29.112:7008" text="阿里云 钱宝专服 121.199.29.112"></subMenu>
+    <subMenu url="http://121.199.75.142:7088" text="阿里云 121.199.75.142  苹果"></subMenu>
+    <subMenu url="http://120.26.38.64:7077"   text="阿里云 120.26.38.64  百度"></subMenu>
+	<subMenu url="http://123.206.84.230:7077"   text="捕鱼3"></subMenu>
+	<subMenu url="http://183.131.213.134:7077"   text="双龙"></subMenu>
+  </mainMenu>
+
+  <mainMenu gameName="电玩城国外版本后台" icon="DwcIcon.png">
+    <subMenu url="https://120.26.38.64" text="阿里云 开心电玩城 120.26.38.64"></subMenu>
+    <subMenu url="https://52.201.235.253" text="亚马逊 52.201.235.253"></subMenu>
+    <subMenu url="https://103.17.95.100" text="香港 103.17.95.100"></subMenu>
+    <subMenu url="https://121.199.29.112" text="阿里云 银河娱乐城 121.199.29.112"></subMenu>
+	<subMenu url="https://202.43.38.3" text="TH现金版"></subMenu>
+  </mainMenu>
+
+  <mainMenu gameName="内网测试--内网测试" icon="test.png">
+    <subMenu url="https://192.168.1.18" text="线下"></subMenu>
+    <subMenu url="http://192.168.1.18:7077" text="捕鱼3"></subMenu>
+    <subMenu url="http://192.168.1.18:7078" text="电玩城"></subMenu>
+  </mainMenu>
+</Root>

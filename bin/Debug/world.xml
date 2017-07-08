@@ -1,0 +1,16 @@
+﻿<root>
+  <monitor_ip>127.0.0.1</monitor_ip>
+  <monitor_port>11001</monitor_port>
+  <out_port>12001</out_port>
+
+  <debug>1</debug>
+  
+  <http_check>127.0.0.1:12345</http_check>
+  
+  <playerdb_url>127.0.0.1:27017</playerdb_url>
+  <playerdb_name>PlayerDB_DWC</playerdb_name>
+  <logdb_url>127.0.0.1:27017</logdb_url>
+  <logdb_name>LogDB_DWC</logdb_name>
+  <gamedb_url>127.0.0.1:27017</gamedb_url>
+  <gamedb_name>GameDB</gamedb_name>
+</root>

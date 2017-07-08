@@ -1,0 +1,102 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WebManager.SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title>后台管理工具入口</title>
+
+    <style type="text/css">
+        div.fun
+        {
+            float : left;
+            width : 150px;
+            height : auto;
+        }
+
+        div.content
+        {
+            float : left;
+            height : auto;
+        }
+        
+        ul.fun_ul
+        {
+            list-style-type:none;
+            margin:0;
+            padding:0;
+        }
+        li.fun_li
+        {
+            margin-bottom : 1px;
+        }
+        a.fun_menu:link, a.fun_menu:visited
+        {
+            display:block;
+            font-weight:bold;
+            color:black;
+            background-color:#D0D0D0;
+            width:120px;
+            text-align:center;
+            padding:4px;
+            text-decoration:none;
+            text-transform:uppercase;
+        }
+        a.fun_menu:hover,a:active
+        {
+            background-color:#cc0000;
+        }
+    </style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="Form1" runat="server">
+    <div class="page">
+        <div class="header">
+            <div class="title">
+                <h1>
+                    后台管理工具入口
+                </h1>
+            </div>
+            <div class="loginDisplay">
+                <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                    <AnonymousTemplate>
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        欢迎使用 <span class="bold"><asp:LoginName ID="HeadLoginName" runat="server" /></span>!
+                        [ <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="注销" LogoutPageUrl="~/"/> ]
+                    </LoggedInTemplate>
+                </asp:LoginView>
+            </div>
+            <div class="clear hideSkiplink">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items>
+                    </Items>
+                </asp:Menu>
+            </div>
+        </div>
+        
+        <div >
+            <asp:Menu ID="Menu1" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items>
+                    </Items>
+                </asp:Menu>
+        </div>
+
+        <div >
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="clear">
+        </div>
+
+        <div class="footer">
+            <span>悠扬--后台管理工具入口</span>
+        </div>
+    </div>
+    
+    </form>
+</body>
+</html>

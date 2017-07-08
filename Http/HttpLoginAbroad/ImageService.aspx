@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ImageService.aspx.cs" Inherits="HttpLogin.ImageService" %>

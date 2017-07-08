@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="../logic/stdafx.h" />
+    <ClInclude Include="../logic/targetver.h" />
+    <ClInclude Include="..\logic\logic_server.h">
+      <Filter>unit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\logic\logic_peer_manager.h">
+      <Filter>unit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\logic\logic_peer.h">
+      <Filter>unit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\logic\servers_manager.h">
+      <Filter>unit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\logic\backstage_manager.h">
+      <Filter>unit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\logic\server_peer.h">
+      <Filter>unit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\logic\proc_logic_packet.h">
+      <Filter>proc_packet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\logic\proc_server_packet.h">
+      <Filter>proc_packet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\logic\game_player.h">
+      <Filter>game_obj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\logic\game_player_mgr.h">
+      <Filter>game_mgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\logic\game_def.h">
+      <Filter>game_sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\logic\timer_manager.h">
+      <Filter>game_sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\logic\proc_world2logic_protocol.h">
+      <Filter>proc_packet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\logic\global_sys_mgr.h">
+      <Filter>game_mgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\logic\game_manager.h">
+      <Filter>game_mgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\logic\proc_world2logic_friend.h">
+      <Filter>proc_packet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sshare\M_MultiLanguageCFG.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sshare\M_GameCFG.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sshare\M_BaseInfoCFG.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\logic\robot_manager.h">
+      <Filter>game_mgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\logic\count_sys.h">
+      <Filter>game_sys</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="../logic/logic.cpp" />
+    <ClCompile Include="../logic/stdafx.cpp" />
+    <ClCompile Include="..\logic\logic_server.cpp">
+      <Filter>unit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\logic\logic_peer.cpp">
+      <Filter>unit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\logic\logic_peer_manager.cpp">
+      <Filter>unit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\logic\servers_manager.cpp">
+      <Filter>unit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\logic\backstage_manager.cpp">
+      <Filter>unit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\logic\server_peer.cpp">
+      <Filter>unit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\logic\proc_logic_packet.cpp">
+      <Filter>proc_packet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\logic\proc_server_packet.cpp">
+      <Filter>proc_packet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\logic\logic_init_packet.cpp">
+      <Filter>proc_packet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\logic\game_player.cpp">
+      <Filter>game_obj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\logic\logic_init_config.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\logic\game_player_mgr.cpp">
+      <Filter>game_mgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\logic\timer_manager.cpp">
+      <Filter>game_sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\logic\proc_world2logic_protocol.cpp">
+      <Filter>proc_packet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\logic\game_player_sys.cpp">
+      <Filter>game_obj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\logic\global_sys_mgr.cpp">
+      <Filter>game_mgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\logic\game_manager.cpp">
+      <Filter>game_mgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\logic\proc_world2logic_friend.cpp">
+      <Filter>proc_packet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sshare\M_MultiLanguageCFG.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sshare\M_GameCFG.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sshare\M_BaseInfoCFG.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\logic\robot_manager.cpp">
+      <Filter>game_mgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\logic\count_sys.cpp">
+      <Filter>game_sys</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="unit">
+      <UniqueIdentifier>{7b43e151-6d1b-43ec-8b1b-3fbf61a91f50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="proc_packet">
+      <UniqueIdentifier>{bb2c0dd2-1f09-482d-8a55-2f9dbde7d322}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="task">
+      <UniqueIdentifier>{b83100fa-029f-4b4d-9323-99435ad303c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="config">
+      <UniqueIdentifier>{cb083eb2-75b9-4c26-a302-478adc1cc434}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game_mgr">
+      <UniqueIdentifier>{905bbb72-97bd-4488-b6f7-465d9087c160}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game_sys">
+      <UniqueIdentifier>{51c3bdec-9a36-4bd7-a5f0-ced1fafe9af8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game_obj">
+      <UniqueIdentifier>{0b911b75-3f4c-48f2-a879-a2acd6c45013}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

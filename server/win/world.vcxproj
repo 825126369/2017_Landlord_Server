@@ -1,0 +1,410 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0CEAA373-35FA-4653-8C0E-1A59ED3D850C}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>world</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IntDir>$(Configuration)$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IntDir>$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <TargetName>$(ProjectName)-gd</TargetName>
+    <OutDir>$(SolutionDir)..\..\bin\$(Configuration)\servers\</OutDir>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IntDir>$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir>$(SolutionDir)..\..\bin\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\protocol;..\sshare;..\world;..\..\share\dependencies\breakpad;..\..\share\dependencies\mongodb;..\..\share\dependencies\boost;..\..\share\common\net;C:\local\boost_1_63_0;..\..\share\common;..\..\share\protocol;..\..\share\dependencies\protobuf;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4244;4267;4996;4351</DisableSpecificWarnings>
+      <AdditionalOptions>-Zm200 %(AdditionalOptions)</AdditionalOptions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\..\share\dependencies\lib\x64;$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <DisableSpecificWarnings>4244;4267;4996;4351</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>..\protocol;..\sshare;..\world;..\..\share\dependencies\breakpad;..\..\share\dependencies\mongodb;..\..\share\dependencies\boost;..\..\share\common\net;..\..\share\common;..\..\share\protocol;..\..\share\dependencies\protobuf;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zm200 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\..\share\dependencies\lib\x64;$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="../world/stdafx.h" />
+    <ClInclude Include="../world/targetver.h" />
+    <ClInclude Include="..\sshare\M_ActivityCFG.h" />
+    <ClInclude Include="..\sshare\M_BaseInfoCFG.h" />
+    <ClInclude Include="..\sshare\M_CommodityCFG.h" />
+    <ClInclude Include="..\sshare\M_DailyLoginCFG.h" />
+    <ClInclude Include="..\sshare\M_DialLotteryCFG.h" />
+    <ClInclude Include="..\sshare\M_ExchangeCFG.h" />
+    <ClInclude Include="..\sshare\M_FreeLotteryCFG.h" />
+    <ClInclude Include="..\sshare\M_GameCFG.h" />
+    <ClInclude Include="..\sshare\M_GiftCFG.h" />
+    <ClInclude Include="..\sshare\M_GiftRewardCFG.h" />
+    <ClInclude Include="..\sshare\M_ItemCFG.h" />
+    <ClInclude Include="..\sshare\M_MultiLanguageCFG.h" />
+    <ClInclude Include="..\sshare\M_OnlineRewardCFG.h" />
+    <ClInclude Include="..\sshare\M_QuestCFG.h" />
+    <ClInclude Include="..\sshare\M_RechangeCFG.h" />
+    <ClInclude Include="..\sshare\M_RechangeExCFG.h" />
+    <ClInclude Include="..\sshare\M_RechangeLotteryCFG.h" />
+    <ClInclude Include="..\sshare\M_RobotNameCFG.h" />
+    <ClInclude Include="..\sshare\M_ShopCFG.h" />
+    <ClInclude Include="..\sshare\M_StarLotteryCFG.h" />
+    <ClInclude Include="..\sshare\M_VIPProfitCFG.h" />
+    <ClInclude Include="..\world\backstage_manager.h" />
+    <ClInclude Include="..\world\bag_def.h" />
+    <ClInclude Include="..\world\bag_mgr.h" />
+    <ClInclude Include="..\world\benefits_mgr.h" />
+    <ClInclude Include="..\world\chat_sys.h" />
+    <ClInclude Include="..\world\check_account_task.h" />
+    <ClInclude Include="..\world\check_apple_task.h" />
+    <ClInclude Include="..\world\check_recharge_task.h" />
+    <ClInclude Include="..\world\commands.h" />
+    <ClInclude Include="..\world\command_base.h" />
+    <ClInclude Include="..\world\command_mgr.h" />
+    <ClInclude Include="..\world\daily_box_lottery_mgr.h" />
+    <ClInclude Include="..\world\daily_box_lottery_sys.h" />
+    <ClInclude Include="..\world\dial_lottery_mgr.h" />
+    <ClInclude Include="..\world\dial_lottery_sys.h" />
+    <ClInclude Include="..\world\exchange_sys.h" />
+    <ClInclude Include="..\world\friend_def.h" />
+    <ClInclude Include="..\world\friend_mgr.h" />
+    <ClInclude Include="..\world\game_check.h" />
+    <ClInclude Include="..\world\game_check_def.h" />
+    <ClInclude Include="..\world\game_db.h" />
+    <ClInclude Include="..\world\game_db_log.h" />
+    <ClInclude Include="..\world\game_def.h" />
+    <ClInclude Include="..\world\game_engine_mgr.h" />
+    <ClInclude Include="..\world\game_player.h" />
+    <ClInclude Include="..\world\game_player_mgr.h" />
+    <ClInclude Include="..\world\game_quest.h" />
+    <ClInclude Include="..\world\game_quest_mgr.h" />
+    <ClInclude Include="..\world\game_rank_sys.h" />
+    <ClInclude Include="..\world\game_sys_def.h" />
+    <ClInclude Include="..\world\game_sys_recharge.h" />
+    <ClInclude Include="..\world\gift_def.h" />
+    <ClInclude Include="..\world\global_sys_mgr.h" />
+    <ClInclude Include="..\world\gm_sys.h" />
+    <ClInclude Include="..\world\id_generator_sys.h" />
+    <ClInclude Include="..\world\mail_def.h" />
+    <ClInclude Include="..\world\mail_sys.h" />
+    <ClInclude Include="..\world\mobile_phone_binding_sys.h" />
+    <ClInclude Include="..\world\name_valid.h" />
+    <ClInclude Include="..\world\notice_sys.h" />
+    <ClInclude Include="..\world\online_reward_mgr.h" />
+    <ClInclude Include="..\world\operation_activity.h" />
+    <ClInclude Include="..\world\operation_activity_condition.h" />
+    <ClInclude Include="..\world\operation_activity_def.h" />
+    <ClInclude Include="..\world\operation_activity_factory.h" />
+    <ClInclude Include="..\world\operation_activity_mgr.h" />
+    <ClInclude Include="..\world\operation_activity_sys.h" />
+    <ClInclude Include="..\world\operation_activity_type.h" />
+    <ClInclude Include="..\world\order_sys.h" />
+    <ClInclude Include="..\world\payment_fix.h" />
+    <ClInclude Include="..\world\payment_task.h" />
+    <ClInclude Include="..\world\player_log_def.h" />
+    <ClInclude Include="..\world\player_log_mgr.h" />
+    <ClInclude Include="..\world\probability.h" />
+    <ClInclude Include="..\world\proc_activity.h" />
+    <ClInclude Include="..\world\proc_benefits.h" />
+    <ClInclude Include="..\world\proc_bind_phone.h" />
+    <ClInclude Include="..\world\proc_c2w_lobby_protocol.h" />
+    <ClInclude Include="..\world\proc_chat.h" />
+    <ClInclude Include="..\world\proc_daily_box_lottery.h" />
+    <ClInclude Include="..\world\proc_dial_lottery.h" />
+    <ClInclude Include="..\world\proc_exchange.h" />
+    <ClInclude Include="..\world\proc_friend.h" />
+    <ClInclude Include="..\world\proc_logic2world_friend.h" />
+    <ClInclude Include="..\world\proc_logic2world_protocol.h" />
+    <ClInclude Include="..\world\proc_logic2world_robot.h" />
+    <ClInclude Include="..\world\proc_mail.h" />
+    <ClInclude Include="..\world\proc_notice.h" />
+    <ClInclude Include="..\world\proc_online_reward.h" />
+    <ClInclude Include="..\world\proc_player_property.h" />
+    <ClInclude Include="..\world\proc_player_quest.h" />
+    <ClInclude Include="..\world\proc_rank.h" />
+    <ClInclude Include="..\world\proc_safe_deposit_box.h" />
+    <ClInclude Include="..\world\proc_server_packet.h" />
+    <ClInclude Include="..\world\proc_shop.h" />
+    <ClInclude Include="..\world\proc_star_lottery.h" />
+    <ClInclude Include="..\world\proc_world_packet.h" />
+    <ClInclude Include="..\world\pump_sys.h" />
+    <ClInclude Include="..\world\pump_type.h" />
+    <ClInclude Include="..\world\quest_def.h" />
+    <ClInclude Include="..\world\robots_sys.h" />
+    <ClInclude Include="..\world\safe_deposit_box_mgr.h" />
+    <ClInclude Include="..\world\send_code_task.h" />
+    <ClInclude Include="..\world\servers_manager.h" />
+    <ClInclude Include="..\world\server_peer.h" />
+    <ClInclude Include="..\world\shop_sys.h" />
+    <ClInclude Include="..\world\star_lottery_mgr.h" />
+    <ClInclude Include="..\world\star_lottery_sys.h" />
+    <ClInclude Include="..\world\th_pay_check.h" />
+    <ClInclude Include="..\world\th_pay_process.h" />
+    <ClInclude Include="..\world\timer_manager.h" />
+    <ClInclude Include="..\world\tool_helper.h" />
+    <ClInclude Include="..\world\url_param.h" />
+    <ClInclude Include="..\world\world_peer.h" />
+    <ClInclude Include="..\world\world_peer_manager.h" />
+    <ClInclude Include="..\world\world_server.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="../world/stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="../world/world.cpp" />
+    <ClCompile Include="..\sshare\M_ActivityCFG.cpp" />
+    <ClCompile Include="..\sshare\M_BaseInfoCFG.cpp" />
+    <ClCompile Include="..\sshare\M_CommodityCFG.cpp" />
+    <ClCompile Include="..\sshare\M_DailyLoginCFG.cpp" />
+    <ClCompile Include="..\sshare\M_DialLotteryCFG.cpp" />
+    <ClCompile Include="..\sshare\M_ExchangeCFG.cpp" />
+    <ClCompile Include="..\sshare\M_FreeLotteryCFG.cpp" />
+    <ClCompile Include="..\sshare\M_GameCFG.cpp" />
+    <ClCompile Include="..\sshare\M_GiftCFG.cpp" />
+    <ClCompile Include="..\sshare\M_GiftRewardCFG.cpp" />
+    <ClCompile Include="..\sshare\M_ItemCFG.cpp" />
+    <ClCompile Include="..\sshare\M_MultiLanguageCFG.cpp" />
+    <ClCompile Include="..\sshare\M_OnlineRewardCFG.cpp" />
+    <ClCompile Include="..\sshare\M_QuestCFG.cpp" />
+    <ClCompile Include="..\sshare\M_RechangeCFG.cpp" />
+    <ClCompile Include="..\sshare\M_RechangeExCFG.cpp" />
+    <ClCompile Include="..\sshare\M_RechangeLotteryCFG.cpp" />
+    <ClCompile Include="..\sshare\M_RobotNameCFG.cpp" />
+    <ClCompile Include="..\sshare\M_ShopCFG.cpp" />
+    <ClCompile Include="..\sshare\M_StarLotteryCFG.cpp" />
+    <ClCompile Include="..\sshare\M_VIPProfitCFG.cpp" />
+    <ClCompile Include="..\world\backstage_manager.cpp" />
+    <ClCompile Include="..\world\bag_def.cpp" />
+    <ClCompile Include="..\world\bag_mgr.cpp" />
+    <ClCompile Include="..\world\benefits_mgr.cpp" />
+    <ClCompile Include="..\world\chat_sys.cpp" />
+    <ClCompile Include="..\world\check_account_task.cpp" />
+    <ClCompile Include="..\world\check_apple_task.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\world\check_recharge_task.cpp" />
+    <ClCompile Include="..\world\commands.cpp" />
+    <ClCompile Include="..\world\command_mgr.cpp" />
+    <ClCompile Include="..\world\daily_box_lottery_mgr.cpp" />
+    <ClCompile Include="..\world\daily_box_lottery_sys.cpp" />
+    <ClCompile Include="..\world\dial_lottery_mgr.cpp" />
+    <ClCompile Include="..\world\dial_lottery_sys.cpp" />
+    <ClCompile Include="..\world\exchange_sys.cpp" />
+    <ClCompile Include="..\world\friend_def.cpp" />
+    <ClCompile Include="..\world\friend_mgr.cpp" />
+    <ClCompile Include="..\world\game_check.cpp" />
+    <ClCompile Include="..\world\game_db.cpp" />
+    <ClCompile Include="..\world\game_db_log.cpp" />
+    <ClCompile Include="..\world\game_engine_mgr.cpp" />
+    <ClCompile Include="..\world\game_player.cpp" />
+    <ClCompile Include="..\world\game_player_mgr.cpp" />
+    <ClCompile Include="..\world\game_player_sys.cpp" />
+    <ClCompile Include="..\world\game_quest.cpp" />
+    <ClCompile Include="..\world\game_quest_mgr.cpp" />
+    <ClCompile Include="..\world\game_rank_sys.cpp" />
+    <ClCompile Include="..\world\game_sys_recharge.cpp" />
+    <ClCompile Include="..\world\gift_def.cpp" />
+    <ClCompile Include="..\world\global_sys_mgr.cpp" />
+    <ClCompile Include="..\world\gm_sys.cpp" />
+    <ClCompile Include="..\world\id_generator_sys.cpp" />
+    <ClCompile Include="..\world\mail_sys.cpp" />
+    <ClCompile Include="..\world\mobile_phone_binding_sys.cpp" />
+    <ClCompile Include="..\world\name_valid.cpp" />
+    <ClCompile Include="..\world\notice_sys.cpp" />
+    <ClCompile Include="..\world\online_reward_mgr.cpp" />
+    <ClCompile Include="..\world\operation_activity.cpp" />
+    <ClCompile Include="..\world\operation_activity_condition.cpp" />
+    <ClCompile Include="..\world\operation_activity_def.cpp" />
+    <ClCompile Include="..\world\operation_activity_factory.cpp" />
+    <ClCompile Include="..\world\operation_activity_mgr.cpp" />
+    <ClCompile Include="..\world\operation_activity_sys.cpp" />
+    <ClCompile Include="..\world\order_sys.cpp" />
+    <ClCompile Include="..\world\payment_fix.cpp" />
+    <ClCompile Include="..\world\payment_task.cpp" />
+    <ClCompile Include="..\world\player_log_def.cpp" />
+    <ClCompile Include="..\world\player_log_mgr.cpp" />
+    <ClCompile Include="..\world\probability.cpp" />
+    <ClCompile Include="..\world\proc_activity.cpp" />
+    <ClCompile Include="..\world\proc_benefits.cpp" />
+    <ClCompile Include="..\world\proc_bind_phone.cpp" />
+    <ClCompile Include="..\world\proc_c2w_lobby_protocol.cpp" />
+    <ClCompile Include="..\world\proc_chat.cpp" />
+    <ClCompile Include="..\world\proc_daily_box_lottery.cpp" />
+    <ClCompile Include="..\world\proc_dial_lottery.cpp" />
+    <ClCompile Include="..\world\proc_exchange.cpp" />
+    <ClCompile Include="..\world\proc_friend.cpp" />
+    <ClCompile Include="..\world\proc_logic2world_friend.cpp" />
+    <ClCompile Include="..\world\proc_logic2world_protocol.cpp" />
+    <ClCompile Include="..\world\proc_logic2world_robot.cpp" />
+    <ClCompile Include="..\world\proc_mail.cpp" />
+    <ClCompile Include="..\world\proc_notice.cpp" />
+    <ClCompile Include="..\world\proc_online_reward.cpp" />
+    <ClCompile Include="..\world\proc_player_property.cpp" />
+    <ClCompile Include="..\world\proc_player_quest.cpp" />
+    <ClCompile Include="..\world\proc_rank.cpp" />
+    <ClCompile Include="..\world\proc_safe_deposit_box.cpp" />
+    <ClCompile Include="..\world\proc_server_packet.cpp" />
+    <ClCompile Include="..\world\proc_shop.cpp" />
+    <ClCompile Include="..\world\proc_star_lottery.cpp" />
+    <ClCompile Include="..\world\proc_world_packet.cpp" />
+    <ClCompile Include="..\world\pump_sys.cpp" />
+    <ClCompile Include="..\world\robots_sys.cpp" />
+    <ClCompile Include="..\world\safe_deposit_box_mgr.cpp" />
+    <ClCompile Include="..\world\send_code_task.cpp" />
+    <ClCompile Include="..\world\servers_manager.cpp" />
+    <ClCompile Include="..\world\server_peer.cpp" />
+    <ClCompile Include="..\world\shop_sys.cpp" />
+    <ClCompile Include="..\world\star_lottery_mgr.cpp" />
+    <ClCompile Include="..\world\star_lottery_sys.cpp" />
+    <ClCompile Include="..\world\th_pay_check.cpp" />
+    <ClCompile Include="..\world\th_pay_process.cpp" />
+    <ClCompile Include="..\world\timer_manager.cpp" />
+    <ClCompile Include="..\world\tool_helper.cpp" />
+    <ClCompile Include="..\world\url_param.cpp" />
+    <ClCompile Include="..\world\world_init_config.cpp" />
+    <ClCompile Include="..\world\world_init_packet.cpp" />
+    <ClCompile Include="..\world\world_peer.cpp" />
+    <ClCompile Include="..\world\world_peer_manager.cpp" />
+    <ClCompile Include="..\world\world_server.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

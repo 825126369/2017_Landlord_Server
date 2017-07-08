@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+此文件由 Web 项目的发布/打包过程使用。可以通过编辑此 MSBuild 文件
+自定义此过程的行为。为了解与此相关的更多内容，请访问 https://go.microsoft.com/fwlink/?LinkID=208121。 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>E:\IIS_Web\HttpLogin</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="BaiduView/GetAccountList.aspx">
+      <publishTime>04/06/2017 02:00:46</publishTime>
+    </File>
+    <File Include="BaiduView/PhoneCode.aspx">
+      <publishTime>04/06/2017 02:00:45</publishTime>
+    </File>
+    <File Include="BaiduView/ThirdLogin.aspx">
+      <publishTime>04/06/2017 02:00:45</publishTime>
+    </File>
+    <File Include="bin/Common.dll">
+      <publishTime>04/29/2017 22:32:49</publishTime>
+    </File>
+    <File Include="bin/HttpLogin.dll">
+      <publishTime>05/01/2017 11:52:58</publishTime>
+    </File>
+    <File Include="bin/MongoDB.Bson.dll">
+      <publishTime>04/06/2017 02:00:15</publishTime>
+    </File>
+    <File Include="bin/MongoDB.Driver.dll">
+      <publishTime>04/06/2017 02:00:15</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>04/06/2017 02:00:12</publishTime>
+    </File>
+    <File Include="Default/ActivationInfo.aspx">
+      <publishTime>04/06/2017 02:00:45</publishTime>
+    </File>
+    <File Include="Default/AutoRegeditAcc.aspx">
+      <publishTime>04/06/2017 02:00:45</publishTime>
+    </File>
+    <File Include="Default/FastLogin.aspx">
+      <publishTime>04/06/2017 02:00:45</publishTime>
+    </File>
+    <File Include="Default/PhoneCode.aspx">
+      <publishTime>04/06/2017 02:00:44</publishTime>
+    </File>
+    <File Include="Default/RegeditAccount.aspx">
+      <publishTime>04/06/2017 02:00:44</publishTime>
+    </File>
+    <File Include="Default/ResetPwd.aspx">
+      <publishTime>04/06/2017 02:00:43</publishTime>
+    </File>
+    <File Include="Default/UpdatePwd.aspx">
+      <publishTime>04/06/2017 02:00:43</publishTime>
+    </File>
+    <File Include="download/config.lua">
+      <publishTime>04/06/2017 02:00:43</publishTime>
+    </File>
+    <File Include="download/config.xml">
+      <publishTime>04/06/2017 02:00:43</publishTime>
+    </File>
+    <File Include="DumpService.aspx">
+      <publishTime>04/06/2017 02:00:25</publishTime>
+    </File>
+    <File Include="ErrorReport.aspx">
+      <publishTime>04/06/2017 02:00:25</publishTime>
+    </File>
+    <File Include="ImageService.aspx">
+      <publishTime>04/06/2017 02:00:25</publishTime>
+    </File>
+    <File Include="LogService.aspx">
+      <publishTime>04/06/2017 02:00:25</publishTime>
+    </File>
+    <File Include="MaintenanceInfo.aspx">
+      <publishTime>04/06/2017 02:00:25</publishTime>
+    </File>
+    <File Include="newAcc/newAutoRegedit.aspx">
+      <publishTime>04/06/2017 02:00:43</publishTime>
+    </File>
+    <File Include="newAcc/newBindAcc.aspx">
+      <publishTime>04/06/2017 02:00:43</publishTime>
+    </File>
+    <File Include="newAcc/newDefaultLogin.aspx">
+      <publishTime>04/06/2017 02:00:42</publishTime>
+    </File>
+    <File Include="newAcc/newFastLogin.aspx">
+      <publishTime>04/06/2017 02:00:42</publishTime>
+    </File>
+    <File Include="newAcc/newRegeditAcc.aspx">
+      <publishTime>04/06/2017 02:00:43</publishTime>
+    </File>
+    <File Include="Platform/anysdk_login.aspx">
+      <publishTime>04/06/2017 02:00:41</publishTime>
+    </File>
+    <File Include="Platform/baiduview_login.aspx">
+      <publishTime>04/06/2017 02:00:41</publishTime>
+    </File>
+    <File Include="Platform/cgamebt_login.aspx">
+      <publishTime>04/06/2017 02:00:41</publishTime>
+    </File>
+    <File Include="Platform/DefaultLogin.aspx">
+      <publishTime>04/06/2017 02:00:40</publishTime>
+    </File>
+    <File Include="Platform/ex_orderinfo.aspx">
+      <publishTime>04/06/2017 02:00:40</publishTime>
+    </File>
+    <File Include="Platform/shuanglong_login.aspx">
+      <publishTime>04/06/2017 02:00:40</publishTime>
+    </File>
+    <File Include="Platform/shuanglong_orderinfo.aspx">
+      <publishTime>04/06/2017 02:00:40</publishTime>
+    </File>
+    <File Include="Platform/thdwc_login.aspx">
+      <publishTime>04/06/2017 02:00:40</publishTime>
+    </File>
+    <File Include="Platform/wanke_login.aspx">
+      <publishTime>04/06/2017 02:00:39</publishTime>
+    </File>
+    <File Include="Platform/ysdk_login.aspx">
+      <publishTime>04/06/2017 02:00:39</publishTime>
+    </File>
+    <File Include="RegeditAccount.aspx">
+      <publishTime>04/06/2017 02:00:24</publishTime>
+    </File>
+    <File Include="ServerList.aspx">
+      <publishTime>04/06/2017 02:00:24</publishTime>
+    </File>
+    <File Include="ServerList2.aspx">
+      <publishTime>04/06/2017 02:00:24</publishTime>
+    </File>
+    <File Include="ServerList3.aspx">
+      <publishTime>04/06/2017 02:00:24</publishTime>
+    </File>
+    <File Include="SwitchLogin.aspx">
+      <publishTime>04/06/2017 02:00:24</publishTime>
+    </File>
+    <File Include="UpdateCheck.aspx">
+      <publishTime>04/06/2017 02:00:24</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>04/29/2017 22:32:49</publishTime>
+    </File>
+    <File Include="ysdk/ysdk_checkpay.aspx">
+      <publishTime>04/06/2017 02:00:39</publishTime>
+    </File>
+    <File Include="ysdk/ysdk_pay.aspx">
+      <publishTime>04/06/2017 02:00:38</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

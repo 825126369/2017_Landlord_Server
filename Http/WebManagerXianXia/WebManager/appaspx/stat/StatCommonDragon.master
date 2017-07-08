@@ -1,0 +1,18 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/appaspx/stat/StatCommon.master" AutoEventWireup="true" CodeBehind="StatCommonDragon.master.cs" Inherits="WebManager.appaspx.stat.StatCommonDragon" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="stat_comm_HeadContent" runat="server">
+    <asp:ContentPlaceHolder ID="StatCommonDragon_HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="stat_common" runat="server">
+    <div class="statMenu">
+        <ul>
+            <li><a href="/appaspx/stat/5dragons/DragonControl.aspx" class="stat_menu">五龙参数调整</a></li>
+            <li><a href="/appaspx/stat/5dragons/DragonViewGameModeEarning.aspx" class="stat_menu">五龙具体盈利情况</a></li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+    
+    <asp:ContentPlaceHolder ID="StatCommonDragon_Content" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>

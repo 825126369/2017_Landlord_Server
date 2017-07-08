@@ -1,0 +1,209 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WebManager.SiteMaster" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link rel="stylesheet" href="/style/bootstrap.min.css" />
+    <script src="/Scripts/module/jquery.min.js"></script>
+    <script src="/Scripts/module/bootstrap.min.js"></script>
+
+    <link href="Site.css?ver=2" rel="stylesheet" type="text/css" />
+    <script src='<%= ResolveUrl("~/Scripts/menu.js") %>' type="text/javascript"></script>
+    <script src='<%= ResolveUrl("~/Scripts/jquery.cookie.js") %>' type="text/javascript"></script>
+    <script src='<%= ResolveUrl("~/Scripts/online.js") %>' type="text/javascript"></script>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+      
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="Form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+        <div class="header">
+            <div class="Icon">
+                <img alt="" src="/data/image/icon.png" height="44"/>
+            </div>
+            <div class="Online">
+                <p>当前在线:</p><p id="curOnline" runat="server">0</p>
+            </div>
+            <div class="cheadOp">
+                 <a href="/About.aspx" target="_blank">日期格式说明</a>
+                 <a href="/appaspx/account/AccountModifyLoginPwd.aspx">修改密码</a>
+                 <a href="/appaspx/Exit.aspx">退出</a>
+            </div>
+            <div class="clear"></div> 
+        </div>
+        <div class="clear"></div> 
+
+        <div class="Page">
+        <div class="asideMenu">
+            <ul class="cmenuOut">
+                <li>
+                    <div class="cdyMenu"><h3>账户概览</h3></div>
+                    <div class="cmenuSub" id="divAccView">
+                        <table class="caccInfo">
+                            <tr>
+                                <td>登录账号:</td> <td id="tdLoginAcc" runat="server"></td>
+                            </tr>
+                            <tr>
+                                <td>级别:</td> <td id="tdAccLevel" runat="server"></td>
+                            </tr>
+                            <tr>
+                                <td>余额:</td> <td id="tdRemainMoney" runat="server"></td>
+                            </tr>
+                             <tr>
+                                <td>代理占成:</td> <td id="tdAgentRatio" runat="server"></td>
+                            </tr>
+                             <tr>
+                                <td>洗码比:</td> <td id="tdWashRatio" runat="server"></td>
+                            </tr>
+                        </table>
+                        <ul>
+                            <li><a href="/appaspx/account/AccountSelfInfo.aspx" class="label label-default">个人信息</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="cdyMenu"><h3>点数存取</h3></div>
+                    <div class="cmenuSub" id="divScore">
+                        <ul>
+                            <li><a href="/appaspx/account/AccountScore.aspx">代理上分/下分</a></li>
+                            <li><a href="/appaspx/account/AccountScorePlayer.aspx">会员上分/下分</a></li>
+                            <!-------------------
+                            <li><a href="/appaspx/account/AccountPlayerOrder.aspx">订单管理</a></li>
+                            ----------------------->
+                            <li id="m_liApiScore" runat="server"><a href="/appaspx/account/AccountScoreAPIAdmin.aspx">API管理员上分/下分</a></li>
+                            <li id="m_liApiLimit" runat="server"><a href="/appaspx/account/AccountMaxBetLimit.aspx">最大下注限制</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="cdyMenu"><h3>账户管理</h3></div>
+                    <div class="cmenuSub" id="divAccMgr">
+                        <ul>
+                            <li><a href="/appaspx/account/AccountSearchSwitch.aspx" >下线管理</a></li>
+                            <li><a href="/appaspx/account/AccountCreateSwitch.aspx" >新增代理</a></li>
+                            <li><a href="/appaspx/account/AccountSearchPlayer.aspx" >会员管理</a></li>
+                            <li><a href="/appaspx/account/AccountCreatePlayer.aspx" >新增会员</a></li>
+                            <li><a href="/appaspx/account/AccountAgencySubMgr.aspx" >子账号管理</a></li>
+                            <li><a href="/appaspx/account/AccountCreateSubAcc.aspx" >新增子账号</a></li>
+                            <li><a href="/appaspx/account/AccountPlayerOp.aspx" >会员快捷操作</a></li>
+                            <li id="m_liApiLogViewer" runat="server"><a href="/appaspx/account/AccountApiLogViewer.aspx" >API管理员日志</a></li>
+                            <%-- <li><a href="/appaspx/account/AccountRightAssign.aspx" >权限分配</a></li>--%>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="cdyMenu"><h3>各项报表</h3></div>
+                    <div class="cmenuSub" id="divReport">
+                        <ul>
+                            <li><a href="/appaspx/account/report/AccountWinLoseReport.aspx" >输赢报表</a></li>
+                            <li><a href="/appaspx/operation/OperationMoneyQuery.aspx" >客户交易</a></li>
+                            <li><a href="/appaspx/account/AccountScoreOpLog.aspx" >点数记录</a></li>
+                            <%--<li><a href="/appaspx/account/AccountRealTimeOrder.aspx" >实时订单记录</a></li>--%>
+                            <li><a href="/appaspx/stat/gamehistory/GameHistory.aspx" >历史记录</a></li>
+                            <li><a href="/appaspx/service/ServiceExcelDownLoad.aspx" >Excel下载</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="cdyMenu"><h3>admin权限功能</h3></div>
+                    <div class="cmenuSub" id="divAdmFun">
+                        <ul>
+                           <%--  <li><a href="/appaspx/account/AccountDel.aspx" >账号删除</a></li>--%>
+                            <li id="m_liApiApprove" runat="server"><a href="/appaspx/account/AccountApiApprove.aspx">API号审批</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li runat="server" id="statParam">
+                    <div class="cdyMenu cMenuAdmin"><h3>游戏参数统计</h3></div>
+                    <div class="cmenuSub" id="divStat">
+                        <h4>鳄鱼大亨</h4>
+                        <ul>
+                            <li><a href="/appaspx/stat/StatCrocodile.aspx" >鳄鱼大亨参数调整</a></li>
+                            <li><a href="/appaspx/stat/StatIndependentCrocodile.aspx" >独立数据-鳄鱼</a></li>
+                            <li><a href="/appaspx/stat/crocodile/CrocodileResult.aspx" >鳄鱼大亨结果控制</a></li>
+                        </ul>
+                        <h4>欢乐骰宝</h4>
+                        <ul>
+                            <li><a href="/appaspx/stat/StatDice.aspx" >骰宝盈利率</a></li>
+                            <li><a href="/appaspx/stat/StatIndependentDice.aspx" >独立数据-骰宝</a></li>
+                            <li><a href="/appaspx/stat/dice/DiceResult.aspx" >骰宝结果控制</a></li>
+                        </ul>
+                        <h4>万人牛牛</h4>
+                        <ul>
+                            <li><a href="/appaspx/stat/cows/CowsControl.aspx" >牛牛参数调整</a></li>
+                            <li><a href="/appaspx/stat/cows/CowsPlayerBanker.aspx" >牛牛上庄查询</a></li>
+                            <li><a href="/appaspx/stat/cows/StatIndependentCows.aspx" >牛牛独立数据</a></li>
+                            <li><a href="/appaspx/stat/cows/CowsCardType.aspx" >牛牛牌型设置</a></li>
+                        </ul>
+                        <h4>百家乐</h4>
+                        <ul>
+                            <li><a href="/appaspx/stat/baccarat/BaccaratControl.aspx" >百家乐参数调整</a></li>
+                            <li><a href="/appaspx/stat/baccarat/BaccaratPlayerBanker.aspx" >上庄情况</a></li>
+                            <li><a href="/appaspx/stat/baccarat/BaccaratResult.aspx" >百家乐结果控制</a></li>
+                        </ul>
+                        <h4>五龙</h4>
+                            <ul>
+                            <li><a href="/appaspx/stat/5dragons/DragonControl.aspx">五龙参数调整</a></li>
+                            <li><a href="/appaspx/stat/5dragons/DragonViewGameModeEarning.aspx">五龙具体盈利情况</a></li>
+                            </ul>
+                        <h4>捕鱼</h4>
+                        <ul>
+                            <li><a href="/appaspx/stat/fishpark/FishParkControl.aspx" >捕鱼参数调整</a></li>
+                            <li><a href="/appaspx/stat/fishpark/FishParkDeskEarningRate.aspx" >捕鱼桌子盈利率</a></li>
+                            <li><a href="/appaspx/stat/fishpark/FishParkStage.aspx" >捕鱼算法分析</a></li>
+                            <li><a href="/appaspx/stat/fishpark/FishParkFishStat.aspx" >捕鱼鱼的统计</a></li>
+                        </ul>
+                        <h4>黑红梅方</h4>
+                        <ul>
+                            <li><a href="/appaspx/stat/shcd/ShcdResult.aspx" >黑红梅方结果控制</a></li>
+                            <li><a href="/appaspx/stat/shcd/ShcdControl.aspx" >黑红梅方参数调整</a></li>
+                            <li><a href="/appaspx/stat/shcd/ShcdIndependent.aspx" >独立数据-黑红梅方</a></li>
+                        </ul>
+
+                        <h4>其他</h4>
+                        <ul>
+                            <li><a href="/appaspx/stat/StatOldEarningsRate.aspx" >盈利率重置查询</a></li>
+                            <li><a href="/appaspx/stat/StatServerEarnings.aspx" >游戏金币流动统计</a></li>
+                            <li><a href="/appaspx/stat/StatTotalConsume.aspx" >消耗收入总计</a></li>
+                            <li><a href="/appaspx/stat/StatReloadTable.aspx" >重新加载表格</a></li>
+                            <li><a href="/appaspx/operation/OperationWishCurse.aspx" >祝福诅咒</a></li>
+                            <li><a href="/appaspx/LogViewer.aspx" >操作日志</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="cmainContent">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="clear"></div>  
+        </div>   
+        
+        <input type="hidden" id="accType" name="accType" runat="server" clientidmode="Static" value="" />    
+
+        <div class="modal fade" id="_normalPopDlg" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="_normalPopDlgTitle" ></h4>
+                </div>
+                <div class="modal-body" id="_normalPopDlgContent"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

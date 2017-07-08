@@ -1,0 +1,1333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{618BF724-E80D-46EF-B30A-ABF409F6950C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebManager</RootNamespace>
+    <AssemblyName>WebManager</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <FilesToIncludeForPublish>OnlyFilesToRunTheApp</FilesToIncludeForPublish>
+    <ExcludeGeneratedDebugSymbol>true</ExcludeGeneratedDebugSymbol>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Enyim.Caching">
+      <HintPath>dll\Enyim.Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="ExitGamesLibs">
+      <HintPath>dll\ExitGamesLibs.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MongoDB.Bson, Version=1.9.1.221, Culture=neutral, PublicKeyToken=f686731cfb9cc103, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Mongodb\MongoDB.Bson.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver, Version=1.9.1.221, Culture=neutral, PublicKeyToken=f686731cfb9cc103, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Mongodb\MongoDB.Driver.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Mongodb\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="accdb\channel.mdb" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="appaspx\ModifyLoginPwd.aspx" />
+    <Content Include="appaspx\AddAccount.aspx" />
+    <Content Include="appaspx\Error.aspx" />
+    <Content Include="appaspx\Exit.aspx" />
+    <Content Include="appaspx\LogViewer.aspx" />
+    <Content Include="appaspx\Notice.aspx" />
+    <Content Include="appaspx\operation\OperationChannelEdit.aspx" />
+    <Content Include="appaspx\operation\OperationFreezeHead.aspx" />
+    <Content Include="appaspx\operation\OperationGenGift.aspx" />
+    <Content Include="appaspx\operation\OperationGenGiftCode.aspx" />
+    <Content Include="appaspx\operation\OperationGiftCodeQuery.aspx" />
+    <Content Include="appaspx\operation\OperationGiftModify.aspx" />
+    <Content Include="appaspx\operation\OperationJPushApp.aspx" />
+    <Content Include="appaspx\operation\OperationJPushMsg.aspx" />
+    <Content Include="appaspx\operation\OperationLoginQuery.aspx" />
+    <Content Include="appaspx\operation\OperationMaintenanceNotice.aspx" />
+    <Content Include="appaspx\operation\OperationMaxOnline.aspx" />
+    <Content Include="appaspx\operation\OperationMoneyQuery.aspx" />
+    <Content Include="appaspx\operation\OperationMoneyQueryDetail.aspx" />
+    <Content Include="appaspx\operation\OperationMoneyWarn.aspx" />
+    <Content Include="appaspx\operation\OperationNotify.aspx" />
+    <Content Include="appaspx\operation\OperationOnlinePlayerCount.aspx" />
+    <Content Include="appaspx\operation\OperationPlayerOp.aspx" />
+    <Content Include="appaspx\operation\OperationPlayerTotalMoney.aspx" />
+    <Content Include="appaspx\operation\OperationRank.aspx" />
+    <Content Include="appaspx\operation\OperationRecharge.aspx" />
+    <Content Include="appaspx\operation\OperationRechargePoint.aspx" />
+    <Content Include="appaspx\operation\OperationSpeaker.aspx" />
+    <Content Include="appaspx\operation\OperationViewInformHead.aspx" />
+    <Content Include="appaspx\operation\OperationWishCurse.aspx" />
+    <Content Include="appaspx\Right.aspx" />
+    <Content Include="appaspx\SelectMachine.aspx" />
+    <Content Include="appaspx\service\ServiceBindPhone.aspx" />
+    <Content Include="appaspx\service\ServiceBlockId.aspx" />
+    <Content Include="appaspx\service\ServiceCheckMail.aspx" />
+    <Content Include="appaspx\service\ServiceExcelDownLoad.aspx" />
+    <Content Include="appaspx\service\ServiceAccountQuery.aspx" />
+    <Content Include="appaspx\service\ServiceBenefitHelp.aspx" />
+    <Content Include="appaspx\service\ServiceBenefits.aspx" />
+    <Content Include="appaspx\service\ServiceBlockAccount.aspx" />
+    <Content Include="appaspx\service\ServiceBlockIP.aspx" />
+    <Content Include="appaspx\service\ServiceExchange.aspx" />
+    <Content Include="appaspx\service\ServiceInfo.aspx" />
+    <Content Include="appaspx\service\ServiceMail.aspx" />
+    <Content Include="appaspx\service\ServiceModifyPwd.aspx" />
+    <Content Include="appaspx\service\ServiceRechargeQuery.aspx" />
+    <Content Include="appaspx\stat\5dragons\DragonControl.aspx" />
+    <Content Include="appaspx\stat\5dragons\DragonViewGameModeEarning.aspx" />
+    <Content Include="appaspx\stat\baccarat\BaccaratControl.aspx" />
+    <Content Include="appaspx\stat\baccarat\BaccaratPlayerBanker.aspx" />
+    <Content Include="appaspx\stat\baccarat\BaccaratResult.aspx" />
+    <Content Include="appaspx\stat\calfroping\CalfRopingClass.aspx" />
+    <Content Include="appaspx\stat\calfroping\CalfRopingControl.aspx" />
+    <Content Include="appaspx\stat\calfroping\CalfRopingIndependent.aspx" />
+    <Content Include="appaspx\stat\calfroping\CalfRopingLevel.aspx" />
+    <Content Include="appaspx\stat\cows\CowsCardType.aspx" />
+    <Content Include="appaspx\stat\cows\CowsControl.aspx" />
+    <Content Include="appaspx\stat\cows\CowsPlayerBanker.aspx" />
+    <Content Include="appaspx\stat\cows\StatIndependentCows.aspx" />
+    <Content Include="appaspx\stat\crocodile\CrocodileResult.aspx" />
+    <Content Include="appaspx\stat\dice\DiceResult.aspx" />
+    <Content Include="appaspx\stat\fishpark\FishParkControl.aspx" />
+    <Content Include="appaspx\stat\fishpark\FishParkDeskEarningRate.aspx" />
+    <Content Include="appaspx\stat\fishpark\FishParkFishStat.aspx" />
+    <Content Include="appaspx\stat\fishpark\FishParkStage.aspx" />
+    <Content Include="appaspx\stat\fish\GrandPrixMatchDay.aspx" />
+    <Content Include="appaspx\stat\fish\GrandPrixWeekChampion.aspx" />
+    <Content Include="appaspx\stat\fish\StatFishlordConsume.aspx" />
+    <Content Include="appaspx\stat\gamedetail\GameDetailBaccarat.aspx" />
+    <Content Include="appaspx\stat\gamedetail\GameDetailCows.aspx" />
+    <Content Include="appaspx\stat\gamedetail\GameDetailCrocodile.aspx" />
+    <Content Include="appaspx\stat\gamedetail\GameDetailDice.aspx" />
+    <Content Include="appaspx\stat\gamedetail\GameDetailFishPark.aspx" />
+    <Content Include="appaspx\stat\gamedetail\GameDetailShcd.aspx" />
+    <Content Include="appaspx\stat\gamedetail\GameDetailViewer.aspx" />
+    <Content Include="appaspx\stat\gamehistory\GameHistory.aspx" />
+    <Content Include="appaspx\stat\shcd\ShcdControl.aspx" />
+    <Content Include="appaspx\stat\shcd\ShcdIndependent.aspx" />
+    <Content Include="appaspx\stat\shcd\ShcdResult.aspx" />
+    <Content Include="appaspx\stat\StatCrocodile.aspx" />
+    <Content Include="appaspx\stat\StatDice.aspx" />
+    <Content Include="appaspx\stat\StatFish.aspx" />
+    <Content Include="appaspx\stat\StatFishlordControl.aspx" />
+    <Content Include="appaspx\stat\StatFishlordDeskEarningsRate.aspx" />
+    <Content Include="appaspx\stat\StatFishlordStage.aspx" />
+    <Content Include="appaspx\stat\StatGeneralPlayerLost.aspx" />
+    <Content Include="appaspx\stat\StatIndependentCrocodile.aspx" />
+    <Content Include="appaspx\stat\StatIndependentDice.aspx" />
+    <Content Include="appaspx\stat\StatIndependentFishlord.aspx" />
+    <Content Include="appaspx\stat\StatLobby.aspx" />
+    <Content Include="appaspx\stat\StatOldEarningsRate.aspx" />
+    <Content Include="appaspx\stat\StatPlayerFavor.aspx" />
+    <Content Include="appaspx\stat\StatReloadTable.aspx" />
+    <Content Include="appaspx\stat\StatServerEarnings.aspx" />
+    <Content Include="appaspx\stat\StatTotalConsume.aspx" />
+    <Content Include="appaspx\stat\StatGameRecharge.aspx" />
+    <Content Include="appaspx\td\TdActivation.aspx" />
+    <Content Include="appaspx\td\TdLTV.aspx" />
+    <Content Include="appaspx\td\TdRechargePlayer.aspx" />
+    <Content Include="data\CalfRoping_CalfCFG.xml" />
+    <Content Include="data\channel.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="data\Cows_CardsCFG.xml" />
+    <Content Include="data\Crocodile_RateCFG.xml" />
+    <Content Include="data\dbserver.xml" />
+    <Content Include="data\Dice_BetAreaCFG.xml" />
+    <Content Include="data\fishpark\Fish_FishCFG.xml" />
+    <Content Include="data\Fish_BuffCFG.xml" />
+    <Content Include="data\Fish_FishCFG.xml" />
+    <Content Include="data\Fish_ItemCFG.xml" />
+    <Content Include="data\format.xml" />
+    <Content Include="data\image\crocodile\AnimalIcon_1.png" />
+    <Content Include="data\image\crocodile\AnimalIcon_2.png" />
+    <Content Include="data\image\crocodile\AnimalIcon_3.png" />
+    <Content Include="data\image\crocodile\AnimalIcon_4.png" />
+    <Content Include="data\image\crocodile\bg_Green.png" />
+    <Content Include="data\image\crocodile\bg_Red.png" />
+    <Content Include="data\image\crocodile\bg_Yellow.png" />
+    <Content Include="data\image\dice\Dice_num_1.png" />
+    <Content Include="data\image\dice\Dice_num_2.png" />
+    <Content Include="data\image\dice\Dice_num_3.png" />
+    <Content Include="data\image\dice\Dice_num_4.png" />
+    <Content Include="data\image\dice\Dice_num_5.png" />
+    <Content Include="data\image\dice\Dice_num_6.png" />
+    <Content Include="data\image\poker\club_1.png" />
+    <Content Include="data\image\poker\club_10.png" />
+    <Content Include="data\image\poker\club_11.png" />
+    <Content Include="data\image\poker\club_12.png" />
+    <Content Include="data\image\poker\club_13.png" />
+    <Content Include="data\image\poker\club_2.png" />
+    <Content Include="data\image\poker\club_3.png" />
+    <Content Include="data\image\poker\club_4.png" />
+    <Content Include="data\image\poker\club_5.png" />
+    <Content Include="data\image\poker\club_6.png" />
+    <Content Include="data\image\poker\club_7.png" />
+    <Content Include="data\image\poker\club_8.png" />
+    <Content Include="data\image\poker\club_9.png" />
+    <Content Include="data\image\poker\diamond_1.png" />
+    <Content Include="data\image\poker\diamond_10.png" />
+    <Content Include="data\image\poker\diamond_11.png" />
+    <Content Include="data\image\poker\diamond_12.png" />
+    <Content Include="data\image\poker\diamond_13.png" />
+    <Content Include="data\image\poker\diamond_2.png" />
+    <Content Include="data\image\poker\diamond_3.png" />
+    <Content Include="data\image\poker\diamond_4.png" />
+    <Content Include="data\image\poker\diamond_5.png" />
+    <Content Include="data\image\poker\diamond_6.png" />
+    <Content Include="data\image\poker\diamond_7.png" />
+    <Content Include="data\image\poker\diamond_8.png" />
+    <Content Include="data\image\poker\diamond_9.png" />
+    <Content Include="data\image\poker\heart_1.png" />
+    <Content Include="data\image\poker\heart_10.png" />
+    <Content Include="data\image\poker\heart_11.png" />
+    <Content Include="data\image\poker\heart_12.png" />
+    <Content Include="data\image\poker\heart_13.png" />
+    <Content Include="data\image\poker\heart_2.png" />
+    <Content Include="data\image\poker\heart_3.png" />
+    <Content Include="data\image\poker\heart_4.png" />
+    <Content Include="data\image\poker\heart_5.png" />
+    <Content Include="data\image\poker\heart_6.png" />
+    <Content Include="data\image\poker\heart_7.png" />
+    <Content Include="data\image\poker\heart_8.png" />
+    <Content Include="data\image\poker\heart_9.png" />
+    <Content Include="data\image\poker\joker.png" />
+    <Content Include="data\image\poker\spade_1.png" />
+    <Content Include="data\image\poker\spade_10.png" />
+    <Content Include="data\image\poker\spade_11.png" />
+    <Content Include="data\image\poker\spade_12.png" />
+    <Content Include="data\image\poker\spade_13.png" />
+    <Content Include="data\image\poker\spade_2.png" />
+    <Content Include="data\image\poker\spade_3.png" />
+    <Content Include="data\image\poker\spade_4.png" />
+    <Content Include="data\image\poker\spade_5.png" />
+    <Content Include="data\image\poker\spade_6.png" />
+    <Content Include="data\image\poker\spade_7.png" />
+    <Content Include="data\image\poker\spade_8.png" />
+    <Content Include="data\image\poker\spade_9.png" />
+    <Content Include="data\money_reason.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="data\M_ItemCFG.xml" />
+    <Content Include="data\M_RechangeCFG.xml" />
+    <Content Include="data\Navigation.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="data\opres.xml" />
+    <Content Include="data\OpRight.xml" />
+    <Content Include="data\platform.xml" />
+    <Content Include="data\right.xml" />
+    <Content Include="data\fish_consume.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="data\cows_card.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="data\td_channel.xml" />
+    <Content Include="dll\Enyim.Caching.dll" />
+    <Content Include="dll\ExitGamesLibs.dll" />
+    <Content Include="image\icon.jpg" />
+    <Content Include="image\notify.png" />
+    <Content Include="Scripts\AddAccount.js" />
+    <Content Include="Scripts\common.js" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\DateRange\css\redmond\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Scripts\DateRange\css\redmond\images\ui-bg_flat_55_fbec88_40x100.png" />
+    <Content Include="Scripts\DateRange\css\redmond\images\ui-bg_glass_75_d0e5f5_1x400.png" />
+    <Content Include="Scripts\DateRange\css\redmond\images\ui-bg_glass_85_dfeffc_1x400.png" />
+    <Content Include="Scripts\DateRange\css\redmond\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Scripts\DateRange\css\redmond\images\ui-bg_gloss-wave_55_5c9ccc_500x100.png" />
+    <Content Include="Scripts\DateRange\css\redmond\images\ui-bg_inset-hard_100_f5f8f9_1x100.png" />
+    <Content Include="Scripts\DateRange\css\redmond\images\ui-bg_inset-hard_100_fcfdfd_1x100.png" />
+    <Content Include="Scripts\DateRange\css\redmond\images\ui-icons_217bc0_256x240.png" />
+    <Content Include="Scripts\DateRange\css\redmond\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Scripts\DateRange\css\redmond\images\ui-icons_469bdd_256x240.png" />
+    <Content Include="Scripts\DateRange\css\redmond\images\ui-icons_6da8d5_256x240.png" />
+    <Content Include="Scripts\DateRange\css\redmond\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Scripts\DateRange\css\redmond\images\ui-icons_d8e7f3_256x240.png" />
+    <Content Include="Scripts\DateRange\css\redmond\images\ui-icons_f9bd01_256x240.png" />
+    <Content Include="Scripts\DateRange\css\redmond\jquery-ui-1.7.1.custom.css" />
+    <Content Include="Scripts\DateRange\css\ui.daterangepicker.css" />
+    <Content Include="Scripts\DateRange\images\217bc0_256x240_icons_icons.png" />
+    <Content Include="Scripts\DateRange\images\2e83ff_256x240_icons_icons.png" />
+    <Content Include="Scripts\DateRange\images\469bdd_256x240_icons_icons.png" />
+    <Content Include="Scripts\DateRange\images\5c9ccc_500x100_textures_12_gloss_wave_55.png" />
+    <Content Include="Scripts\DateRange\images\6da8d5_256x240_icons_icons.png" />
+    <Content Include="Scripts\DateRange\images\aaaaaa_40x100_textures_01_flat_0.png" />
+    <Content Include="Scripts\DateRange\images\cd0a0a_256x240_icons_icons.png" />
+    <Content Include="Scripts\DateRange\images\d0e5f5_40x100_textures_02_glass_75.png" />
+    <Content Include="Scripts\DateRange\images\d8e7f3_256x240_icons_icons.png" />
+    <Content Include="Scripts\DateRange\images\dfeffc_40x100_textures_02_glass_85.png" />
+    <Content Include="Scripts\DateRange\images\f5f8f9_40x100_textures_06_inset_hard_100.png" />
+    <Content Include="Scripts\DateRange\images\f9bd01_256x240_icons_icons.png" />
+    <Content Include="Scripts\DateRange\images\fbec88_40x100_textures_01_flat_55.png" />
+    <Content Include="Scripts\DateRange\images\fcfdfd_40x100_textures_06_inset_hard_100.png" />
+    <Content Include="Scripts\DateRange\images\fef1ec_40x100_textures_02_glass_95.png" />
+    <Content Include="Scripts\DateRange\js\daterangepicker.jQuery.js" />
+    <Content Include="Scripts\DateRange\js\jquery-1.3.1.min.js" />
+    <Content Include="Scripts\DateRange\js\jquery-1.3.2.min.js" />
+    <Content Include="Scripts\DateRange\js\jquery-ui-1.7.1.custom.min.js" />
+    <Content Include="Scripts\module\runtime-debug.js" />
+    <Content Include="Scripts\module\runtime.js" />
+    <Content Include="Scripts\module\sea-debug.js" />
+    <Content Include="Scripts\module\sea.js" />
+    <Content Include="Scripts\module\standalone-debug.js" />
+    <Content Include="Scripts\module\standalone.js" />
+    <Content Include="Scripts\forbid_key.js" />
+    <Content Include="Scripts\gift_code.js" />
+    <Content Include="Scripts\gift_modify.js" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Scripts\mselect\css\bootstrap-multiselect.css" />
+    <Content Include="Scripts\mselect\js\bootstrap-multiselect-collapsible-groups.js" />
+    <Content Include="Scripts\mselect\js\bootstrap-multiselect.js" />
+    <Content Include="Scripts\operation\OperationWishCurse.js" />
+    <Content Include="Scripts\service\ServiceMail.js" />
+    <Content Include="Scripts\stat\GameHistory.js" />
+    <Content Include="Scripts\stat\ShcdControl.js" />
+    <Content Include="Scripts\stat\StatLobby.js" />
+    <Content Include="Site.css" />
+    <Content Include="style\game_detail.css" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\ModifyLoginPwd.aspx.cs">
+      <DependentUpon>ModifyLoginPwd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\ModifyLoginPwd.aspx.designer.cs">
+      <DependentUpon>ModifyLoginPwd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\AddAccount.aspx.cs">
+      <DependentUpon>AddAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\AddAccount.aspx.designer.cs">
+      <DependentUpon>AddAccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\Exit.aspx.cs">
+      <DependentUpon>Exit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\Exit.aspx.designer.cs">
+      <DependentUpon>Exit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\LogViewer.aspx.cs">
+      <DependentUpon>LogViewer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\LogViewer.aspx.designer.cs">
+      <DependentUpon>LogViewer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\Notice.aspx.cs">
+      <DependentUpon>Notice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\Notice.aspx.designer.cs">
+      <DependentUpon>Notice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationChannelEdit.aspx.cs">
+      <DependentUpon>OperationChannelEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationChannelEdit.aspx.designer.cs">
+      <DependentUpon>OperationChannelEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationCommon.master.cs">
+      <DependentUpon>OperationCommon.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationCommon.master.designer.cs">
+      <DependentUpon>OperationCommon.master</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationFreezeHead.aspx.cs">
+      <DependentUpon>OperationFreezeHead.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationFreezeHead.aspx.designer.cs">
+      <DependentUpon>OperationFreezeHead.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationGenGift.aspx.cs">
+      <DependentUpon>OperationGenGift.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationGenGift.aspx.designer.cs">
+      <DependentUpon>OperationGenGift.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationGenGiftCode.aspx.cs">
+      <DependentUpon>OperationGenGiftCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationGenGiftCode.aspx.designer.cs">
+      <DependentUpon>OperationGenGiftCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationGiftCodeQuery.aspx.cs">
+      <DependentUpon>OperationGiftCodeQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationGiftCodeQuery.aspx.designer.cs">
+      <DependentUpon>OperationGiftCodeQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationGiftModify.aspx.cs">
+      <DependentUpon>OperationGiftModify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationGiftModify.aspx.designer.cs">
+      <DependentUpon>OperationGiftModify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationJPushApp.aspx.cs">
+      <DependentUpon>OperationJPushApp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationJPushApp.aspx.designer.cs">
+      <DependentUpon>OperationJPushApp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationJPushMsg.aspx.cs">
+      <DependentUpon>OperationJPushMsg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationJPushMsg.aspx.designer.cs">
+      <DependentUpon>OperationJPushMsg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationLoginQuery.aspx.cs">
+      <DependentUpon>OperationLoginQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationLoginQuery.aspx.designer.cs">
+      <DependentUpon>OperationLoginQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationMaintenanceNotice.aspx.cs">
+      <DependentUpon>OperationMaintenanceNotice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationMaintenanceNotice.aspx.designer.cs">
+      <DependentUpon>OperationMaintenanceNotice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationMaxOnline.aspx.cs">
+      <DependentUpon>OperationMaxOnline.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationMaxOnline.aspx.designer.cs">
+      <DependentUpon>OperationMaxOnline.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationMoneyQuery.aspx.cs">
+      <DependentUpon>OperationMoneyQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationMoneyQuery.aspx.designer.cs">
+      <DependentUpon>OperationMoneyQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationMoneyQueryDetail.aspx.cs">
+      <DependentUpon>OperationMoneyQueryDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationMoneyQueryDetail.aspx.designer.cs">
+      <DependentUpon>OperationMoneyQueryDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationMoneyWarn.aspx.cs">
+      <DependentUpon>OperationMoneyWarn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationMoneyWarn.aspx.designer.cs">
+      <DependentUpon>OperationMoneyWarn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationNotify.aspx.cs">
+      <DependentUpon>OperationNotify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationNotify.aspx.designer.cs">
+      <DependentUpon>OperationNotify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationOnlinePlayerCount.aspx.cs">
+      <DependentUpon>OperationOnlinePlayerCount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationOnlinePlayerCount.aspx.designer.cs">
+      <DependentUpon>OperationOnlinePlayerCount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationPlayerOp.aspx.cs">
+      <DependentUpon>OperationPlayerOp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationPlayerOp.aspx.designer.cs">
+      <DependentUpon>OperationPlayerOp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationPlayerTotalMoney.aspx.cs">
+      <DependentUpon>OperationPlayerTotalMoney.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationPlayerTotalMoney.aspx.designer.cs">
+      <DependentUpon>OperationPlayerTotalMoney.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationRank.aspx.cs">
+      <DependentUpon>OperationRank.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationRank.aspx.designer.cs">
+      <DependentUpon>OperationRank.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationRecharge.aspx.cs">
+      <DependentUpon>OperationRecharge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationRecharge.aspx.designer.cs">
+      <DependentUpon>OperationRecharge.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationRechargePoint.aspx.cs">
+      <DependentUpon>OperationRechargePoint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationRechargePoint.aspx.designer.cs">
+      <DependentUpon>OperationRechargePoint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationSpeaker.aspx.cs">
+      <DependentUpon>OperationSpeaker.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationSpeaker.aspx.designer.cs">
+      <DependentUpon>OperationSpeaker.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationViewInformHead.aspx.cs">
+      <DependentUpon>OperationViewInformHead.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationViewInformHead.aspx.designer.cs">
+      <DependentUpon>OperationViewInformHead.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationWishCurse.aspx.cs">
+      <DependentUpon>OperationWishCurse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\operation\OperationWishCurse.aspx.designer.cs">
+      <DependentUpon>OperationWishCurse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\Right.aspx.cs">
+      <DependentUpon>Right.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\Right.aspx.designer.cs">
+      <DependentUpon>Right.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\SelectMachine.aspx.cs">
+      <DependentUpon>SelectMachine.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\SelectMachine.aspx.designer.cs">
+      <DependentUpon>SelectMachine.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceBindPhone.aspx.cs">
+      <DependentUpon>ServiceBindPhone.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceBindPhone.aspx.designer.cs">
+      <DependentUpon>ServiceBindPhone.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceBlockId.aspx.cs">
+      <DependentUpon>ServiceBlockId.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceBlockId.aspx.designer.cs">
+      <DependentUpon>ServiceBlockId.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceCheckMail.aspx.cs">
+      <DependentUpon>ServiceCheckMail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceCheckMail.aspx.designer.cs">
+      <DependentUpon>ServiceCheckMail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceExcelDownLoad.aspx.cs">
+      <DependentUpon>ServiceExcelDownLoad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceExcelDownLoad.aspx.designer.cs">
+      <DependentUpon>ServiceExcelDownLoad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceAccountQuery.aspx.cs">
+      <DependentUpon>ServiceAccountQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceAccountQuery.aspx.designer.cs">
+      <DependentUpon>ServiceAccountQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceBenefitHelp.aspx.cs">
+      <DependentUpon>ServiceBenefitHelp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceBenefitHelp.aspx.designer.cs">
+      <DependentUpon>ServiceBenefitHelp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceBenefits.aspx.cs">
+      <DependentUpon>ServiceBenefits.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceBenefits.aspx.designer.cs">
+      <DependentUpon>ServiceBenefits.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceBlockAccount.aspx.cs">
+      <DependentUpon>ServiceBlockAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceBlockAccount.aspx.designer.cs">
+      <DependentUpon>ServiceBlockAccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceBlockIP.aspx.cs">
+      <DependentUpon>ServiceBlockIP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceBlockIP.aspx.designer.cs">
+      <DependentUpon>ServiceBlockIP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceCommon.master.cs">
+      <DependentUpon>ServiceCommon.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceCommon.master.designer.cs">
+      <DependentUpon>ServiceCommon.master</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceExchange.aspx.cs">
+      <DependentUpon>ServiceExchange.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceExchange.aspx.designer.cs">
+      <DependentUpon>ServiceExchange.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceInfo.aspx.cs">
+      <DependentUpon>ServiceInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceInfo.aspx.designer.cs">
+      <DependentUpon>ServiceInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceMail.aspx.cs">
+      <DependentUpon>ServiceMail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceMail.aspx.designer.cs">
+      <DependentUpon>ServiceMail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceModifyPwd.aspx.cs">
+      <DependentUpon>ServiceModifyPwd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceModifyPwd.aspx.designer.cs">
+      <DependentUpon>ServiceModifyPwd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceRechargeQuery.aspx.cs">
+      <DependentUpon>ServiceRechargeQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\service\ServiceRechargeQuery.aspx.designer.cs">
+      <DependentUpon>ServiceRechargeQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\5dragons\DragonControl.aspx.cs">
+      <DependentUpon>DragonControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\5dragons\DragonControl.aspx.designer.cs">
+      <DependentUpon>DragonControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\5dragons\DragonViewGameModeEarning.aspx.cs">
+      <DependentUpon>DragonViewGameModeEarning.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\5dragons\DragonViewGameModeEarning.aspx.designer.cs">
+      <DependentUpon>DragonViewGameModeEarning.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\baccarat\BaccaratControl.aspx.cs">
+      <DependentUpon>BaccaratControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\baccarat\BaccaratControl.aspx.designer.cs">
+      <DependentUpon>BaccaratControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\baccarat\BaccaratPlayerBanker.aspx.cs">
+      <DependentUpon>BaccaratPlayerBanker.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\baccarat\BaccaratPlayerBanker.aspx.designer.cs">
+      <DependentUpon>BaccaratPlayerBanker.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\baccarat\BaccaratResult.aspx.cs">
+      <DependentUpon>BaccaratResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\baccarat\BaccaratResult.aspx.designer.cs">
+      <DependentUpon>BaccaratResult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\calfroping\CalfRopingClass.aspx.cs">
+      <DependentUpon>CalfRopingClass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\calfroping\CalfRopingClass.aspx.designer.cs">
+      <DependentUpon>CalfRopingClass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\calfroping\CalfRopingControl.aspx.cs">
+      <DependentUpon>CalfRopingControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\calfroping\CalfRopingControl.aspx.designer.cs">
+      <DependentUpon>CalfRopingControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\calfroping\CalfRopingIndependent.aspx.cs">
+      <DependentUpon>CalfRopingIndependent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\calfroping\CalfRopingIndependent.aspx.designer.cs">
+      <DependentUpon>CalfRopingIndependent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\calfroping\CalfRopingLevel.aspx.cs">
+      <DependentUpon>CalfRopingLevel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\calfroping\CalfRopingLevel.aspx.designer.cs">
+      <DependentUpon>CalfRopingLevel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\cows\CowsCardType.aspx.cs">
+      <DependentUpon>CowsCardType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\cows\CowsCardType.aspx.designer.cs">
+      <DependentUpon>CowsCardType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\cows\CowsControl.aspx.cs">
+      <DependentUpon>CowsControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\cows\CowsControl.aspx.designer.cs">
+      <DependentUpon>CowsControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\cows\CowsPlayerBanker.aspx.cs">
+      <DependentUpon>CowsPlayerBanker.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\cows\CowsPlayerBanker.aspx.designer.cs">
+      <DependentUpon>CowsPlayerBanker.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\cows\StatIndependentCows.aspx.cs">
+      <DependentUpon>StatIndependentCows.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\cows\StatIndependentCows.aspx.designer.cs">
+      <DependentUpon>StatIndependentCows.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\crocodile\CrocodileResult.aspx.cs">
+      <DependentUpon>CrocodileResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\crocodile\CrocodileResult.aspx.designer.cs">
+      <DependentUpon>CrocodileResult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\dice\DiceResult.aspx.cs">
+      <DependentUpon>DiceResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\dice\DiceResult.aspx.designer.cs">
+      <DependentUpon>DiceResult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\fishpark\FishParkControl.aspx.cs">
+      <DependentUpon>FishParkControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\fishpark\FishParkControl.aspx.designer.cs">
+      <DependentUpon>FishParkControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\fishpark\FishParkDeskEarningRate.aspx.cs">
+      <DependentUpon>FishParkDeskEarningRate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\fishpark\FishParkDeskEarningRate.aspx.designer.cs">
+      <DependentUpon>FishParkDeskEarningRate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\fishpark\FishParkFishStat.aspx.cs">
+      <DependentUpon>FishParkFishStat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\fishpark\FishParkFishStat.aspx.designer.cs">
+      <DependentUpon>FishParkFishStat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\fishpark\FishParkStage.aspx.cs">
+      <DependentUpon>FishParkStage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\fishpark\FishParkStage.aspx.designer.cs">
+      <DependentUpon>FishParkStage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\fish\GrandPrixMatchDay.aspx.cs">
+      <DependentUpon>GrandPrixMatchDay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\fish\GrandPrixMatchDay.aspx.designer.cs">
+      <DependentUpon>GrandPrixMatchDay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\fish\GrandPrixWeekChampion.aspx.cs">
+      <DependentUpon>GrandPrixWeekChampion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\fish\GrandPrixWeekChampion.aspx.designer.cs">
+      <DependentUpon>GrandPrixWeekChampion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\fish\StatFishlordConsume.aspx.cs">
+      <DependentUpon>StatFishlordConsume.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\fish\StatFishlordConsume.aspx.designer.cs">
+      <DependentUpon>StatFishlordConsume.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\gamedetail\GameDetailBaccarat.aspx.cs">
+      <DependentUpon>GameDetailBaccarat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\gamedetail\GameDetailBaccarat.aspx.designer.cs">
+      <DependentUpon>GameDetailBaccarat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\gamedetail\GameDetailCows.aspx.cs">
+      <DependentUpon>GameDetailCows.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\gamedetail\GameDetailCows.aspx.designer.cs">
+      <DependentUpon>GameDetailCows.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\gamedetail\GameDetailCrocodile.aspx.cs">
+      <DependentUpon>GameDetailCrocodile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\gamedetail\GameDetailCrocodile.aspx.designer.cs">
+      <DependentUpon>GameDetailCrocodile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\gamedetail\GameDetailDice.aspx.cs">
+      <DependentUpon>GameDetailDice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\gamedetail\GameDetailDice.aspx.designer.cs">
+      <DependentUpon>GameDetailDice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\gamedetail\GameDetailFishPark.aspx.cs">
+      <DependentUpon>GameDetailFishPark.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\gamedetail\GameDetailFishPark.aspx.designer.cs">
+      <DependentUpon>GameDetailFishPark.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\gamedetail\GameDetailShcd.aspx.cs">
+      <DependentUpon>GameDetailShcd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\gamedetail\GameDetailShcd.aspx.designer.cs">
+      <DependentUpon>GameDetailShcd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\gamedetail\GameDetailViewer.aspx.cs">
+      <DependentUpon>GameDetailViewer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\gamedetail\GameDetailViewer.aspx.designer.cs">
+      <DependentUpon>GameDetailViewer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\gamehistory\GameHistory.aspx.cs">
+      <DependentUpon>GameHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\gamehistory\GameHistory.aspx.designer.cs">
+      <DependentUpon>GameHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\shcd\ShcdControl.aspx.cs">
+      <DependentUpon>ShcdControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\shcd\ShcdControl.aspx.designer.cs">
+      <DependentUpon>ShcdControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\shcd\ShcdIndependent.aspx.cs">
+      <DependentUpon>ShcdIndependent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\shcd\ShcdIndependent.aspx.designer.cs">
+      <DependentUpon>ShcdIndependent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\shcd\ShcdResult.aspx.cs">
+      <DependentUpon>ShcdResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\shcd\ShcdResult.aspx.designer.cs">
+      <DependentUpon>ShcdResult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatCommon.master.cs">
+      <DependentUpon>StatCommon.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatCommon.master.designer.cs">
+      <DependentUpon>StatCommon.master</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatCommonBaccarat.master.cs">
+      <DependentUpon>StatCommonBaccarat.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatCommonBaccarat.master.designer.cs">
+      <DependentUpon>StatCommonBaccarat.master</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatCommonCalfRoping.master.cs">
+      <DependentUpon>StatCommonCalfRoping.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatCommonCalfRoping.master.designer.cs">
+      <DependentUpon>StatCommonCalfRoping.master</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatCommonCows.master.cs">
+      <DependentUpon>StatCommonCows.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatCommonCows.master.designer.cs">
+      <DependentUpon>StatCommonCows.master</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatCommonCrocodile.master.cs">
+      <DependentUpon>StatCommonCrocodile.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatCommonCrocodile.master.designer.cs">
+      <DependentUpon>StatCommonCrocodile.master</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatCommonDice.master.cs">
+      <DependentUpon>StatCommonDice.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatCommonDice.master.designer.cs">
+      <DependentUpon>StatCommonDice.master</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatCommonDragon.master.cs">
+      <DependentUpon>StatCommonDragon.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatCommonDragon.master.designer.cs">
+      <DependentUpon>StatCommonDragon.master</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatCommonFishlord.master.cs">
+      <DependentUpon>StatCommonFishlord.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatCommonFishlord.master.designer.cs">
+      <DependentUpon>StatCommonFishlord.master</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatCommonFishPark.master.cs">
+      <DependentUpon>StatCommonFishPark.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatCommonFishPark.master.designer.cs">
+      <DependentUpon>StatCommonFishPark.master</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatCommonShcd.master.cs">
+      <DependentUpon>StatCommonShcd.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatCommonShcd.master.designer.cs">
+      <DependentUpon>StatCommonShcd.master</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatCrocodile.aspx.cs">
+      <DependentUpon>StatCrocodile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatCrocodile.aspx.designer.cs">
+      <DependentUpon>StatCrocodile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatDice.aspx.cs">
+      <DependentUpon>StatDice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatDice.aspx.designer.cs">
+      <DependentUpon>StatDice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatFish.aspx.cs">
+      <DependentUpon>StatFish.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatFish.aspx.designer.cs">
+      <DependentUpon>StatFish.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatFishlordControl.aspx.cs">
+      <DependentUpon>StatFishlordControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatFishlordControl.aspx.designer.cs">
+      <DependentUpon>StatFishlordControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatFishlordDeskEarningsRate.aspx.cs">
+      <DependentUpon>StatFishlordDeskEarningsRate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatFishlordDeskEarningsRate.aspx.designer.cs">
+      <DependentUpon>StatFishlordDeskEarningsRate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatFishlordStage.aspx.cs">
+      <DependentUpon>StatFishlordStage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatFishlordStage.aspx.designer.cs">
+      <DependentUpon>StatFishlordStage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatGeneralPlayerLost.aspx.cs">
+      <DependentUpon>StatGeneralPlayerLost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatGeneralPlayerLost.aspx.designer.cs">
+      <DependentUpon>StatGeneralPlayerLost.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatIndependentCrocodile.aspx.cs">
+      <DependentUpon>StatIndependentCrocodile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatIndependentCrocodile.aspx.designer.cs">
+      <DependentUpon>StatIndependentCrocodile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatIndependentDice.aspx.cs">
+      <DependentUpon>StatIndependentDice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatIndependentDice.aspx.designer.cs">
+      <DependentUpon>StatIndependentDice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatIndependentFishlord.aspx.cs">
+      <DependentUpon>StatIndependentFishlord.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatIndependentFishlord.aspx.designer.cs">
+      <DependentUpon>StatIndependentFishlord.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatLobby.aspx.cs">
+      <DependentUpon>StatLobby.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatLobby.aspx.designer.cs">
+      <DependentUpon>StatLobby.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatOldEarningsRate.aspx.cs">
+      <DependentUpon>StatOldEarningsRate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatOldEarningsRate.aspx.designer.cs">
+      <DependentUpon>StatOldEarningsRate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatPlayerFavor.aspx.cs">
+      <DependentUpon>StatPlayerFavor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatPlayerFavor.aspx.designer.cs">
+      <DependentUpon>StatPlayerFavor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatReloadTable.aspx.cs">
+      <DependentUpon>StatReloadTable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatReloadTable.aspx.designer.cs">
+      <DependentUpon>StatReloadTable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatServerEarnings.aspx.cs">
+      <DependentUpon>StatServerEarnings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatServerEarnings.aspx.designer.cs">
+      <DependentUpon>StatServerEarnings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatTotalConsume.aspx.cs">
+      <DependentUpon>StatTotalConsume.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatTotalConsume.aspx.designer.cs">
+      <DependentUpon>StatTotalConsume.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\stat\StatGameRecharge.aspx.cs">
+      <DependentUpon>StatGameRecharge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\stat\StatGameRecharge.aspx.designer.cs">
+      <DependentUpon>StatGameRecharge.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\td\TdActivation.aspx.cs">
+      <DependentUpon>TdActivation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\td\TdActivation.aspx.designer.cs">
+      <DependentUpon>TdActivation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\td\TdCommon.master.cs">
+      <DependentUpon>TdCommon.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\td\TdCommon.master.designer.cs">
+      <DependentUpon>TdCommon.master</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\td\TdLTV.aspx.cs">
+      <DependentUpon>TdLTV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\td\TdLTV.aspx.designer.cs">
+      <DependentUpon>TdLTV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appaspx\td\TdRechargePlayer.aspx.cs">
+      <DependentUpon>TdRechargePlayer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appaspx\td\TdRechargePlayer.aspx.designer.cs">
+      <DependentUpon>TdRechargePlayer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appcode\accdb.cs" />
+    <Compile Include="appcode\account_mgr.cs" />
+    <Compile Include="appcode\common.cs" />
+    <Compile Include="appcode\count_mgr.cs" />
+    <Compile Include="appcode\db.cs" />
+    <Compile Include="appcode\def.cs" />
+    <Compile Include="appcode\dyop.cs" />
+    <Compile Include="appcode\export_excel.cs" />
+    <Compile Include="appcode\game_detail.cs" />
+    <Compile Include="appcode\log.cs" />
+    <Compile Include="appcode\menu_mgr.cs" />
+    <Compile Include="appcode\notice_mgr.cs" />
+    <Compile Include="appcode\oplog.cs" />
+    <Compile Include="appcode\oplog_mgr.cs" />
+    <Compile Include="appcode\opres_mgr.cs" />
+    <Compile Include="appcode\page_foot.cs" />
+    <Compile Include="appcode\query.cs" />
+    <Compile Include="appcode\querypay.cs" />
+    <Compile Include="appcode\RefreshPageBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appcode\remote_mgr.cs" />
+    <Compile Include="appcode\res.cs" />
+    <Compile Include="appcode\right_mgr.cs" />
+    <Compile Include="appcode\stat_mgr.cs" />
+    <Compile Include="appcode\sys_base.cs" />
+    <Compile Include="appcode\table.cs" />
+    <Compile Include="appcode\user.cs" />
+    <Compile Include="appcode\query_game.cs" />
+    <Compile Include="ashx\AddAccount.ashx.cs">
+      <DependentUpon>AddAccount.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\ShcdControl.ashx.cs">
+      <DependentUpon>ShcdControl.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\Common.csproj">
+      <Project>{ea3d98dd-533c-4a9a-93a3-39f3035ed717}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\libcommon\libcommon.csproj">
+      <Project>{5c624ef3-6680-40af-a4c6-17b0f7f57146}</Project>
+      <Name>libcommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RemoteCommon\RemoteCommon.csproj">
+      <Project>{8fcaeeea-e7db-4e5c-815e-ae1465a5276f}</Project>
+      <Name>RemoteCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="appaspx\stat\StatCommon.master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="appaspx\operation\OperationCommon.master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="appaspx\service\ServiceCommon.master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="data\map_reduce.csv" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="appaspx\stat\StatCommonFishlord.master" />
+    <Content Include="appaspx\stat\StatCommonCrocodile.master" />
+    <Content Include="appaspx\stat\StatCommonDice.master" />
+    <Content Include="appaspx\stat\StatCommonBaccarat.master" />
+    <Content Include="appaspx\stat\StatCommonCows.master" />
+    <Content Include="appaspx\stat\StatCommonDragon.master" />
+    <Content Include="appaspx\stat\StatCommonFishPark.master" />
+    <Content Include="appaspx\td\TdCommon.master" />
+    <Content Include="appaspx\stat\StatCommonShcd.master" />
+    <Content Include="appaspx\stat\StatCommonCalfRoping.master" />
+    <Content Include="ashx\ShcdControl.ashx" />
+    <Content Include="ashx\AddAccount.ashx" />
+    <None Include="Properties\PublishProfiles\publish.pubxml" />
+    <None Include="Properties\PublishProfiles\webmanager.pubxml" />
+    <None Include="Properties\PublishProfiles\webmgr.pubxml" />
+    <Content Include="Scripts\mselect\less\bootstrap-multiselect.less" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>12442</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup>
+    <PostBuildEvent>copy ..\..\..\..\Program\bin\Config\M_ItemCFG.xml ..\data\
+copy ..\..\..\..\Program\bin\Config\Fish_FishCFG.xml ..\data\
+copy ..\..\..\..\Program\bin\Config\Fish_ItemCFG.xml ..\data\
+copy ..\..\..\..\Program\bin\Config\M_RechangeCFG.xml ..\data\
+copy ..\..\..\..\Program\bin\Config\Fish_BuffCFG.xml ..\data\
+copy ..\..\..\..\Program\bin\Config\Crocodile_RateCFG.xml ..\data\
+copy ..\..\..\..\Program\bin\Config\FishPark\Fish_FishCFG.xml ..\data\fishpark
+copy ..\..\..\..\Program\bin\Config\CalfRoping_CalfCFG.xml ..\data\
+copy ..\..\..\..\Program\bin\Config\Cows_CardsCFG.xml ..\data\</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

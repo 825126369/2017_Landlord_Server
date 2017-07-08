@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="baidu_pay.aspx.cs" Inherits="HttpRecharge.baidu_pay" %>

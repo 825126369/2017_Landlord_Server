@@ -1,0 +1,61 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/appaspx/stat/StatCommon.master" AutoEventWireup="true" CodeBehind="StatCommonCrocodile.master.cs" Inherits="WebManager.appaspx.stat.StatCommonCrocodile" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="stat_comm_HeadContent" runat="server">
+    <link href="../../Site.css" rel="stylesheet" />
+    <style type="text/css">
+    /*ul
+    {
+        list-style-type:none;
+        margin:0;
+        padding:0;
+        overflow:hidden;
+    }
+    li
+    {
+        float:left;
+        margin-right : 1px;
+        margin-bottom : 1px;
+        margin-top : 1px;
+        display : inline;
+    }
+    a.stat_menu:link,a.stat_menu:visited
+    {
+        display:block;
+        width:120px;
+        font-weight:bold;
+        color:black;
+        background-color:#D0D0D0;
+        text-align:center;
+        padding:4px;
+        text-decoration:none;
+        text-transform:uppercase;
+    }
+    a.stat_menu:hover
+    {
+        background-color:#cc0000;
+    }
+    div.SplitBorder
+    {
+        width : auto;
+        height : auto;
+        border-style : solid;
+        border-color : black;
+        border-width : 2px;
+        padding : 5px;
+        margin-bottom : 10px;
+    }*/
+</style>
+    <asp:ContentPlaceHolder ID="StatCommonCrocodile_HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="stat_common" runat="server">
+    <div class="statMenu">
+        <ul>
+            <li><a href="StatCrocodile.aspx" class="stat_menu">鳄鱼大亨参数调整</a></li>
+            <li><a href="StatIndependentCrocodile.aspx" class="stat_menu">独立数据-鳄鱼</a></li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+
+    <asp:ContentPlaceHolder ID="StatCommonCrocodile_Content" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>

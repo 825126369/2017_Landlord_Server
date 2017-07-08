@@ -1,0 +1,59 @@
+fun,map,reduce,描述,结束标志(不能删)
+winLoseStatA,"function Map() {
+  
+ if(this.gameId!=13)
+ emit(this.playerId,    
+      { playerOutlay : this.playerOutlay, playerIncome : this.playerIncome, washCount:0 }
+     ); 
+   
+  if(this.gameId != 9)
+  {
+    emit(this.playerId,    
+         { playerOutlay : 0, playerIncome : 0, washCount : this.playerOutlay } 
+     ); 
+  }
+}
+","function Reduce(key, values) {
+  var reduced = {playerOutlay : 0, playerIncome : 0, washCount:0}; 
+ values.forEach(function(val) {
+   reduced.playerOutlay += val.playerOutlay; 
+   reduced.playerIncome += val.playerIncome; 
+   reduced.washCount += val.washCount; 
+  });
+
+  return reduced; 
+}
+",输赢统计，单个玩家的总下注，总盈利，洗码量,$
+winLoseStatB,"function Map() {
+   if(this.gameId!=13)
+ emit(this.playerId,    
+      { playerOutlay : this.playerOutlay, playerIncome : this.playerIncome, washCount:0 }
+     ); 
+   
+  if(this.gameId != 9)
+  {
+    emit(this.playerId,    
+         { playerOutlay : 0, playerIncome : 0, washCount : this.playerWinBet } 
+     ); 
+  }
+}
+","function Reduce(key, values) {
+  var reduced = {playerOutlay : 0, playerIncome : 0, washCount:0}; 
+ values.forEach(function(val) {
+   reduced.playerOutlay += val.playerOutlay; 
+   reduced.playerIncome += val.playerIncome; 
+   reduced.washCount += val.washCount; 
+  });
+
+  return reduced; 
+}
+",输赢统计，单个玩家的总下注，总盈利，洗码量,$
+winLosePlayer,"function Map() {
+ 
+ emit( this.playerId, {result:0} ); 
+}","function Reduce(key, values) {
+
+ var reduced = {result:0}; 
+
+ return reduced; 
+}",输赢统计中的玩家,$

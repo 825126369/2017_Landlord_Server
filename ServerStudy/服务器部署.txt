@@ -1,0 +1,5 @@
+						Windows2008 R2 服务器部署
+1：Windows防火墙，入站规则和出栈规则要修改一下，增加对外端口
+GameServer增加gate端口，网关端口
+
+2：IIS配置

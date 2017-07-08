@@ -1,0 +1,26 @@
+﻿.cDel
+{
+}
+
+    .cDel td
+    {
+        padding: 6px;
+    }
+        .cDel td span
+        {
+            color:red;
+        }
+    .cDel table tr:first-child td
+    {
+        text-align:center;
+    }
+    .cDel input[type=text]
+    {
+        width: 200px;
+        height:25px;
+    }
+    .cDel input[type=button]
+    {
+        width:60px;
+        height:25px;
+    }

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0"?>
+
+<configuration>
+  <!-- default用的是anysdk表 -->
+  <add key="0" type="table" >
+    <elem>
+      <add key="eng" value="default" type="string" />
+      <add key="cha" value="default" type="string" />
+      <add key="table" value="anysdk_pay" type="string" />
+    </elem>
+  </add>
+  
+  <add key="1" type="table" >
+    <elem>
+      <add key="eng" value="anysdk" type="string" />
+      <add key="cha" value="anysdk" type="string" />
+      <add key="table" value="anysdk_pay" type="string" />
+    </elem>
+  </add>
+
+  <add key="2" type="table" >
+    <elem>
+      <add key="eng" value="qbao" type="string" />
+      <add key="cha" value="钱宝" type="string" />
+      <add key="table" value="qbao_pay" type="string" />
+    </elem>
+  </add>
+</configuration>
+

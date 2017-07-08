@@ -1,0 +1,28 @@
+package logic2world_protocols;
+
+enum e_server_msg_type {
+    e_mst_lwstart_index = 20000;
+	e_mst_l2w_game_ready = 20001;//注册游戏
+
+	e_mst_w2l_player_login = 20002;//玩家登陆
+	e_mst_w2l_player_logout = 20003;//玩家退出
+	e_mst_w2l_change_player_property = 20004; // 玩家属性变化
+	e_mst_l2w_player_login_result = 20005;//进入游戏返回
+	e_mst_l2w_player_logout_result = 20006;//退出游戏返回
+
+	e_mst_w2l_enter_friend_room = 20007;		  // 进入好友房间
+	e_mst_l2w_enter_friend_room_result = 20008;   // 进入好友房间结果
+
+	e_mst_l2w_player_property_stat = 20009;       // 统计金币，礼券变化的协议
+	e_mst_w2l_accept_gift = 20010;				  // 接收到礼物
+
+	e_mst_l2w_game_broadcast = 20011;			//游戏消息广播
+
+	e_mst_l2w_robot_request = 20012;			//请求机器人
+
+	e_mst_l2w_player_quest_change = 20013;		//玩家任务成就改变
+	e_mst_l2w_player_star_change  = 20014;		//玩家星星数据改变
+
+
+	e_mst_lwend_index = 30000;
+  }

@@ -1,0 +1,10 @@
+<root>
+  <out_port>11001</out_port>
+  
+  // 报警页面所在地址
+  <warnAspx>192.168.0.50:12346</warnAspx>
+  
+  <server_id>1</server_id>    // 游戏服务器ID(一组服务器具有相同的ID)
+  
+  <debug>1</debug>
+</root>

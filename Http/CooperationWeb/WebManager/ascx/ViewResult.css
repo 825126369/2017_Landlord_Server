@@ -1,0 +1,14 @@
+﻿
+.cResultData
+{
+    text-align : center;
+    margin : 0px auto; 
+    width : auto
+}
+
+div.cData[defCtrl="ctrlViewResult"] table
+{
+    margin:5px auto;
+}
+
+

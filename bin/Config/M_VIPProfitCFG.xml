@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Data VipLv="0" VipExp="6" OnlineReward="0" MaxGiftslimit="0" GiftUnlock="" RoomUnlock="" FishItemUnlock="" VipName="0" GiveTicket="0" DailyLottery="1" />
+	<Data VipLv="1" VipExp="30" OnlineReward="0" MaxGiftslimit="99999999999" GiftUnlock="" RoomUnlock="" FishItemUnlock="" VipName="1" GiveTicket="0" DailyLottery="2" />
+	<Data VipLv="2" VipExp="100" OnlineReward="0" MaxGiftslimit="99999999999" GiftUnlock="" RoomUnlock="" FishItemUnlock="" VipName="2" GiveTicket="0" DailyLottery="2" />
+	<Data VipLv="3" VipExp="300" OnlineReward="0" MaxGiftslimit="99999999999" GiftUnlock="" RoomUnlock="" FishItemUnlock="" VipName="3" GiveTicket="0" DailyLottery="2" />
+	<Data VipLv="4" VipExp="1000" OnlineReward="0" MaxGiftslimit="99999999999" GiftUnlock="" RoomUnlock="" FishItemUnlock="" VipName="4" GiveTicket="0" DailyLottery="3" />
+	<Data VipLv="5" VipExp="3000" OnlineReward="0" MaxGiftslimit="99999999999" GiftUnlock="" RoomUnlock="" FishItemUnlock="" VipName="5" GiveTicket="0" DailyLottery="3" />
+	<Data VipLv="6" VipExp="10000" OnlineReward="0" MaxGiftslimit="99999999999" GiftUnlock="" RoomUnlock="" FishItemUnlock="" VipName="6" GiveTicket="0" DailyLottery="3" />
+	<Data VipLv="7" VipExp="30000" OnlineReward="0" MaxGiftslimit="99999999999" GiftUnlock="" RoomUnlock="" FishItemUnlock="" VipName="7" GiveTicket="0" DailyLottery="4" />
+	<Data VipLv="8" VipExp="100000" OnlineReward="0" MaxGiftslimit="99999999999" GiftUnlock="" RoomUnlock="" FishItemUnlock="" VipName="8" GiveTicket="0" DailyLottery="4" />
+	<Data VipLv="9" VipExp="300000" OnlineReward="0" MaxGiftslimit="99999999999" GiftUnlock="" RoomUnlock="" FishItemUnlock="" VipName="9" GiveTicket="0" DailyLottery="4" />
+	<Data VipLv="10" VipExp="0" OnlineReward="0" MaxGiftslimit="99999999999" GiftUnlock="" RoomUnlock="" FishItemUnlock="" VipName="10" GiveTicket="0" DailyLottery="5" />
+	<Data VipLv="99" VipExp="0" OnlineReward="0" MaxGiftslimit="0" GiftUnlock="" RoomUnlock="" FishItemUnlock="" VipName="0" GiveTicket="0" DailyLottery="1" />
+</Root>

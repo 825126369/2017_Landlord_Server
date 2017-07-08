@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Data ID="15" GameName="斗地主-人机大战" IsOpen="true" />
+	<Data ID="16" GameName="斗地主-自定义游戏" IsOpen="true" />
+	<Data ID="17" GameName="斗地主-排位赛" IsOpen="true" />
+</Root>

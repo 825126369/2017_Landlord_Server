@@ -1,0 +1,15 @@
+import "logic2world_msg_type.proto";
+import "msg_info_def.proto";
+import "msg_type_def.proto";
+import "pump_type.proto";
+
+package logic2world_protocols;
+
+//ÇëÇó»úÆ÷ÈË
+message packetl2w_request_robot
+{
+	optional e_server_msg_type packet_id = 1 [default = e_mst_l2w_robot_request];		
+	optional int64 needgold = 2;
+	optional int32 needvip = 3;
+	optional int32 gameid = 4;
+}

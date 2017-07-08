@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AccCheck.aspx.cs" Inherits="HttpLogin.Default.AccCheck" %>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0"?>
+
+<configuration>
+	<add key="account" value="192.168.1.18" type="string" />
+	 <!-- 账号db与PlayerDb是否在同一个IP下 -->
+	<add key="isSame" value="true" type="bool" />
+	
+	<!-- 连接数据库串 -->
+    <add key="connectStr" value="server={0};user id=root; password=123456; database={1}; pooling=false" type="string"/>
+    <add key="mysql" value="192.168.1.18" type="string" />
+
+	<!-- 洗码量采用的统计算法, A只统计押注   B只统计押中部分的 -->
+	<add key="statAlg" value="A" type="string" />
+	
+	<!-- 统计(洗码量)间隔,1分钟 -->
+	<add key="statDelta" value="5" type="int" />
+
+	<add key="server" type="table" >
+		<elem>
+			<add key="serverIp" value="192.168.1.18" type="string" />   <!-- 服务器IP， 主IP -->
+			<add key="serverId" value="4" type="string" />              <!-- 服务器ID -->
+			<add key="serverName" value="dwc" type="string" />       <!-- 服务器名称 -->
+			<add key="logDbIp" value="192.168.1.18" type="string" />     <!-- logdb服务器ip -->
+		</elem>	
+	</add>
+</configuration>
+

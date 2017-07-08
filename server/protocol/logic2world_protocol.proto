@@ -1,0 +1,120 @@
+import "logic2world_msg_type.proto";
+import "msg_info_def.proto";
+import "msg_type_def.proto";
+import "pump_type.proto";
+
+package logic2world_protocols;
+
+//游戏核心加载完毕 向world注册
+message packetl2w_game_ready {
+	optional e_server_msg_type packet_id = 1 [default = e_mst_l2w_game_ready];		
+	optional fixed32 game_id = 2;	//游戏id
+	optional fixed32 game_ver = 3;	//游戏版本
+}
+
+
+//玩家登陆
+message packetw2l_player_login {
+	optional e_server_msg_type packet_id = 1 [default = e_mst_w2l_player_login];		
+	optional fixed32 sessionid = 2;
+	optional msg_info_def.msg_account_info account_info = 3;	//账号信息
+	optional msg_info_def.msg_account_info_ex account_info_ex = 4;	//扩展信息	
+}
+
+message packetl2w_player_login_result {
+	optional e_server_msg_type packet_id = 1 [default = e_mst_l2w_player_login_result];		
+	optional fixed32 playerid = 2;
+	optional msg_type_def.e_msg_result_def result = 3 [default = e_rmt_fail];
+}
+
+//玩家退出
+message packetw2l_player_logout {
+	optional e_server_msg_type packet_id = 1 [default = e_mst_w2l_player_logout];	
+	optional fixed32 playerid = 2;
+}
+ 
+message packetl2w_player_logout_result {
+	optional e_server_msg_type packet_id = 1 [default = e_mst_l2w_player_logout_result];		
+	optional fixed32 playerid = 2;
+}
+
+// 通知改变玩家属性(双向) world <->logic
+message packetw2l_change_player_property
+{
+	optional e_server_msg_type packet_id = 1 [default = e_mst_w2l_change_player_property];	
+	optional fixed32 playerid = 2;
+
+	optional msg_info_def.msg_account_info change_info = 3; //改变的信息
+	optional msg_info_def.msg_account_info_ex change_info_ex = 4;	//扩展信息
+}
+
+// 统计金币，礼券变化的协议, logic->world
+message packetl2w_player_property_stat
+{
+	optional e_server_msg_type packet_id = 1 [default = e_mst_l2w_player_property_stat];	
+
+	// 玩家ID
+	optional fixed32 playerId = 2;
+
+	// 所在游戏
+	optional fixed32 gameId = 3;
+
+	// 哪个属性，金币或礼券 e_item_type_def定义
+	optional msg_type_def.e_item_type_def attrType = 4;
+
+	// 变化量
+	optional int32 addValue = 5;
+
+	// 变化原因
+	optional PropertyReasonType reason = 6;
+
+	// 额外参数
+	optional string param = 7;
+}
+
+// 接收到礼物
+message packetw2l_accept_gift
+{
+	optional e_server_msg_type packet_id = 1 [default = e_mst_w2l_accept_gift];	
+
+	optional int32 senderId = 2;
+
+	optional int32 receiverId = 3;
+
+	optional int32 giftId = 4;
+}
+
+
+// 广播游戏消息
+message packetl2w_game_broadcast
+{
+	optional e_server_msg_type packet_id = 1 [default = e_mst_l2w_game_broadcast];	
+
+	optional string game_msg = 2;
+}
+
+//任务成就改变
+message packetl2w_player_quest_change
+{
+	optional e_server_msg_type packet_id = 1 [default = e_mst_l2w_player_quest_change];	
+
+	optional fixed32 player_id = 2;
+
+	optional fixed32 quest_id = 3;	//任务成就ID
+
+	optional fixed32 q_count = 4 [default = 1];	//数量
+
+	optional fixed32 ex_param = 5 [default = 0] ; //扩展参数
+}
+
+//玩家星星系统数据改变
+message packetl2w_player_star_change
+{
+	optional e_server_msg_type packet_id = 1 [default = e_mst_l2w_player_star_change];	
+
+	optional fixed32 player_id = 2;
+
+	optional fixed32 addstar = 3 [default = 0];	//获得星星
+
+	optional fixed32 addaward = 4 [default = 0];	//获得奖金
+}

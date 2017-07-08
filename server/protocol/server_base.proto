@@ -1,0 +1,30 @@
+package server_protocols;
+
+enum e_server_type {
+	e_st_undefine = 0;
+    e_st_gate = 1;
+	e_st_login = 2;
+	e_st_world = 3;
+	e_st_center = 4;
+	e_st_logic = 5;
+	e_st_monitor = 6;
+  }
+
+  //??????????????
+message server_attributes{
+	optional int32 client_count = 1[default = 0];//gate Á¬????Á¿
+}
+  
+message server_info 
+{
+	optional e_server_type server_type = 1;
+	optional string server_ip = 2;
+	optional fixed32 server_port = 3;
+	optional server_attributes attributes = 4;
+}
+
+message msg_packet 
+{
+	optional fixed32 msgid = 1;
+	optional bytes msginfo = 2;
+}

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0"?>
+
+<configuration>  
+  <add key="-1" value="随机" type="string" />
+  <add key="0" value="无牛" type="string" />
+  <add key="1" value="牛1" type="string" />
+  <add key="2" value="牛2" type="string" />
+  <add key="3" value="牛3" type="string" />
+  
+  <add key="4" value="牛4" type="string" />
+  <add key="5" value="牛5" type="string" />
+  <add key="6" value="牛6" type="string" />
+  <add key="7" value="牛7" type="string" />
+  
+  <add key="8" value="牛8" type="string" />
+  <add key="9" value="牛9" type="string" />
+  
+  <add key="10" value="牛牛" type="string" />
+  <add key="11" value="银牛" type="string" />
+  <add key="12" value="炸弹" type="string" />
+  <add key="13" value="金牛" type="string" />
+  <add key="14" value="五小牛 " type="string" />
+</configuration>
+

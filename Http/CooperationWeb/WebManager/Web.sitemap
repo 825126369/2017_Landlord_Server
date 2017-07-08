@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="" title=""  description="">
+        <siteMapNode url="~/appaspx/DailyDeviceActivate.aspx" title="每日设备激活"  description="" />
+      
+        <siteMapNode url="~/appaspx/DailyAccountCreate.aspx" title="每日账号创建 "  description="" />
+      
+        <siteMapNode url="~/appaspx/DailyRecharge.aspx" title="每日充值总额 "  description="" />
+
+        <siteMapNode url="~/appaspx/ExitLogin.aspx" title="退出登录"  description="" />
+
+        <siteMapNode url="~/appaspx/AddAccount.aspx" title="添加账号"  description="" />
+
+        <siteMapNode url="~/appaspx/EditRight.aspx" title="编辑账号"  description="" />
+
+        <siteMapNode url="~/appaspx/AddChannel.aspx" title="添加渠道"  description="" />
+    </siteMapNode>
+</siteMap>

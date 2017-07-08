@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="beecloud_pay.aspx.cs" Inherits="HttpRecharge.beecloud_pay" %>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0"?>
+
+<configuration>
+  <add right="operation"   fmt="运营相关权限" />
+  <add right="service"     fmt="客服相关权限" />
+  <add right="stat"        fmt="统计数据权限" />
+  <add right="notice"      fmt="发布公告权限" />
+  <add right="viewlog"     fmt="查看日志权限" />
+  <add right="rightEdit"   fmt="编辑权限" />
+  <add right="addAccount"  fmt="增加账号权限" />
+</configuration>

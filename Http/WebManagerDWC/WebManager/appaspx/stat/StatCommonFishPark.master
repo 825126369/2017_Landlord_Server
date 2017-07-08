@@ -1,0 +1,20 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/appaspx/stat/StatCommon.master" AutoEventWireup="true" CodeBehind="StatCommonFishPark.master.cs" Inherits="WebManager.appaspx.stat.StatCommonFishPark" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="stat_comm_HeadContent" runat="server">
+    <asp:ContentPlaceHolder ID="StatCommonFishPark_HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="stat_common" runat="server">
+    <div class="statMenu">
+        <ul>
+            <li><a href="/appaspx/stat/fishpark/FishParkControl.aspx" >鳄鱼公园参数调整</a></li>
+            <li><a href="/appaspx/stat/fishpark/FishParkDeskEarningRate.aspx" >鳄鱼公园桌子盈利率</a></li>
+            <li><a href="/appaspx/stat/fishpark/FishParkStage.aspx" >鳄鱼公园算法分析</a></li>
+            <li><a href="/appaspx/stat/fishpark/FishParkFishStat.aspx" >鳄鱼公园鱼的统计</a></li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+    
+    <asp:ContentPlaceHolder ID="StatCommonFishPark_Content" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>

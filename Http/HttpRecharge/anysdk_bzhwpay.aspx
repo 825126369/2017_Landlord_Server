@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="anysdk_bzhwpay.aspx.cs" Inherits="PaymentCheck.anysdk_bzhwpay" %>

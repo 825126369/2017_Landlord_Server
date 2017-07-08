@@ -1,0 +1,20 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/appaspx/stat/StatCommon.master" AutoEventWireup="true" CodeBehind="StatCommonCows.master.cs" Inherits="WebManager.appaspx.stat.StatCommonCows" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="stat_comm_HeadContent" runat="server">
+    <asp:ContentPlaceHolder ID="StatCommonCows_HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="stat_common" runat="server">
+    <div class="statMenu">
+        <ul>
+            <li><a href="/appaspx/stat/cows/CowsControl.aspx" >牛牛参数调整</a></li>
+            <li><a href="/appaspx/stat/cows/CowsPlayerBanker.aspx" >牛牛上庄查询</a></li>
+            <li><a href="/appaspx/stat/cows/StatIndependentCows.aspx" >牛牛独立数据</a></li>
+            <li><a href="/appaspx/stat/cows/CowsCardType.aspx" >牛牛牌型设置</a></li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+
+    <asp:ContentPlaceHolder ID="StatCommonCows_Content" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>

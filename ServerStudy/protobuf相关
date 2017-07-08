@@ -1,0 +1,6 @@
+						电玩城Protobuf相关
+packet_manager.h,enable_object_factory.h,proc_server_packet.h 
+
+相关的宏：PACKET_REGEDIT_SEND,PACKET_REGEDIT_RECV
+
+原理很简单：把协议加到字典里，然后读取

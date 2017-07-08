@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="server_protocols">
+      <UniqueIdentifier>{e85727f5-f5d2-4483-abb6-54b7063a6a07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="client2logic">
+      <UniqueIdentifier>{44fc9b6a-816e-4ad5-baf3-ff7b2b0a2e58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="client2world">
+      <UniqueIdentifier>{90699896-b761-4e48-ad13-f8d61099be5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="client2gate">
+      <UniqueIdentifier>{62606472-e15d-4518-827a-9b455f647ed0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="msg_def">
+      <UniqueIdentifier>{b85447e5-3f84-4ac3-9019-def154769758}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logic2world">
+      <UniqueIdentifier>{586b1c17-27f4-49db-a67c-de4140d7c83f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\protocol\server_base.pb.cc">
+      <Filter>server_protocols</Filter>
+    </ClCompile>
+    <ClCompile Include="..\protocol\server_protocol.pb.cc">
+      <Filter>server_protocols</Filter>
+    </ClCompile>
+    <ClCompile Include="..\protocol\server_msg_type.pb.cc">
+      <Filter>server_protocols</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\protocol\client2logic_msg_type.pb.cc">
+      <Filter>client2logic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\protocol\client2world_msg_type.pb.cc">
+      <Filter>client2world</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\protocol\client2gate_msg_type.pb.cc">
+      <Filter>client2gate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\protocol\logic2world_msg_type.pb.cc">
+      <Filter>logic2world</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\protocol\client2world_protocol.pb.cc">
+      <Filter>client2world</Filter>
+    </ClCompile>
+    <ClCompile Include="..\protocol\logic2world_protocol.pb.cc">
+      <Filter>logic2world</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\protocol\client2logic_protocol.pb.cc">
+      <Filter>client2logic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\protocol\msg_info_def.pb.cc">
+      <Filter>msg_def</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\protocol\msg_type_def.pb.cc">
+      <Filter>msg_def</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\protocol\client2gate_protocol.pb.cc">
+      <Filter>client2gate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\protocol\client2world_dial_lottery.pb.cc">
+      <Filter>client2world</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\protocol\client2world_player_property.pb.cc">
+      <Filter>client2world</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\protocol\client2world_mail.pb.cc">
+      <Filter>client2world</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\protocol\client2world_rank.pb.cc">
+      <Filter>client2world</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\protocol\client2world_chat.pb.cc">
+      <Filter>client2world</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\protocol\client2world_exchange.pb.cc">
+      <Filter>client2world</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\protocol\client2world_shop.pb.cc">
+      <Filter>client2world</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\protocol\client2world_friend.pb.cc">
+      <Filter>client2world</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\protocol\client2world_online_reward.pb.cc">
+      <Filter>client2world</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\protocol\client2world_safe_deposit_box.pb.cc">
+      <Filter>client2world</Filter>
+    </ClCompile>
+    <ClCompile Include="..\protocol\logic2world_friend.pb.cc">
+      <Filter>logic2world</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\protocol\client2world_benefits.pb.cc">
+      <Filter>client2world</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\protocol\pump_type.pb.cc">
+      <Filter>msg_def</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\protocol\client2world_notice.pb.cc">
+      <Filter>client2world</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\protocol\client2world_bind_phone.pb.cc">
+      <Filter>client2world</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\protocol\client2world_daily_box_lottery.pb.cc">
+      <Filter>client2world</Filter>
+    </ClCompile>
+    <ClCompile Include="..\protocol\logic2world_robot.pb.cc">
+      <Filter>logic2world</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\protocol\client2world_activity.pb.cc">
+      <Filter>client2world</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\protocol\client2world_player_quest.pb.cc">
+      <Filter>client2world</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\protocol\client2world_star_lottery.pb.cc">
+      <Filter>client2world</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\protocol\server_base.pb.h">
+      <Filter>server_protocols</Filter>
+    </ClInclude>
+    <ClInclude Include="..\protocol\server_protocol.pb.h">
+      <Filter>server_protocols</Filter>
+    </ClInclude>
+    <ClInclude Include="..\protocol\server_msg_type.pb.h">
+      <Filter>server_protocols</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\protocol\client2logic_msg_type.pb.h">
+      <Filter>client2logic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\protocol\client2world_msg_type.pb.h">
+      <Filter>client2world</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\protocol\client2gate_msg_type.pb.h">
+      <Filter>client2gate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\protocol\logic2world_msg_type.pb.h">
+      <Filter>logic2world</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\protocol\client2world_protocol.pb.h">
+      <Filter>client2world</Filter>
+    </ClInclude>
+    <ClInclude Include="..\protocol\logic2world_protocol.pb.h">
+      <Filter>logic2world</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\protocol\client2logic_protocol.pb.h">
+      <Filter>client2logic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\protocol\msg_info_def.pb.h">
+      <Filter>msg_def</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\protocol\msg_type_def.pb.h">
+      <Filter>msg_def</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\protocol\client2gate_protocol.pb.h">
+      <Filter>client2gate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\protocol\client2world_dial_lottery.pb.h">
+      <Filter>client2world</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\protocol\client2world_player_property.pb.h">
+      <Filter>client2world</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\protocol\client2world_mail.pb.h">
+      <Filter>client2world</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\protocol\client2world_rank.pb.h">
+      <Filter>client2world</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\protocol\client2world_chat.pb.h">
+      <Filter>client2world</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\protocol\client2world_exchange.pb.h">
+      <Filter>client2world</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\protocol\client2world_shop.pb.h">
+      <Filter>client2world</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\protocol\client2world_friend.pb.h">
+      <Filter>client2world</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\protocol\client2world_online_reward.pb.h">
+      <Filter>client2world</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\protocol\client2world_safe_deposit_box.pb.h">
+      <Filter>client2world</Filter>
+    </ClInclude>
+    <ClInclude Include="..\protocol\logic2world_friend.pb.h">
+      <Filter>logic2world</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\protocol\client2world_benefits.pb.h">
+      <Filter>client2world</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\protocol\pump_type.pb.h">
+      <Filter>msg_def</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\protocol\client2world_notice.pb.h">
+      <Filter>client2world</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\protocol\client2world_bind_phone.pb.h">
+      <Filter>client2world</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\protocol\client2world_daily_box_lottery.pb.h">
+      <Filter>client2world</Filter>
+    </ClInclude>
+    <ClInclude Include="..\protocol\logic2world_robot.pb.h">
+      <Filter>logic2world</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\protocol\client2world_activity.pb.h">
+      <Filter>client2world</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\protocol\client2world_player_quest.pb.h">
+      <Filter>client2world</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\protocol\client2world_star_lottery.pb.h">
+      <Filter>client2world</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\protocol\server_base.proto">
+      <Filter>server_protocols</Filter>
+    </None>
+    <None Include="..\protocol\server_protocol.proto">
+      <Filter>server_protocols</Filter>
+    </None>
+    <None Include="..\protocol\server_msg_type.proto">
+      <Filter>server_protocols</Filter>
+    </None>
+    <None Include="..\..\share\protocol\client2logic_msg_type.proto">
+      <Filter>client2logic</Filter>
+    </None>
+    <None Include="..\..\share\protocol\client2world_msg_type.proto">
+      <Filter>client2world</Filter>
+    </None>
+    <None Include="..\..\share\protocol\client2gate_msg_type.proto">
+      <Filter>client2gate</Filter>
+    </None>
+    <None Include="..\protocol\logic2world_msg_type.proto">
+      <Filter>logic2world</Filter>
+    </None>
+    <None Include="..\..\share\protocol\client2world_protocol.proto">
+      <Filter>client2world</Filter>
+    </None>
+    <None Include="..\protocol\logic2world_protocol.proto">
+      <Filter>logic2world</Filter>
+    </None>
+    <None Include="..\..\share\protocol\client2logic_protocol.proto">
+      <Filter>client2logic</Filter>
+    </None>
+    <None Include="..\..\share\protocol\msg_info_def.proto">
+      <Filter>msg_def</Filter>
+    </None>
+    <None Include="..\..\share\protocol\msg_type_def.proto">
+      <Filter>msg_def</Filter>
+    </None>
+    <None Include="..\..\share\protocol\client2gate_protocol.proto">
+      <Filter>client2gate</Filter>
+    </None>
+    <None Include="..\..\share\protocol\client2world_dial_lottery.proto">
+      <Filter>client2world</Filter>
+    </None>
+    <None Include="..\..\share\protocol\client2world_player_property.proto">
+      <Filter>client2world</Filter>
+    </None>
+    <None Include="..\..\share\protocol\client2world_mail.proto">
+      <Filter>client2world</Filter>
+    </None>
+    <None Include="..\..\share\protocol\client2world_rank.proto">
+      <Filter>client2world</Filter>
+    </None>
+    <None Include="..\..\share\protocol\client2world_chat.proto">
+      <Filter>client2world</Filter>
+    </None>
+    <None Include="..\..\share\protocol\client2world_exchange.proto">
+      <Filter>client2world</Filter>
+    </None>
+    <None Include="..\..\share\protocol\client2world_shop.proto">
+      <Filter>client2world</Filter>
+    </None>
+    <None Include="..\..\share\protocol\client2world_friend.proto">
+      <Filter>client2world</Filter>
+    </None>
+    <None Include="..\..\share\protocol\client2world_online_reward.proto">
+      <Filter>client2world</Filter>
+    </None>
+    <None Include="..\..\share\protocol\client2world_safe_deposit_box.proto">
+      <Filter>client2world</Filter>
+    </None>
+    <None Include="..\protocol\logic2world_friend.proto">
+      <Filter>logic2world</Filter>
+    </None>
+    <None Include="..\..\share\protocol\pump_type.proto">
+      <Filter>msg_def</Filter>
+    </None>
+    <None Include="..\..\share\protocol\client2world_notice.proto">
+      <Filter>client2world</Filter>
+    </None>
+    <None Include="..\..\share\protocol\client2world_bind_phone.proto">
+      <Filter>client2world</Filter>
+    </None>
+    <None Include="..\..\share\protocol\client2world_daily_box_lottery.proto">
+      <Filter>client2world</Filter>
+    </None>
+    <None Include="..\protocol\logic2world_robot.proto">
+      <Filter>logic2world</Filter>
+    </None>
+    <None Include="..\..\share\protocol\client2world_activity.proto">
+      <Filter>client2world</Filter>
+    </None>
+    <None Include="..\..\share\protocol\client2world_player_quest.proto">
+      <Filter>client2world</Filter>
+    </None>
+    <None Include="..\..\share\protocol\client2world_star_lottery.proto">
+      <Filter>client2world</Filter>
+    </None>
+    <None Include="..\..\share\protocol\client2world_benefits.proto">
+      <Filter>client2world</Filter>
+    </None>
+  </ItemGroup>
+</Project>

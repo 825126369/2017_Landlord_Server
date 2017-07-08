@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AbroadCheck.aspx.cs" Inherits="AccountCheck.AbroadCheck" %>

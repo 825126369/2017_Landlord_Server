@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\gate\gate.cpp" />
+    <ClCompile Include="..\gate\stdafx.cpp" />
+    <ClCompile Include="..\gate\gate_server.cpp">
+      <Filter>unit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gate\gate_peer.cpp">
+      <Filter>unit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gate\gate_peer_manager.cpp">
+      <Filter>unit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gate\backstage_manager.cpp">
+      <Filter>unit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gate\server_peer.cpp">
+      <Filter>unit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gate\proc_server_packet.cpp">
+      <Filter>proc_packet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gate\clients_manager.cpp">
+      <Filter>unit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gate\gate_init_packet.cpp">
+      <Filter>proc_packet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gate\proc_gate_packet.cpp">
+      <Filter>proc_packet</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\gate\stdafx.h" />
+    <ClInclude Include="..\gate\gate_server.h">
+      <Filter>unit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gate\gate_peer_manager.h">
+      <Filter>unit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gate\gate_peer.h">
+      <Filter>unit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gate\backstage_manager.h">
+      <Filter>unit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gate\server_peer.h">
+      <Filter>unit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gate\proc_server_packet.h">
+      <Filter>proc_packet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gate\clients_manager.h">
+      <Filter>unit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gate\targetver.h" />
+    <ClInclude Include="..\gate\proc_gate_packet.h">
+      <Filter>proc_packet</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="unit">
+      <UniqueIdentifier>{d24d1bdc-2907-4909-8e28-ab08928545cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="proc_packet">
+      <UniqueIdentifier>{a9acc166-ad0b-4af4-93d2-7881398fa6ae}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

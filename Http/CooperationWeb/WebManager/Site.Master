@@ -1,0 +1,33 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WebManager.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="style/default.css" rel="stylesheet" />
+    <script src="script/jquery-1.8.3.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+      
+    <div class="page">
+        <div class="cSafeWidth cMainMenu">
+            <asp:Menu ID="menuMain" runat="server" DataSourceID="AdsSiteMap" 
+                MaximumDynamicDisplayLevels="2" Orientation="Horizontal" 
+                StaticDisplayLevels="2" SkipLinkText="" RenderingMode="Default"
+                onprerender="onMenuPreRender"></asp:Menu>
+            <asp:SiteMapDataSource ID="AdsSiteMap" runat="server" />
+            <div class="clr"></div>
+        </div>
+
+        <asp:ContentPlaceHolder ID="masterMainContent" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

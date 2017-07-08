@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{54A7A44B-829D-4580-A674-5458AE30B029}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>sshare</RootNamespace>
+    <ProjectName>sshare</ProjectName>
+    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IntDir>$(Configuration)$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IntDir>$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <TargetName>$(ProjectName)-gd</TargetName>
+    <OutDir>$(SolutionDir)..\..\bin\$(Configuration)\servers\</OutDir>
+    <IncludePath>C:\Program Files (x86)\Visual Leak Detector\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files (x86)\Visual Leak Detector\lib\Win64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IntDir>$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir>$(SolutionDir)..\..\bin\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\sshare;..\..\share\dependencies\boost;..\..\share\common;..\..\share\dependencies\breakpad;..\..\share\dependencies\mongodb;..\..\share\dependencies\protobuf;..\..\share\dependencies\cryptopp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996;4244;4267;4351</DisableSpecificWarnings>
+      <AdditionalOptions>-Zm300 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+    </Lib>
+    <Lib>
+      <AdditionalLibraryDirectories>..\..\share\dependencies\lib\lib_x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\sshare;..\..\share\dependencies\boost;..\..\share\common;..\..\share\dependencies\breakpad;..\..\share\dependencies\mongodb;..\..\share\dependencies\protobuf;..\..\share\dependencies\cryptopp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996;4244;4267</DisableSpecificWarnings>
+      <ProgramDataBaseFileName>$(SolutionDir)..\..\bin\$(Configuration)\$(ProjectName).pdb</ProgramDataBaseFileName>
+      <AdditionalOptions>-Zm136 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>..\..\share\dependencies\lib\lib_x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="../sshare/stdafx.h" />
+    <ClInclude Include="../sshare/targetver.h" />
+    <ClInclude Include="..\..\share\common\BigInteger.h" />
+    <ClInclude Include="..\..\share\common\com_log.h" />
+    <ClInclude Include="..\..\share\common\enable_crypto.h" />
+    <ClInclude Include="..\..\share\common\enable_hashmap.h" />
+    <ClInclude Include="..\..\share\common\enable_id_generate.h" />
+    <ClInclude Include="..\..\share\common\enable_json_map.h" />
+    <ClInclude Include="..\..\share\common\enable_minidump.h" />
+    <ClInclude Include="..\..\share\common\enable_object_factory.h" />
+    <ClInclude Include="..\..\share\common\enable_object_manager.h" />
+    <ClInclude Include="..\..\share\common\enable_object_pool.h" />
+    <ClInclude Include="..\..\share\common\enable_processinfo.h" />
+    <ClInclude Include="..\..\share\common\enable_queue.h" />
+    <ClInclude Include="..\..\share\common\enable_random.h" />
+    <ClInclude Include="..\..\share\common\enable_singleton.h" />
+    <ClInclude Include="..\..\share\common\enable_smart_ptr.h" />
+    <ClInclude Include="..\..\share\common\enable_string_convert.h" />
+    <ClInclude Include="..\..\share\common\enable_xml_config.h" />
+    <ClInclude Include="..\..\share\common\game_macro.h" />
+    <ClInclude Include="..\..\share\common\http\connection.hpp" />
+    <ClInclude Include="..\..\share\common\http\connection_manager.hpp" />
+    <ClInclude Include="..\..\share\common\http\header.hpp" />
+    <ClInclude Include="..\..\share\common\http\http_server.hpp" />
+    <ClInclude Include="..\..\share\common\http\mime_types.hpp" />
+    <ClInclude Include="..\..\share\common\http\reply.hpp" />
+    <ClInclude Include="..\..\share\common\http\request.hpp" />
+    <ClInclude Include="..\..\share\common\http\request_handler.hpp" />
+    <ClInclude Include="..\..\share\common\http\request_parser.hpp" />
+    <ClInclude Include="..\..\share\common\net\msg_queue.h" />
+    <ClInclude Include="..\..\share\common\net\net_buffer.h" />
+    <ClInclude Include="..\..\share\common\net\packet_head.h" />
+    <ClInclude Include="..\..\share\common\net\packet_manager.h" />
+    <ClInclude Include="..\..\share\common\net\peer_handler.h" />
+    <ClInclude Include="..\..\share\common\net\peer_http.h" />
+    <ClInclude Include="..\..\share\common\net\peer_http_mgr.h" />
+    <ClInclude Include="..\..\share\common\net\peer_tcp.h" />
+    <ClInclude Include="..\..\share\common\net\peer_tcp_server.h" />
+    <ClInclude Include="..\..\share\common\server_log.h" />
+    <ClInclude Include="..\..\share\common\task_manager.h" />
+    <ClInclude Include="..\..\share\common\time_helper.h" />
+    <ClInclude Include="..\..\share\common\tinyxml2.h" />
+    <ClInclude Include="..\sshare\db_base.h" />
+    <ClInclude Include="..\sshare\db_query.h" />
+    <ClInclude Include="..\sshare\game_object.h" />
+    <ClInclude Include="..\sshare\game_object_array.h" />
+    <ClInclude Include="..\sshare\game_object_container.h" />
+    <ClInclude Include="..\sshare\game_object_def.h" />
+    <ClInclude Include="..\sshare\game_object_field.h" />
+    <ClInclude Include="..\sshare\game_object_handler.h" />
+    <ClInclude Include="..\sshare\game_object_map.h" />
+    <ClInclude Include="..\sshare\game_object_queue.h" />
+    <ClInclude Include="..\sshare\game_sys_base.h" />
+    <ClInclude Include="..\sshare\game_sys_mgr.h" />
+    <ClInclude Include="..\sshare\i_game_def.h" />
+    <ClInclude Include="..\sshare\i_game_ehandler.h" />
+    <ClInclude Include="..\sshare\i_game_engine.h" />
+    <ClInclude Include="..\sshare\i_game_phandler.h" />
+    <ClInclude Include="..\sshare\i_game_player.h" />
+    <ClInclude Include="..\sshare\server_base.h" />
+    <ClInclude Include="..\sshare\server_define.h" />
+    <ClInclude Include="..\sshare\server_manager_handler.h" />
+    <ClInclude Include="..\sshare\server_timer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="../sshare/stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\share\common\BigInteger.cpp" />
+    <ClCompile Include="..\..\share\common\enable_crypto.cpp" />
+    <ClCompile Include="..\..\share\common\enable_minidump.cpp" />
+    <ClCompile Include="..\..\share\common\enable_processinfo.cpp" />
+    <ClCompile Include="..\..\share\common\enable_string_convert.cpp" />
+    <ClCompile Include="..\..\share\common\http\connection.cpp" />
+    <ClCompile Include="..\..\share\common\http\connection_manager.cpp" />
+    <ClCompile Include="..\..\share\common\http\http_server.cpp" />
+    <ClCompile Include="..\..\share\common\http\mime_types.cpp" />
+    <ClCompile Include="..\..\share\common\http\reply.cpp" />
+    <ClCompile Include="..\..\share\common\http\request_handler.cpp" />
+    <ClCompile Include="..\..\share\common\http\request_parser.cpp" />
+    <ClCompile Include="..\..\share\common\net\net_buffer.cpp" />
+    <ClCompile Include="..\..\share\common\net\packet_head.cpp" />
+    <ClCompile Include="..\..\share\common\net\peer_http.cpp" />
+    <ClCompile Include="..\..\share\common\net\peer_http_mgr.cpp" />
+    <ClCompile Include="..\..\share\common\net\peer_tcp.cpp" />
+    <ClCompile Include="..\..\share\common\net\peer_tcp_server.cpp" />
+    <ClCompile Include="..\..\share\common\server_log.cpp" />
+    <ClCompile Include="..\..\share\common\task_manager.cpp" />
+    <ClCompile Include="..\..\share\common\time_helper.cpp" />
+    <ClCompile Include="..\..\share\common\tinyxml2.cpp" />
+    <ClCompile Include="..\sshare\db_base.cpp" />
+    <ClCompile Include="..\sshare\db_query.cpp" />
+    <ClCompile Include="..\sshare\game_object.cpp" />
+    <ClCompile Include="..\sshare\game_object_array.cpp" />
+    <ClCompile Include="..\sshare\game_object_container.cpp" />
+    <ClCompile Include="..\sshare\game_object_field.cpp" />
+    <ClCompile Include="..\sshare\game_object_map.cpp" />
+    <ClCompile Include="..\sshare\game_object_queue.cpp" />
+    <ClCompile Include="..\sshare\game_sys_mgr.cpp" />
+    <ClCompile Include="..\sshare\i_game_ehandler.cpp" />
+    <ClCompile Include="..\sshare\i_game_engine.cpp" />
+    <ClCompile Include="..\sshare\i_game_phandler.cpp" />
+    <ClCompile Include="..\sshare\i_game_player.cpp" />
+    <ClCompile Include="..\sshare\server_base.cpp" />
+    <ClCompile Include="..\sshare\server_timer.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
